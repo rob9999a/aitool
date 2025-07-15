@@ -18,7 +18,7 @@ const Contact = () => {
                         href="mailto:support@aitoolshub.com"
                         className="text-indigo-600 font-semibold underline text-xl hover:text-indigo-800 transition"
                     >
-                        support@aitoolshub.com
+                        jirkovik@gmail.com
                     </a>
                 </div>
             </div>

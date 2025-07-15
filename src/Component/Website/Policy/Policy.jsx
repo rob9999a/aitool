@@ -75,7 +75,7 @@ const PrivacyPolicy = () => {
                                     href="mailto:support@aitoolshub.com"
                                     className="text-indigo-700 font-semibold underline hover:text-indigo-900"
                                 >
-                                    support@aitoolshub.com
+                                    jirkovik@gmail.com
                                 </a>.
                             </p>
                         </div>
