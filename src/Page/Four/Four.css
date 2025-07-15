@@ -1,0 +1,75 @@
+/* Section & General */
+#template {
+    padding: 40px 15px;
+    height: auto;
+    padding-top: 12%;
+}
+
+/* Cards */
+.div-cards {
+    margin: 30px 0;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.title-cards {
+    font-size: 1.8rem;
+    color: #111;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.title-cardss {
+    font-size: 22px;
+    color: black;
+}
+
+
+
+.contenu-cards {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+
+.category-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.category-title {
+    font-weight: 600;
+    color: #002244;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 600) {
+    .img-cards {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .title-cards {
+        font-size: 1.5rem;
+        color: #edb4b4;
+
+    }
+
+
+}

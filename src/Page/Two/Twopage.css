@@ -1,0 +1,114 @@
+#template {
+    padding-top: 2%;
+    background: #f5f5f5;
+    height: 100vh;
+
+}
+
+.ai-wrapper {
+    background: #f5f5f5;
+    padding: 3rem 1rem;
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    text-align: center;
+    height: auto;
+}
+
+.ai-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #01152f;
+    margin-bottom: 0.5rem;
+}
+
+.ai-subtitle {
+    font-size: 1.0rem;
+    color: #444;
+    margin-bottom: 5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ai-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ai-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 1.8rem 1.2rem;
+    width: 100%;
+    max-width: 340px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.ai-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.tool-name {
+    font-size: 1.7rem;
+    color: #026ffd;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.tool-desc {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.stars {
+    font-size: 1.4rem;
+    color: #f7c948;
+    margin-bottom: 0.8rem;
+}
+
+.tags {
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #dfffe3;
+    color: #15a854;
+    padding: 0.25rem 0.7rem;
+    font-size: 0.85rem;
+    border-radius: 12px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.learn-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #026ffd;
+    color: #fff;
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.learn-btn:hover {
+    background-color: #014cc2;
+}
+
+@media screen and (max-width: 600px) {
+    .ai-title {
+        font-size: 30px;
+    }
+
+}

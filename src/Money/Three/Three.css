@@ -1,0 +1,53 @@
+.long-description {
+    background-color: #f9faff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(2, 111, 253, 0.15);
+    color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 2rem auto;
+    border: 3px solid gainsboro;
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+.title {
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    background-color: #049804;
+}
+
+.long-description h2 {
+    font-size: 2rem;
+    color: #049804;
+    font-weight: 600;
+    margin-bottom: 2%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.long-description p {
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.02em;
+}
+
+.long-description strong {
+    color: #d72638;
+    font-weight: 700;
+}
+
+.img-template {
+    padding-top: 18%;
+    border-radius: 0%;
+    border: 1px solid aliceblue;
+}

@@ -1,0 +1,470 @@
+/* App.css */
+:root {
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --secondary: #4f46e5;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --gray-light: #e2e8f0;
+    --red: #ef4444;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --purple: #8b5cf6;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.ai-access-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #f0f9ff, #ffffff);
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.ai-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ai-icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.circuit {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.circuit::before,
+.circuit::after {
+    content: "";
+    position: absolute;
+    background: var(--gray-light);
+}
+
+.circuit::before {
+    width: 3px;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circuit::after {
+    width: 100%;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-weight: 800;
+}
+
+.hero-section .subtitle {
+    font-size: 1.2rem;
+    color: var(--gray);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Sections */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--dark);
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.content-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.visual-content {
+    flex: 1;
+}
+
+/* Pyramid Chart */
+.pyramid-chart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pyramid-tier {
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: var(--shadow);
+}
+
+.elite {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
+    color: white;
+}
+
+.professional {
+    background: linear-gradient(to right, #4f46e5, #818cf8);
+    color: white;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.public {
+    background: linear-gradient(to right, #64748b, #94a3b8);
+    color: white;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.pyramid-tier .label {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.pyramid-tier .description {
+    font-size: 0.95rem;
+}
+
+/* Comparison Grid */
+.access-comparison h2 {
+    margin-bottom: 50px;
+}
+
+.comparison-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.comparison-card {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-light);
+    transition: transform 0.3s ease;
+}
+
+.comparison-card:hover {
+    transform: translateY(-5px);
+}
+
+.comparison-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--gray-light);
+}
+
+.comparison-card ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.comparison-card li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.comparison-card li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.example {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.example .icon {
+    font-size: 2rem;
+}
+
+/* Case Studies */
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.case-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-light);
+    transition: all 0.3s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.case-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.case-header .icon {
+    font-size: 2rem;
+}
+
+.case-header h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.case-card p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.stat {
+    background: #eff6ff;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--primary);
+    text-align: center;
+    border-left: 4px solid var(--primary);
+}
+
+/* Implications */
+.implications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.implication-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-light);
+    transition: all 0.3s ease;
+}
+
+.implication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.implication-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+/* Democratization */
+.democratization {
+    background: #f8fafc;
+    border-radius: 20px;
+    margin: 40px 0;
+    padding: 50px;
+}
+
+.democratization ul {
+    margin: 25px 0;
+    padding-left: 25px;
+}
+
+.democratization li {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.progress-chart {
+    width: 100%;
+}
+
+.progress-bar {
+    height: 50px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    border-radius: 10px;
+}
+
+.progress-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+/* Conclusion */
+.conclusion {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 30px;
+    background: #f1f5f9;
+    border-radius: 16px;
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.conclusion p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.balance-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.balance-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    min-width: 150px;
+}
+
+.balance-item .icon {
+    font-size: 2.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .comparison-grid {
+        flex-direction: column;
+    }
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .democratization {
+        padding: 30px 20px;
+    }
+
+    .conclusion .quote {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
