@@ -91,7 +91,7 @@ const articlesWithHref = [
         title: "What if the future of your job has already been decided… but no one told you?",
         description: "Behind boardroom doors, companies may already know which roles will vanish, which departments will shrink, and which human skills will soon be obsolete.",
         category: 'business',
-        image: "https://i.postimg.cc/2j2NNdJf/0x0.webp",
+        image: "https://i.postimg.cc/fTCHQXMw/close-up-idea-concept-23-2148882592.jpg",
         readTime: "13 min read",
         views: "161.2K",
         likes: 198,
