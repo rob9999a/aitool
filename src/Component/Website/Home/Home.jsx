@@ -203,7 +203,7 @@ const Home = () => {
                 {totalPages > 1 && (
                     <section className="py-12">
                         <div className="container mx-auto px-4">
-                            <div className="flex items-center justify-center gap-2">
+                            <div className="items-center justify-center gap-2">
                                 <button
                                     onClick={() => handlePageChange(currentPage - 1)}
                                     disabled={currentPage === 1}
