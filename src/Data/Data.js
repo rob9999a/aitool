@@ -1845,8 +1845,8 @@ const articlesWithHref = [
         id: 125,
         title: "AI's Roadmap to World War III: The Key Events Unfolding Now",
         description: "From economic collapses to regional proxy wars, AI models outline a chilling sequence of global events that could lead directly to WW3. Are we following the script?",
-        category: 'geopolitics',
-        image: "https://i.postimg.cc/7ZdL91k0/ai-global-roadmap.jpg",
+        category: 'news',
+        image: "https://i.postimg.cc/TPTjvJTQ/pictorial-reflection-war-destruction-blast-weapon-disaster-explosion-fire-768733-7706.avif",
         readTime: "8 min read",
         views: "75.1K",
         likes: 1510,
@@ -1926,8 +1926,8 @@ const articlesWithHref = [
         views: "85.7K",
         likes: 1590,
         isHot: true,
-        date: "May 5, 2026",
-        dateSort: new Date("2026-05-05"),
+        date: "July 30, 2025",
+        dateSort: new Date("2025-07-30"),
         href: '/google-ai-weapons-leak'
     },
 
