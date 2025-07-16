@@ -202,7 +202,7 @@ const Home = () => {
                 {/* Pagination */}
                 {totalPages > 1 && (
                     <section className="py-12 text-center">
-                        <div className="container text-center mx-auto px-4 ">
+                        <div className="container text-center mx-auto px-4">
                             <div className="items-center text-center justify-center gap-4">
                                 <button
                                     onClick={() => handlePageChange(currentPage - 1)}
