@@ -907,7 +907,7 @@ const articlesWithHref = [
         title: "What if mastering one AI tool could double your freelance income this year?",
         description: "What if mastering just one AI tool could double your freelance income this year? By deeply learning a single powerful tool—like ChatGPT for content",
         category: 'freelance',
-        image: "https://i.postimg.cc/rwxDL8FD/freepik-the-style-is-candid-image-photography-with-natural-31288.jpg",
+        image: "https://i.postimg.cc/9QC1chpG/kjl.avif",
         readTime: "4 min read",
         views: "32K",
         likes: 965,
