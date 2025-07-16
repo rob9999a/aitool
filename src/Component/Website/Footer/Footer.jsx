@@ -19,9 +19,7 @@ function Footer() {
                     Join thousands of entrepreneurs and creators who trust our curated content.
                 </p>
 
-                <div className="flex items-center justify-center gap-6 text-gray-400 text-sm">
-                    <span className="text-xl">© 2025 AI Tools</span>
-                    <span>•</span>
+                <div className="flex items-center justify-center gap-4 text-gray-400 text-sm">
                     <a
                         href="/privacy-policy"
                         className="text-xl transition-colors duration-200 hover:text-white hover:underline"
