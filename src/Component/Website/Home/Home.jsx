@@ -201,9 +201,9 @@ const Home = () => {
 
                 {/* Pagination */}
                 {totalPages > 1 && (
-                    <section className="py-12">
-                        <div className="container mx-auto px-4">
-                            <div className="items-center justify-center gap-2">
+                    <section className="py-12 text-center">
+                        <div className="container text-center mx-auto px-4">
+                            <div className="items-center text-center justify-center gap-4">
                                 <button
                                     onClick={() => handlePageChange(currentPage - 1)}
                                     disabled={currentPage === 1}
