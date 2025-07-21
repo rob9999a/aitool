@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
     <loc>https://aitools-eosin.vercel.app/</loc>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+
   <url>
+    <loc>https://aitools-eosin.vercel.app/freelance-competitive</loc>
+
     <loc>https://aitools-eosin.vercel.app/contact</loc>
+
+
+    <loc>https://aitools-eosin.vercel.app/anduril-vs-musk</loc>
+
+    <loc>https://aitools-eosin.vercel.app/anthropic-ai-safety</loc>
+
+
+    <loc>https://aitools-eosin.vercel.app/ai-traditional</loc>
+
+
+    <loc>https://aitools-eosin.vercel.app/deepmind-agi-quest</loc>
+
+
+    <loc>https://aitools-eosin.vercel.app/ai-gn-ideas</loc>
+
+    <loc>https://aitools-eosin.vercel.app/tools</loc>
+
+    <loc>hhttps://aitools-eosin.vercel.app/ai-surveillance-whistleblower</loc>
+
+    <lastmod>2025-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  
+
 </urlset>
