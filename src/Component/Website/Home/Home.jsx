@@ -60,25 +60,28 @@ const Home = () => {
         <>
 
             <Helmet>
-                <title>Discover AI Tools That Transform Your Business in 2025 | AI Revolution</title>
+                <title>Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025</title>
 
                 <meta
                     name="description"
-                    content="Explore the hottest AI tools and strategies in 2025 that are reshaping industries, from automation to content creation. Boost your business with AI innovation."
+                    content="Unlock the power of Fyrexia AI's cutting-edge tools to automate, innovate, and skyrocket your business growth in 2025 and beyond."
                 />
 
                 <meta
                     name="keywords"
-                    content="AI tools, artificial intelligence, automation, content creation, business transformation, AI strategies 2025"
+                    content="Fyrexia AI, next-generation AI tools, business automation, AI innovation, AI strategies 2025, smart AI solutions"
                 />
 
                 <meta name="robots" content="index, follow" />
 
                 {/* Open Graph for social media */}
-                <meta property="og:title" content="Discover AI Tools That Transform Your Business in 2025" />
+                <meta
+                    property="og:title"
+                    content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025"
+                />
                 <meta
                     property="og:description"
-                    content="Explore the hottest AI tools and strategies reshaping industries. Automate, create content, and grow your business with AI."
+                    content="Discover Fyrexia AI’s revolutionary AI tools designed to transform industries, automate workflows, and fuel innovation."
                 />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://aitools-eosin.vercel.app/" />
@@ -86,10 +89,13 @@ const Home = () => {
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Discover AI Tools That Transform Your Business in 2025" />
+                <meta
+                    name="twitter:title"
+                    content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025"
+                />
                 <meta
                     name="twitter:description"
-                    content="Explore the hottest AI tools and strategies reshaping industries. Automate, create content, and grow your business with AI."
+                    content="Unlock the power of Fyrexia AI’s cutting-edge tools to automate, innovate, and skyrocket your business growth."
                 />
                 <meta name="twitter:image" content="https://aitools-eosin.vercel.app/og-image.png" />
             </Helmet>
@@ -110,12 +116,11 @@ const Home = () => {
                     {/* Hero Section */}
                     <section id='template-home' className="py-16">
                         <div className="container mx-auto px-4 text-center">
-                            <h1 className="text-6xl md:text-6xl font-black  text-transparent bg-clip-text bg-gradient-to-r 
-                        from-blue-600 via-purple-800 to-blue-600 mb-6 tracking-tight">
-                                Discover AI Tools That Transform Your Business
+                            <h1 className="text-5xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-800 to-blue-600 mb-6 tracking-tight">
+                                Fyrexia AI — Discover AI Tools That Transform Your Business
                             </h1>
                             <p className="text-xl text-gray-400 font-bold mb-8 max-w-4xl mx-auto">
-                                From automation to content creation, explore the hottest AI tools and strategies that are reshaping industries in 2025.
+                                At <span className="text-blue-600 font-extrabold">Fyrexia AI</span>, discover the hottest AI tools and strategies in 2025, from automation to content creation, reshaping industries worldwide.
                             </p>
                         </div>
                     </section>
