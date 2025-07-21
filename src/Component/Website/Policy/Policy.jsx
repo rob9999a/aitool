@@ -1,10 +1,28 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
+
 import Navbar from '../Header/Navbar';
 
 const PrivacyPolicy = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Privacy Policy | Fyrexia AI</title>
+                <meta
+                    name="description"
+                    content="Read Fyrexia AI's Privacy Policy to understand how we collect, use, and protect your data."
+                />
+            </Helmet>
+
+            <div className="max-w-4xl mx-auto p-6">
+                <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
+                <p className="mb-4">
+                    We respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.
+                </p>
+            </div>
+
             <Navbar></Navbar>
 
 
@@ -17,7 +35,7 @@ const PrivacyPolicy = () => {
 
                     <section className="space-y-8 text-gray-700 leading-relaxed text-lg">
                         <p>
-                            At <span className="font-semibold text-indigo-600">AI Tools Hub</span>, your privacy is our top priority. This Privacy Policy explains how we collect, use, and protect your information when you use our website.
+                            At <span className="font-semibold text-indigo-600">Fyrexia AI</span>, your privacy is our top priority. This Privacy Policy explains how we collect, use, and protect your information when you use our website.
                         </p>
 
                         <div>

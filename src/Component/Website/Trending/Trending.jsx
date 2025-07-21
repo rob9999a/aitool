@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet";
+
 import Navbar from '../Header/Navbar';
 
 const Trending = () => {
@@ -164,6 +166,27 @@ const Trending = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Trending Fyrexia AI for Creators</title>
+
+                <meta
+                    name="description"
+                    content="Discover the latest AI tools on Fyrexia AI designed specifically for creators to innovate and grow in 2025."
+                />
+
+                <meta property="og:title" content="Trending Fyrexia AI for Creators" />
+                <meta
+                    property="og:description"
+                    content="Explore cutting-edge AI tools tailored for creators. Boost your creativity and business with Fyrexia AI."
+                />
+
+                <meta name="twitter:title" content="Trending Fyrexia AI for Creators" />
+                <meta
+                    name="twitter:description"
+                    content="Discover innovative AI tools on Fyrexia AI for creators to transform their work and business."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 
@@ -174,10 +197,10 @@ const Trending = () => {
                         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
                             <div>
                                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                                    Trending AI Tools for Creators
+                                    Trending Fyrexia AI for Creators
                                 </h1>
                                 <p className="text-xl text-blue-100 max-w-3xl">
-                                    Discover the most powerful AI tools that content creators are using in 2025
+                                    Discover the most powerful AI tools that content creators are using in 2025 - 2080
                                 </p>
                             </div>
                             <div className="mt-6 md:mt-0">

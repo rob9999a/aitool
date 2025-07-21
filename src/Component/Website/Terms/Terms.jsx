@@ -17,7 +17,7 @@ const TermsOfService = () => {
 
                     <section className="space-y-8 text-gray-700 leading-relaxed text-lg">
                         <p>
-                            Welcome to AI Tools Hub! By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.
+                            Welcome to Fyrexia AI! By accessing or using our website, you agree to comply with and be bound by the following terms and conditions.
                         </p>
 
                         <div>
