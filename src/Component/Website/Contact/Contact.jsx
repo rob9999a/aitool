@@ -1,9 +1,26 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
+
 import Navbar from '../Header/Navbar';
 
 const Contact = () => {
     return (
         <>
+
+            <Helmet>
+                <title>Fyrexia AI - Discover AI Tools That Transform Your Business</title>
+                <meta
+                    name="description"
+                    content="Explore the hottest AI tools and strategies that are reshaping automation, content creation, marketing, and more with Fyrexia AI."
+                />
+                <meta name="keywords" content="AI tools, automation, content creation, Fyrexia, GPT, AI strategies" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <meta property="og:title" content="Fyrexia AI" />
+                <meta property="og:description" content="AI tools that boost productivity and growth." />
+                <meta property="og:url" content="https://aitools-eosin.vercel.app" />
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white flex items-center justify-center px-6 sm:px-12 md:px-24 lg:px-40">

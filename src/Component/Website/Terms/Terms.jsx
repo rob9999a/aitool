@@ -6,6 +6,22 @@ const TermsOfService = () => {
 
 
         <>
+            import {Helmet} from 'react-helmet';
+
+            <Helmet>
+                <title>Fyrexia AI - Discover AI Tools That Transform Your Business</title>
+                <meta
+                    name="description"
+                    content="Explore the hottest AI tools and strategies that are reshaping automation, content creation, marketing, and more with Fyrexia AI."
+                />
+                <meta name="keywords" content="AI tools, automation, content creation, Fyrexia, GPT, AI strategies" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <meta property="og:title" content="Fyrexia AI" />
+                <meta property="og:description" content="AI tools that boost productivity and growth." />
+                <meta property="og:url" content="https://aitools-eosin.vercel.app" />
+            </Helmet>
+
 
             <Navbar></Navbar>
 
