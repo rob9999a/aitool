@@ -1,31 +1,19 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-
 import Navbar from '../Header/Navbar';
 
 const PrivacyPolicy = () => {
     return (
-
         <>
-
             <Helmet>
                 <title>Privacy Policy | Fyrexia AI</title>
                 <meta
                     name="description"
-                    content="Read Fyrexia AI's Privacy Policy to understand how we collect, use, and protect your data."
+                    content="Learn how Fyrexia AI collects, uses, and protects your personal information. Your privacy is our top priority."
                 />
             </Helmet>
 
-            <div className="max-w-4xl mx-auto p-6">
-                <h1 className="text-4xl font-bold mb-6">Privacy Policy</h1>
-                <p className="mb-4">
-                    We respect your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information.
-                </p>
-            </div>
-
-            <Navbar></Navbar>
-
-
+            <Navbar />
 
             <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white py-16 px-6 sm:px-12 md:px-24 lg:px-40">
                 <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-10">
@@ -39,58 +27,46 @@ const PrivacyPolicy = () => {
                         </p>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                Information We Collect
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">Information We Collect</h2>
                             <p>
                                 We may collect personal information such as your name, email address, and any data you voluntarily provide through forms or newsletter sign-ups.
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                How We Use Your Information
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">How We Use Your Information</h2>
                             <p>
                                 Your data helps us improve content, provide personalized services, and keep you updated. We never sell or share your data with third parties without your permission.
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                Cookies
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">Cookies</h2>
                             <p>
                                 We use cookies to enhance your browsing experience and gather anonymous analytics to improve our site.
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                Security
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">Security</h2>
                             <p>
                                 We use industry-standard security measures to safeguard your information from unauthorized access.
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                Your Rights
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">Your Rights</h2>
                             <p>
                                 You can access, update, or delete your personal data anytime by contacting us.
                             </p>
                         </div>
 
                         <div>
-                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">
-                                Contact Us
-                            </h2>
+                            <h2 className="text-2xl font-semibold text-indigo-600 mb-3">Contact Us</h2>
                             <p>
                                 If you have any questions or concerns, please reach out at{' '}
                                 <a
-                                    href="mailto:support@aitoolshub.com"
+                                    href="mailto:jirkovik@gmail.com"
                                     className="text-indigo-700 font-semibold underline hover:text-indigo-900"
                                 >
                                     jirkovik@gmail.com
