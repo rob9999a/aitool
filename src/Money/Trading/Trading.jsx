@@ -22,19 +22,8 @@ const TradingInsights = () => {
                     property="og:description"
                     content="Discover the truth about AI-powered trading systems and if they truly beat human traders consistently."
                 />
-                <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-vs-human-trading" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-trading.jpg" />
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Can a Machine Really Trade Better Than a Human… Every Single Time?" />
-                <meta
-                    name="twitter:description"
-                    content="Learn about AI algorithms that are transforming trading. Can machines outperform humans in every trade?"
-                />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-trading.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+
             </Helmet>
             <Navbar></Navbar>
 

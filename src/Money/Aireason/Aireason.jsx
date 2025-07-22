@@ -9,6 +9,8 @@ const Aireason = () => {
 
         <>
             <Helmet>
+                <title>Fyrexia AI</title>
+
                 <title>Why Some People Are Winning Big with AI — While Others Stay Stuck</title>
                 <meta
                     name="description"
@@ -24,18 +26,10 @@ const Aireason = () => {
                     content="Learn the mindset, tools, and decisions that separate AI winners from those still struggling. What’s really holding people back from AI success?"
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-winners-vs-stuck" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-gap.jpg" />
+                <meta property="og:url" content="https://aitools-eosin.vercel.app//ai-winners-vs-stuck" />
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Why Some People Are Winning Big with AI — While Others Stay Stuck" />
-                <meta
-                    name="twitter:description"
-                    content="Not everyone wins with AI. But those who do follow a different path. Learn what sets them apart."
-                />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-gap.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+
+
             </Helmet>
 
             <Navbar></Navbar>

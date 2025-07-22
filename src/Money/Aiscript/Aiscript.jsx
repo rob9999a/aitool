@@ -24,19 +24,8 @@ const AIDropshippingPage = () => {
                 <meta name="robots" content="index, follow" />
                 <html lang="en" />
 
-                {/* Open Graph (for social sharing) */}
-                <meta property="og:title" content="What Happens When AI Does Everything — Product, Copy, Ads, and Fulfillment?" />
-                <meta property="og:description" content="From product selection to fulfillment — see how AI is building fully automated eCommerce businesses while you chill." />
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-ecommerce" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-shop-thumbnail.jpg" />
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="What Happens When AI Does Everything — Product, Copy, Ads, and Fulfillment?" />
-                <meta name="twitter:description" content="Discover how AI automates dropshipping: product choice, ad copy, marketing, and fulfillment — with zero effort from you." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-shop-thumbnail.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+
             </Helmet>
 
 
