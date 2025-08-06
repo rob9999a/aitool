@@ -36,13 +36,36 @@ const Predictai = () => {
                 <title>Can Artificial Intelligence Predict Economic Crises Before They Happen?</title>
                 <meta
                     name="description"
-                    content="Discover how AI technology is used to forecast economic crises ahead of time and its potential to revolutionize financial markets."
+                    content="Explore how AI technology is revolutionizing economic forecasting by predicting financial crises before they occur, potentially reshaping global markets."
                 />
                 <meta
                     name="keywords"
                     content="AI economic crisis prediction, artificial intelligence forecasting, economic crisis early warning, financial AI"
                 />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="Can Artificial Intelligence Predict Economic Crises Before They Happen?" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI is transforming economic forecasting by identifying early warning signs of financial crises, offering a new approach to market stability."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-predict-economic" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-economic-crisis.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can Artificial Intelligence Predict Economic Crises Before They Happen?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI is being utilized to forecast economic downturns, potentially preventing future financial crises."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-economic-crisis.jpg" />
+                <meta name="twitter:site" content="@fyrexia" />
             </Helmet>
+
 
             <Navbar>  </Navbar>
 

@@ -9,9 +9,8 @@ const Aireason = () => {
 
         <>
             <Helmet>
-                <title>Fyrexia AI</title>
-
                 <title>Why Some People Are Winning Big with AI — While Others Stay Stuck</title>
+
                 <meta
                     name="description"
                     content="Discover the real difference between those crushing it with AI and those falling behind. It's not just tools — it's mindset, timing, and how they act on the opportunity. Find out where you stand."
@@ -26,11 +25,10 @@ const Aireason = () => {
                     content="Learn the mindset, tools, and decisions that separate AI winners from those still struggling. What’s really holding people back from AI success?"
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://aitools-eosin.vercel.app//ai-winners-vs-stuck" />
-
-
-
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-winners-vs-stuck" />
+                <meta property="og:site_name" content="Fyrexia AI" />
             </Helmet>
+
 
             <Navbar></Navbar>
 

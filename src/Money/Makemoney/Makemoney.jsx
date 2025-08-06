@@ -18,6 +18,9 @@ const AIIncomePage = () => {
                     content="Explore how artificial intelligence can potentially replace traditional full-time jobs and generate a steady income of $5,000 per month. Discover tools, strategies, and real-life examples of AI-powered side hustles and passive income streams."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
                 {/* Open Graph */}
                 <meta property="og:title" content="Can AI Replace a Full-Time Job and Earn You $5,000/Month?" />
                 <meta
@@ -25,8 +28,8 @@ const AIIncomePage = () => {
                     content="Discover how AI tools and automation can create sustainable income, potentially replacing full-time jobs. Learn proven strategies and real success stories."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-fulltime-job-5000" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-earnings-thumbnail.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-fulltime-job-5000" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-earnings-thumbnail.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -35,10 +38,11 @@ const AIIncomePage = () => {
                     name="twitter:description"
                     content="Explore AI-powered income opportunities that can replace full-time jobs and generate $5,000/month. Real examples and strategies revealed."
                 />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-earnings-thumbnail.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
-                <html lang="en" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-earnings-thumbnail.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
 
 
 

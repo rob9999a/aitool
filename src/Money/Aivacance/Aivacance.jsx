@@ -7,7 +7,7 @@ const AIVacationIncomePage = () => {
     return (
 
         <>
-            (
+
             <Helmet>
                 <title>Would You Believe Me If I Told You AI Is Making Me Money… While I'm on Vacation?</title>
                 <meta
@@ -15,22 +15,26 @@ const AIVacationIncomePage = () => {
                     content="Discover how AI is generating income for me while I relax on vacation. Learn the automation secrets and tools that let money flow even when I’m away."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 {/* Open Graph */}
                 <meta property="og:title" content="Would You Believe Me If I Told You AI Is Making Me Money… While I'm on Vacation?" />
                 <meta property="og:description" content="See how AI keeps making money while I’m on vacation. No extra work, just smart automation and passive income." />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-passive-vacation" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-vacation.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-passive-vacation" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-vacation.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Would You Believe Me If I Told You AI Is Making Me Money… While I'm on Vacation?" />
                 <meta name="twitter:description" content="AI keeps earning while I relax. Discover the exact tools and strategies I use to automate income even when I’m away." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-vacation.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-vacation.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

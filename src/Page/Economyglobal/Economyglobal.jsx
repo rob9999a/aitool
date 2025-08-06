@@ -13,13 +13,37 @@ const HiddenAIEconomy = () => {
                 <title>Is a Hidden AI Force Controlling the Economy?</title>
                 <meta
                     name="description"
-                    content="Explore the theory of a hidden AI force shaping the global economy and how the helmet symbolizes the shield hiding its true power."
+                    content="Explore the theory of a hidden AI force shaping the global economy and how the 'helmet' symbolizes the shield masking its true influence."
                 />
                 <meta
                     name="keywords"
-                    content="hidden AI, secret AI economy, AI control, AI behind the scenes, helmet metaphor, AI shadows"
+                    content="hidden AI, secret AI economy, AI control, algorithmic power, AI influence, helmet metaphor, shadow AI"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Is a Hidden AI Force Controlling the Economy?" />
+                <meta
+                    property="og:description"
+                    content="Is AI secretly steering the global economy? Dive into this speculative look at the invisible forces shaping financial systems."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/hidden-ai-economy" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/hidden-ai-economy.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Is a Hidden AI Force Controlling the Economy?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore how unseen AI systems might be influencing global markets — and what the 'helmet' really means."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/hidden-ai-economy.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
 
             <Navbar>
 

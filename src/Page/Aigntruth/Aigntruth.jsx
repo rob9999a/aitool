@@ -61,7 +61,33 @@ const Aigntruth = () => {
                     name="keywords"
                     content="AI parallel reality, artificial reality, AI truth, deepfake world, simulation theory, AI manipulation"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Create a Parallel Reality More Convincing Than Truth?" />
+                <meta
+                    property="og:description"
+                    content="Explore how AI builds convincing parallel realities through deepfakes and simulations that challenge our perception of truth."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-parallel-reality" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-parallel-reality.avif" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Create a Parallel Reality More Convincing Than Truth?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover the power of AI-driven deepfakes and simulations creating realities that blur the line between truth and fiction."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-parallel-reality.avif" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

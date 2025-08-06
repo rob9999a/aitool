@@ -16,6 +16,8 @@ const Stepmoney = () => {
                     content="Discover how I generated passive income using artificial intelligence — even while I slept. Learn the exact tools, strategies, and automation that helped me turn AI into a money-making machine."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
 
                 {/* Open Graph (Facebook/LinkedIn/etc) */}
                 <meta property="og:title" content="How I Made Money While Sleeping — Thanks to AI Automation" />
@@ -24,8 +26,8 @@ const Stepmoney = () => {
                     content="Step-by-step breakdown of how AI helped me build a passive income stream. Zero inventory. Full automation."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-passive-income" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-sleep-money.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-passive-income" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-sleep-money.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -34,11 +36,13 @@ const Stepmoney = () => {
                     name="twitter:description"
                     content="Discover how I used AI to earn money while I slept. Automation, tools, and strategies revealed."
                 />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-sleep-money.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
-
-                <html lang="en" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-sleep-money.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
+
+
             <Navbar></Navbar>
 
 

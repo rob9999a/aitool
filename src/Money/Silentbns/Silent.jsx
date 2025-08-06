@@ -17,21 +17,28 @@ const AISilentPartner = () => {
                     content="Let artificial intelligence handle the hard work while you focus on growth. Discover how AI can automate, scale, and silently power your business — 24/7. Are you ready to partner with the future?"
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 {/* Open Graph for Facebook/LinkedIn */}
                 <meta property="og:title" content="Are You Ready to Let AI Be Your Silent Business Partner?" />
-                <meta property="og:description" content="AI is the ultimate partner: no salary, no sleep, just results. See how entrepreneurs are using automation to earn more by doing less." />
+                <meta
+                    property="og:description"
+                    content="AI is the ultimate partner: no salary, no sleep, just results. See how entrepreneurs are using automation to earn more by doing less."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-business-partner" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-silent-partner.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-business-partner" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-silent-partner.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Are You Ready to Let AI Be Your Silent Business Partner?" />
-                <meta name="twitter:description" content="Discover how AI can automate your business and work for you 24/7. Zero burnout. Just pure, scalable growth." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-silent-partner.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how AI can automate your business and work for you 24/7. Zero burnout. Just pure, scalable growth."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-silent-partner.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
 
             <Navbar></Navbar>

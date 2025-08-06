@@ -5,6 +5,38 @@ const AIAdCampaignCard = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>What If Your Next Ad Campaign Was Written by AI — and It Worked?</title>
+                <meta
+                    name="description"
+                    content="Discover how AI-crafted ad campaigns can boost your marketing results. Learn the secrets behind AI-driven copy that converts and engages like never before."
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What If Your Next Ad Campaign Was Written by AI — and It Worked?" />
+                <meta
+                    property="og:description"
+                    content="Explore the power of AI-generated advertising campaigns and how they can transform your marketing success."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-ad-campaign" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-ad-campaign.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="What If Your Next Ad Campaign Was Written by AI — and It Worked?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI can write ad campaigns that boost your engagement and conversions with ease."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-ad-campaign.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

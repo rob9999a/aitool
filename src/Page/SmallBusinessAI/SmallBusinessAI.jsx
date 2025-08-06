@@ -7,29 +7,45 @@ const SmallBusinessAI = () => {
     return (
 
         <>
+
+
             <Helmet>
-                <title>How AI Can Help Small Businesses Grow — Without Hiring More Staff</title>
+                <title>How AI Fuels Small Business Growth | Fyrexia</title>
                 <meta
                     name="description"
-                    content="Discover how artificial intelligence tools can help small businesses boost productivity, cut costs, and scale — all without hiring extra employees."
+                    content="Explore how AI tools are transforming small businesses by enhancing efficiency, customer engagement, and scalability. Learn how AI empowers SMEs to compete with larger enterprises."
                 />
                 <meta
                     name="keywords"
-                    content="AI for small business, artificial intelligence, business automation, AI tools, growth without hiring, AI productivity, cost saving tools"
+                    content="AI for small business, small business growth, AI tools, SME AI adoption, business automation, AI customer engagement"
                 />
-                <meta name="author" content="Your Name or Business Blog" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
 
-                {/* Open Graph Meta for Social Media Sharing */}
-                <meta property="og:title" content="How AI Can Help Small Businesses Grow — Without Hiring More Staff" />
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="How AI Fuels Small Business Growth | Fyrexia" />
                 <meta
                     property="og:description"
-                    content="Explore practical ways small businesses can use AI to streamline tasks, increase efficiency, and expand operations — without expanding payroll."
+                    content="Discover how AI is revolutionizing small businesses by improving operations, customer service, and marketing strategies."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:image" content="https://i.postimg.cc/7LvTYMrF/programming-background-collage-23-2149901780.avif" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-small-business-growth" />
-                <link rel="canonical" href="https://yourwebsite.com/ai-small-business-growth" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-small-business-growth" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-small-business.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="How AI Fuels Small Business Growth | Fyrexia" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI tools are helping small businesses streamline operations, enhance customer interactions, and drive growth."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-small-business.jpg" />
+                <meta name="twitter:site" content="@fyrexia" />
             </Helmet>
+
+
+
+
             <Navbar></Navbar>
 
 

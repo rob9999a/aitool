@@ -73,16 +73,30 @@ export default function InvisibleSkillsFreelancers() {
                     content="freelancer skills, modern freelancing, hidden freelance skills, soft skills for freelancers, gig economy tips"
                 />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://yourwebsite.com/modern-freelancer-skills" />
+                <meta name="author" content="Fyrexia AI" />
+                <link rel="canonical" href="https://fyrexia.co.uk/modern-freelancer-skills" />
+
+                {/* Open Graph */}
                 <meta property="og:title" content="What Skills Do Modern Freelancers Need That Most People Ignore?" />
                 <meta
                     property="og:description"
                     content="Discover the underrated skills that modern freelancers must master to stand out in today’s competitive gig economy."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/modern-freelancer-skills" />
-                <meta property="og:site_name" content="YourWebsiteName" />
+                <meta property="og:url" content="https://fyrexia.co.uk/modern-freelancer-skills" />
+                <meta property="og:site_name" content="Fyrexia AI" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What Skills Do Modern Freelancers Need That Most People Ignore?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover the underrated skills modern freelancers must master to stand out in today’s gig economy."
+                />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

@@ -44,6 +44,7 @@ const AIJobImpact = () => {
 
         <>
             <Navbar></Navbar>
+
             <Helmet>
                 <title>Is Artificial Intelligence Stealing Jobs—Or Revealing They Were Never Truly Necessary?</title>
                 <meta
@@ -54,7 +55,31 @@ const AIJobImpact = () => {
                     name="keywords"
                     content="AI jobs, job automation, unnecessary jobs, AI labor market, AI economy, David Graeber"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Is Artificial Intelligence Stealing Jobs—Or Revealing They Were Never Truly Necessary?" />
+                <meta
+                    property="og:description"
+                    content="Explore how AI automation might not just take jobs but reveal which jobs were unnecessary in the first place."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-stealing-jobs-or-revealing-truth" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-jobs-truth.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Is Artificial Intelligence Stealing Jobs—Or Revealing They Were Never Truly Necessary?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover the impact of AI on the job market and how automation exposes the real value of work."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-jobs-truth.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
 
 
             <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900">

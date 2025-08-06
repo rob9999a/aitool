@@ -90,6 +90,41 @@ function Googlemachine() {
     return (
 
         <>
+
+            <Helmet>
+                <title>🧬 The World's First Living Biological Computer Just Went Online</title>
+                <meta
+                    name="description"
+                    content="Discover the groundbreaking CL1 biological computer by Cortical Labs, integrating human neurons with silicon to revolutionize computing and neuroscience."
+                />
+                <meta
+                    name="keywords"
+                    content="biological computer, CL1, Cortical Labs, human neurons, silicon chip, neuroscience, biocomputing, synthetic biological intelligence"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="🧬 The World's First Living Biological Computer Just Went Online" />
+                <meta
+                    property="og:description"
+                    content="Explore the CL1, the first biological computer combining human neurons with silicon, offering new possibilities in computing and neuroscience."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/living-biocomputer" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/living-biocomputer.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="🧬 The World's First Living Biological Computer Just Went Online" />
+                <meta
+                    name="twitter:description"
+                    content="Learn about the CL1 biological computer by Cortical Labs, merging human neurons with silicon to create a new paradigm in computing."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/living-biocomputer.jpg" />
+                <meta name="twitter:site" content="@fyrexia" />
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gradient-to-br from-gray-100 to-blue-50 text-gray-800 antialiased leading-relaxed">

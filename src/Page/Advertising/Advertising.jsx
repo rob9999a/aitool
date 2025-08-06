@@ -17,7 +17,26 @@ const AIAdvertising = () => {
                     name="keywords"
                     content="AI advertising, AI marketing, deceptive ads, artificial intelligence in marketing, ad manipulation"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Is Artificial Intelligence Used to Create Advertising Campaigns That Deceive Millions?" />
+                <meta property="og:description" content="Learn how AI is being used to design persuasive — and sometimes deceptive — advertising campaigns that reach millions of people." />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-deceptive-ads" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-deceptive-ads.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Is Artificial Intelligence Used to Create Advertising Campaigns That Deceive Millions?" />
+                <meta name="twitter:description" content="Discover how AI shapes advertising campaigns that influence millions, including the ethical questions around deception." />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-deceptive-ads.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
             <Navbar></Navbar>
 
 

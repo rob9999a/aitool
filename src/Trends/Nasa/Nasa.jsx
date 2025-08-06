@@ -5,6 +5,41 @@ const Nasa = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>🧭 NASA's Time Anomaly: Unraveling Earth's Magnetic Mystery</title>
+                <meta
+                    name="description"
+                    content="Explore NASA's discovery of a growing anomaly in Earth's magnetic field, its potential impacts on satellites, and the ongoing research to understand this phenomenon."
+                />
+                <meta
+                    name="keywords"
+                    content="NASA, time anomaly, Earth's magnetic field, satellite anomalies, magnetic anomaly, space weather, scientific research"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="🧭 NASA's Time Anomaly: Unraveling Earth's Magnetic Mystery" />
+                <meta
+                    property="og:description"
+                    content="Delve into NASA's findings on a growing anomaly in Earth's magnetic field, its effects on satellite operations, and the scientific efforts to decode this enigma."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/nasa-time-anomaly" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/nasa-time-anomaly.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="🧭 NASA's Time Anomaly: Unraveling Earth's Magnetic Mystery" />
+                <meta
+                    name="twitter:description"
+                    content="Investigate NASA's observation of a time anomaly in Earth's magnetic field, its implications for satellite technology, and the ongoing research to understand this phenomenon."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/nasa-time-anomaly.jpg" />
+                <meta name="twitter:site" content="@fyrexia" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

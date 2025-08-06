@@ -73,6 +73,7 @@ const Home = () => {
                 />
 
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
 
                 {/* Open Graph for social media */}
                 <meta
@@ -84,8 +85,8 @@ const Home = () => {
                     content="Discover Fyrexia AI’s revolutionary AI tools designed to transform industries, automate workflows, and fuel innovation."
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://aitools-eosin.vercel.app/" />
-                <meta property="og:image" content="https://aitools-eosin.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+                <meta property="og:image" content="https://fyrexia.co.uk/og-image.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -97,7 +98,7 @@ const Home = () => {
                     name="twitter:description"
                     content="Unlock the power of Fyrexia AI’s cutting-edge tools to automate, innovate, and skyrocket your business growth."
                 />
-                <meta name="twitter:image" content="https://aitools-eosin.vercel.app/og-image.png" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/og-image.png" />
             </Helmet>
 
 

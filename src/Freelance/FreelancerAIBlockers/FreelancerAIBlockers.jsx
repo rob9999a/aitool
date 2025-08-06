@@ -5,6 +5,40 @@ export default function FreelancerAIBlockers() {
     return (
 
         <>
+            <Helmet>
+                <title>What’s Stopping Most Freelancers from Using AI to 10x Their Output?</title>
+
+                <meta
+                    name="description"
+                    content="Discover common barriers freelancers face when adopting AI tools and how to overcome them to multiply productivity."
+                />
+
+                <meta
+                    name="keywords"
+                    content="freelancers, AI adoption, productivity, AI tools, overcoming barriers, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What’s Stopping Most Freelancers from Using AI to 10x Their Output?" />
+                <meta
+                    property="og:description"
+                    content="Explore why many freelancers hesitate to use AI and learn strategies to boost your freelance productivity."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What’s Stopping Most Freelancers from Using AI to 10x Their Output?" />
+                <meta
+                    name="twitter:description"
+                    content="Find out common challenges freelancers face in using AI and how Fyrexia AI helps overcome them."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

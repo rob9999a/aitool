@@ -5,6 +5,41 @@ const Marketsearch = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>📊 Can AI Tools Replace Traditional Market Research?</title>
+                <meta
+                    name="description"
+                    content="Explore how AI is transforming market research — from instant trend analysis to real-time consumer insights — and whether traditional methods are becoming obsolete."
+                />
+                <meta
+                    name="keywords"
+                    content="AI market research, artificial intelligence tools, marketing automation, real-time consumer data, AI insights, future of market research"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="📊 Can AI Tools Replace Traditional Market Research?" />
+                <meta
+                    property="og:description"
+                    content="Discover whether AI can truly replace traditional market research — and how businesses are gaining faster, deeper insights using automation."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://yourwebsite.com/ai-vs-market-research" />
+                <meta property="og:image" content="https://yourwebsite.com/images/ai-market-research.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="📊 Can AI Tools Replace Traditional Market Research?" />
+                <meta
+                    name="twitter:description"
+                    content="AI is revolutionizing how we collect and interpret consumer insights. Is it the end of traditional market research?"
+                />
+                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-market-research.jpg" />
+                <meta name="twitter:site" content="@yourhandle" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

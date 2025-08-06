@@ -60,6 +60,40 @@ const AIVsFreelancers = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Can AI Help Me Land More Freelance Clients?</title>
+
+                <meta
+                    name="description"
+                    content="Discover how Fyrexia AI tools can help freelancers attract and manage more clients efficiently with smart automation."
+                />
+
+                <meta
+                    name="keywords"
+                    content="AI for freelancers, freelance clients, AI automation, client management, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Help Me Land More Freelance Clients?" />
+                <meta
+                    property="og:description"
+                    content="Explore smart AI tools designed to help freelancers grow their client base and streamline project management."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Can AI Help Me Land More Freelance Clients?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how Fyrexia AI tools can help freelancers attract and manage more clients efficiently."
+                />
+            </Helmet>
+
 
             <Navbar>
             </Navbar>

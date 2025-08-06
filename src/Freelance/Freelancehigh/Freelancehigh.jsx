@@ -40,6 +40,41 @@ const Freelancehigh = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>How to Stand Out as a Freelancer in the Age of AI</title>
+
+                <meta
+                    name="description"
+                    content="Learn effective strategies to differentiate yourself as a freelancer using AI tools to boost productivity, creativity, and client satisfaction."
+                />
+
+                <meta
+                    name="keywords"
+                    content="freelancer tips, stand out freelancer, AI for freelancers, productivity tools, client satisfaction, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="How to Stand Out as a Freelancer in the Age of AI" />
+                <meta
+                    property="og:description"
+                    content="Discover ways freelancers can leverage AI to enhance their skills, streamline workflows, and impress clients."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="How to Stand Out as a Freelancer in the Age of AI" />
+                <meta
+                    name="twitter:description"
+                    content="Explore AI-powered strategies for freelancers to boost productivity and client success."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

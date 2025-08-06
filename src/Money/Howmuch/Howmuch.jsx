@@ -23,6 +23,8 @@ const Howmuch = () => {
         <>
 
             <Navbar></Navbar>
+
+
             <Helmet>
                 <title>How Much Money Could You Make if AI Automated Your Entire Business?</title>
                 <meta
@@ -30,6 +32,7 @@ const Howmuch = () => {
                     content="Discover the potential earnings when AI takes over your entire business operations. Learn strategies, tools, and success stories of AI-powered automation generating profits."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 {/* Open Graph */}
@@ -39,8 +42,8 @@ const Howmuch = () => {
                     content="Explore the possibilities of AI automating your business from start to finish. See how entrepreneurs are making significant income with AI-driven workflows."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-automated-business" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-business-automation.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-automated-business" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-business-automation.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -49,9 +52,10 @@ const Howmuch = () => {
                     name="twitter:description"
                     content="Learn how AI automation can transform your business and increase your profits. Discover real examples and tools that help generate revenue automatically."
                 />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-business-automation.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-business-automation.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
 
             <div className="min-h-screen bg-white font-sans">
                 {/* Hero Section */}

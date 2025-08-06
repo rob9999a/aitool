@@ -6,6 +6,42 @@ const Freelancedms = () => {
 
 
         <>
+
+            <Helmet>
+                <title>What if Your Next 10 Freelance Clients Came from AI — Not Cold DMs?</title>
+
+                <meta
+                    name="description"
+                    content="Explore how AI can help you land your next freelance clients effortlessly without the hassle of cold messaging."
+                />
+
+                <meta
+                    name="keywords"
+                    content="freelance clients, AI client acquisition, cold DMs alternative, Fyrexia AI, freelance automation"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What if Your Next 10 Freelance Clients Came from AI — Not Cold DMs?" />
+                <meta
+                    property="og:description"
+                    content="Discover AI tools that automate client acquisition, helping freelancers grow without cold outreach."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What if Your Next 10 Freelance Clients Came from AI — Not Cold DMs?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how Fyrexia AI can revolutionize your freelance client acquisition, eliminating the need for cold DMs."
+                />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

@@ -22,11 +22,30 @@ const AIDropshippingPage = () => {
 
                 {/* SEO Basics */}
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
+                {/* Open Graph for social sharing */}
+                <meta property="og:title" content="What Happens When AI Does Everything — Product, Copy, Ads, and Fulfillment?" />
+                <meta
+                    property="og:description"
+                    content="Discover the future of fully automated eCommerce where AI handles everything from product selection to order fulfillment."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/what-happens-when-ai-does-everything" />
+                {/* احط صورة لو عندك */}
+                {/* <meta property="og:image" content="https://fyrexia.co.uk/images/ai-automation.jpg" /> */}
 
-
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="What Happens When AI Does Everything — Product, Copy, Ads, and Fulfillment?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore how AI can fully automate your eCommerce business, from product choice to delivery."
+                />
+                {/* <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-automation.jpg" /> */}
             </Helmet>
+
 
 
 

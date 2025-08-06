@@ -44,14 +44,18 @@ const tools = [
 const AIToolsFlex = () => {
     return (
         <>
+
+            <Helmet>
+                <title>Top 5 Free AI Tools to Start Your Business in 2025</title>
+                <meta name="description" content="Discover the best free AI tools for starting and growing your business in 2025: ChatGPT, Notion AI, Copy.ai and more." />
+                <meta name="keywords" content="AI tools, free AI, ChatGPT, Notion AI, AI for startups, 2025 business tools" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
             <div className="ai-wrapper">
-                <Helmet>
-                    <title>Top 5 Free AI Tools to Start Your Business in 2025</title>
-                    <meta name="description" content="Discover the best free AI tools for starting and growing your business in 2025: ChatGPT, Notion AI, Copy.ai and more." />
-                    <meta name="keywords" content="AI tools, free AI, ChatGPT, Notion AI, AI for startups, 2025 business tools" />
-                </Helmet>
+
 
                 <section id='template'>
 

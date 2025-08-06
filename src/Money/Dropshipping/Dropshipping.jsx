@@ -15,19 +15,31 @@ const AIDropshippingSuccess = () => {
                     content="Learn how I made $1,000 with AI-powered dropshipping — without holding inventory, packing orders, or touching a single product. Discover the tools, strategy, and secret that made it work in 30 days!"
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
 
+                {/* Open Graph */}
                 <meta property="og:title" content="How I Made $1,000 With AI Dropshipping — Without Touching a Single Product!" />
-                <meta property="og:description" content="The full strategy I used to make $1,000 with AI dropshipping in just 30 days. Zero inventory. Zero shipping. 100% automation." />
+                <meta
+                    property="og:description"
+                    content="The full strategy I used to make $1,000 with AI dropshipping in just 30 days. Zero inventory. Zero shipping. 100% automation."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-dropshipping-journey" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-dropshipping-thumbnail.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-dropshipping-journey" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-dropshipping-thumbnail.jpg" />
 
+                {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="How I Made $1,000 With AI Dropshipping — Without Touching a Single Product!" />
-                <meta name="twitter:description" content="Discover the exact steps I took to earn $1,000 using AI for dropshipping, with zero handling or shipping." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-dropshipping-thumbnail.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta
+                    name="twitter:description"
+                    content="Discover the exact steps I took to earn $1,000 using AI for dropshipping, with zero handling or shipping."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-dropshipping-thumbnail.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

@@ -33,21 +33,33 @@ const Yourtrader = () => {
                     content="Are machines replacing imagination, or enhancing it? Discover how creatives are using AI not as a crutch, but as a catalyst — and why the future of creativity isn’t artificial, it’s amplified."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 {/* Open Graph */}
                 <meta property="og:title" content="Are AI-Generated Ideas Killing Creativity — or Supercharging It?" />
-                <meta property="og:description" content="AI is shaking up art, design, and storytelling. But is it helping or hurting creativity? Find out through this eye-opening perspective." />
+                <meta
+                    property="og:description"
+                    content="AI is shaking up art, design, and storytelling. But is it helping or hurting creativity? Find out through this eye-opening perspective."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-creativity-story" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-vs-creativity.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-creativity-story" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-vs-creativity.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Are AI-Generated Ideas Killing Creativity — or Supercharging It?" />
-                <meta name="twitter:description" content="AI doesn’t have a soul — but it might spark yours. Discover how artists are using it to think bigger, not smaller." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-vs-creativity.jpg" />
+                <meta
+                    name="twitter:description"
+                    content="AI doesn’t have a soul — but it might spark yours. Discover how artists are using it to think bigger, not smaller."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-vs-creativity.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
+
+
+
             <Navbar></Navbar>
 
 

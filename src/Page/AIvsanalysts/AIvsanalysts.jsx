@@ -5,6 +5,38 @@ export default function AIvsAnalysts() {
     return (
 
         <>
+
+            <Helmet>
+                <title>Can AI Help You Make Better Business Decisions Than a Team of Analysts?</title>
+                <meta
+                    name="description"
+                    content="Discover how AI-powered tools can analyze data faster and more accurately than traditional analyst teams, helping you make smarter business decisions."
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Help You Make Better Business Decisions Than a Team of Analysts?" />
+                <meta
+                    property="og:description"
+                    content="Explore how AI is transforming business analytics by providing faster, deeper insights that can outperform human analysts."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-vs-analysts" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-vs-analysts.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Help You Make Better Business Decisions Than a Team of Analysts?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI-driven analytics can help your business make faster and more accurate decisions than traditional analyst teams."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-vs-analysts.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

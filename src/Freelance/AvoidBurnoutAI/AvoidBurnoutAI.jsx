@@ -5,6 +5,41 @@ export default function AvoidBurnoutAI() {
     return (
 
         <>
+
+            <Helmet>
+                <title>How Can Freelancers Avoid Burnout While Scaling Fast with AI?</title>
+
+                <meta
+                    name="description"
+                    content="Learn how freelancers can use AI tools to scale their business quickly without facing burnout, maintaining productivity and balance."
+                />
+
+                <meta
+                    name="keywords"
+                    content="freelancer burnout, AI for freelancers, scaling fast, productivity, work-life balance, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="How Can Freelancers Avoid Burnout While Scaling Fast with AI?" />
+                <meta
+                    property="og:description"
+                    content="Discover AI strategies that help freelancers grow rapidly while preserving mental health and productivity."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="How Can Freelancers Avoid Burnout While Scaling Fast with AI?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn effective AI tools and tips for freelancers to prevent burnout while scaling their business."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 
@@ -13,7 +48,7 @@ export default function AvoidBurnoutAI() {
                 <div className="max-w-8xl mx-auto bg-whiteHere’s how to avoid burnout and scale smart:shadow-2xl rounded-3xl p-12 space-y-10">
 
                     <h1 className="div-template  text-4xl text-start font-extrabold text-indigo-700">
-                        🔥 How can freelancers avoid burnout while scaling fast with AI?
+                        How can freelancers avoid burnout while scaling fast with AI?
                     </h1>
 
                     <p className="text-lg text-gray-700 leading-relaxed">

@@ -30,6 +30,7 @@ function Navbar() {
                     content="Fyrexia AI, AI tools, artificial intelligence, business automation, AI innovation"
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
 
                 {/* Open Graph */}
                 <meta property="og:title" content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools" />
@@ -38,18 +39,17 @@ function Navbar() {
                     content="Discover Fyrexia AI’s revolutionary AI tools designed to transform industries and fuel innovation."
                 />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://aitools-eosin.vercel.app/" />
-                <meta property="og:image" content="https://aitools-eosin.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
 
                 {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:card" content="summary" />
                 <meta name="twitter:title" content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools" />
                 <meta
                     name="twitter:description"
                     content="Unlock the power of Fyrexia AI's cutting-edge tools to automate, innovate, and skyrocket your business growth."
                 />
-                <meta name="twitter:image" content="https://aitools-eosin.vercel.app/og-image.png" />
             </Helmet>
+
 
 
 

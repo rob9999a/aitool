@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../Component/Website/Header/Navbar";
 
-export default function Topfreelance() {
+export default function Aiclient() {
   return (
     <>
       <Navbar></Navbar>

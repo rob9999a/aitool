@@ -11,6 +11,38 @@ const AIIdeaInfluence = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Can AI Plant Ideas in Our Minds?</title>
+                <meta
+                    name="description"
+                    content="Explore how AI might influence human thoughts and ideas through advanced algorithms, personalized content, and persuasive technology."
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Plant Ideas in Our Minds?" />
+                <meta
+                    property="og:description"
+                    content="Discover the possibilities and ethics behind AI's ability to subtly influence human thinking and decision-making."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-plant-ideas" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-plant-ideas.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Plant Ideas in Our Minds?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore the impact of AI on influencing thoughts and ideas through technology and algorithms."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-plant-ideas.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

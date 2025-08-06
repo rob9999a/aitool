@@ -5,6 +5,41 @@ export default function Toolfreelance() {
     return (
 
         <>
+
+            <Helmet>
+                <title>What if Mastering One AI Tool Could Double Your Freelance Income This Year?</title>
+
+                <meta
+                    name="description"
+                    content="Discover how mastering a single AI tool can help freelancers significantly increase their income and efficiency in 2025."
+                />
+
+                <meta
+                    name="keywords"
+                    content="AI tools for freelancers, increase freelance income, mastering AI, freelance productivity, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What if Mastering One AI Tool Could Double Your Freelance Income This Year?" />
+                <meta
+                    property="og:description"
+                    content="Learn how focusing on one powerful AI tool can transform your freelance business and boost your earnings."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What if Mastering One AI Tool Could Double Your Freelance Income This Year?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore the impact of mastering a single AI tool on freelance success and income growth."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 
@@ -12,7 +47,7 @@ export default function Toolfreelance() {
                 <div className="max-w-8xl mx-auto bg-white border border-gray-200 rounded-2xl shadow-lg p-8 md:p-12 space-y-8">
 
                     <h1 className="text-3xl md:text-4xl font-bold text-red-600 leading-snug">
-                        💡 What if mastering one AI tool could double your freelance income this year?
+                        What if mastering one AI tool could double your freelance income this year?
                     </h1>
 
                     <p className="text-lg">

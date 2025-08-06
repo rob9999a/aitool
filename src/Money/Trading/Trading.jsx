@@ -25,6 +25,9 @@ const TradingInsights = () => {
 
 
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

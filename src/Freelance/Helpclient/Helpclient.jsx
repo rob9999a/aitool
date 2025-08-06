@@ -6,6 +6,40 @@ export default function Helpclient() {
 
 
         <>
+            <Helmet>
+                <title>Can AI Help Freelancers Win High-Paying Clients — Without Lowering Rates or Working More Hours?</title>
+
+                <meta
+                    name="description"
+                    content="Discover how Fyrexia AI empowers freelancers to attract premium clients efficiently without compromising rates or increasing workload."
+                />
+
+                <meta
+                    name="keywords"
+                    content="AI for freelancers, high-paying clients, freelance rates, productivity tools, Fyrexia AI"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Help Freelancers Win High-Paying Clients — Without Lowering Rates or Working More Hours?" />
+                <meta
+                    property="og:description"
+                    content="Learn how AI tools help freelancers secure better-paying clients while maintaining work-life balance."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="Can AI Help Freelancers Win High-Paying Clients — Without Lowering Rates or Working More Hours?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore Fyrexia AI’s solutions for freelancers to attract premium clients efficiently and sustainably."
+                />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

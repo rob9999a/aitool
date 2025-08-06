@@ -5,6 +5,38 @@ const Customerupportai = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>How AI Can Revolutionize Customer Support Without Increasing Costs</title>
+                <meta
+                    name="description"
+                    content="Discover how AI-powered solutions are transforming customer support by improving efficiency, response times, and satisfaction — all without raising costs."
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="How AI Can Revolutionize Customer Support Without Increasing Costs" />
+                <meta
+                    property="og:description"
+                    content="Explore AI innovations that enhance customer support efficiency and experience without extra expenses."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-customer-support-revolution" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-customer-support.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="How AI Can Revolutionize Customer Support Without Increasing Costs" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI can improve customer support efficiency and satisfaction without increasing operational costs."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-customer-support.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

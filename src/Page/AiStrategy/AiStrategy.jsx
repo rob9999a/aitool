@@ -5,6 +5,38 @@ const AiStrategy = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>What if Your Business Strategy Was Powered by Real-Time AI Insights?</title>
+                <meta
+                    name="description"
+                    content="Discover how real-time AI insights can transform your business strategy, enabling smarter decisions, faster growth, and competitive advantage."
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What if Your Business Strategy Was Powered by Real-Time AI Insights?" />
+                <meta
+                    property="og:description"
+                    content="Explore the impact of AI-driven real-time data on shaping business strategies for maximum success."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-real-time-strategy" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-real-time-strategy.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="What if Your Business Strategy Was Powered by Real-Time AI Insights?" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how AI insights in real time can revolutionize decision-making and business growth."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-real-time-strategy.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

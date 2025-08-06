@@ -9,6 +9,7 @@ const AICreatedCompanies = () => {
 
         <>
             <Navbar></Navbar>
+
             <Helmet>
                 <title>Can AI Create Fake Companies That Generate Massive Profits Without Humans?</title>
                 <meta
@@ -19,6 +20,29 @@ const AICreatedCompanies = () => {
                     name="keywords"
                     content="AI fake companies, AI businesses, autonomous AI profits, artificial intelligence startups, AI no human"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Create Fake Companies That Generate Massive Profits Without Humans?" />
+                <meta
+                    property="og:description"
+                    content="Dive into the future of AI-driven businesses and whether autonomous AI can generate profits without human hands."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-fake-companies" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-fake.avif" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Create Fake Companies That Generate Massive Profits Without Humans?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore the possibility of AI autonomously running fake companies that generate profits without human intervention."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-fake.avif" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
 
             <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800 p-4">

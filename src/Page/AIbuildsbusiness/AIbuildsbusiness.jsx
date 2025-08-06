@@ -2,6 +2,8 @@ import React from "react";
 
 export default function AIBuildsBusiness() {
     return (
+
+
         <section className="bg-white min-h-screen py-16 px-6 md:px-16 font-sans text-gray-900">
             <div className="max-w-5xl mx-auto space-y-12">
                 <h1 className="text-4xl font-extrabold text-center text-indigo-700">

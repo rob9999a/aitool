@@ -11,16 +11,30 @@ const Powerai = () => {
 
             <Navbar />
             <Helmet>
-                <title>Is Powerful AI Reserved for the Elite? Helmet Metaphor Explained</title>
+                <title>Would You Trust the Machine if It Predicted Your Failure? | AI Business Warning & Leadership</title>
+
                 <meta
                     name="description"
-                    content="Discover if powerful AI is reserved for the elite and how the 'helmet' symbolizes protection and control in the world of AI technology."
+                    content="Discover a powerful story about trusting AI predictions of business failure. Learn why true leadership means rebuilding yourself, not just your company. Are you ready to face the machine’s warning?"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta
+                    property="og:title"
+                    content="Would You Trust the Machine if It Predicted Your Failure? | AI Business Warning & Leadership"
                 />
                 <meta
-                    name="keywords"
-                    content="Powerful AI, AI elite, AI exclusivity, AI protection, helmet metaphor, AI control"
+                    property="og:description"
+                    content="Discover a powerful story about trusting AI predictions of business failure. Learn why true leadership means rebuilding yourself, not just your company. Are you ready to face the machine’s warning?"
                 />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/predict-ai" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/predict-ai-thumbnail.jpg" />
             </Helmet>
+
+
 
             <section id='template'>
 

@@ -10,7 +10,7 @@ const Aiglobal = () => {
 
             <Navbar />
             <Helmet>
-                <title>Helmet: Do Elites Use Secret AI to Control the Global Economy?</title>
+                <title>Do Elites Use Secret AI to Control the Global Economy?</title>
                 <meta
                     name="description"
                     content="Explore if elites use secret AI tools—symbolized by a 'helmet' of control—to influence and dominate the global economy."
@@ -19,7 +19,25 @@ const Aiglobal = () => {
                     name="keywords"
                     content="secret AI, elite control, global economy, AI power, helmet metaphor, AI influence"
                 />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Do Elites Use Secret AI to Control the Global Economy?" />
+                <meta property="og:description" content="Explore if elites use secret AI tools—symbolized by a 'helmet' of control—to influence and dominate the global economy." />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/secret-ai-helmet-control" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-helmet-control.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Do Elites Use Secret AI to Control the Global Economy?" />
+                <meta name="twitter:description" content="Discover the truth about elite use of secret AI technologies shaping global economic power." />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-helmet-control.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
 
 
             <div className="hero">

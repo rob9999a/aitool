@@ -8,6 +8,8 @@ const AIIncomeStory = () => {
 
         <>
             <Navbar></Navbar>
+
+
             <Helmet>
                 <title>Is Making $5,000/Month with AI Easier Than You Think?</title>
                 <meta
@@ -15,21 +17,26 @@ const AIIncomeStory = () => {
                     content="Discover how everyday people are generating $5,000/month using AI-powered tools and automation. Explore real strategies, passive income systems, and whether AI can make financial freedom more accessible than ever."
                 />
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 {/* Open Graph (for social sharing) */}
                 <meta property="og:title" content="Is Making $5,000/Month with AI Easier Than You Think?" />
-                <meta property="og:description" content="Explore whether AI tools can help you earn $5,000/month. Learn how automation is changing the income game — even for beginners." />
+                <meta
+                    property="og:description"
+                    content="Explore whether AI tools can help you earn $5,000/month. Learn how automation is changing the income game — even for beginners."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-income-5000" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-income-thumbnail.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-income-5000" />
+                {/* اذا ما عندكش صورة تقدر تحذف هذا السطر */}
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-income-thumbnail.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Is Making $5,000/Month with AI Easier Than You Think?" />
                 <meta name="twitter:description" content="Learn how to use AI for passive income and discover if making $5,000/month is simpler than it seems." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-income-thumbnail.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-income-thumbnail.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
 
 

@@ -69,7 +69,7 @@ import FreelanceAIMistakeStrange from './Freelance/Mskfreelance/Mskfreelance';
 import Toolfreelance from './Freelance/Toolfreelance/Toolfreelance';
 import FreelancerAIBlockers from './Freelance/FreelancerAIBlockers/FreelancerAIBlockers';
 import AvoidBurnoutAI from './Freelance/AvoidBurnoutAI/AvoidBurnoutAI';
-import Topfreelance from './Freelance/Topfreelance/Topfreelance';
+import Topfreelance from './Freelance/Topfreelance/Aiclient';
 import SmallBizAIGrowth from './Page/SmallBizAIGrowth/SmallBizAIGrowth';
 import SmartDecisionsAI from './Page/SmartDecisionsAI/SmartDecisionsAI';
 import AIvsAnalysts from './Page/AIvsanalysts/AIvsanalysts';
@@ -149,6 +149,7 @@ import TermsOfService from './Component/Website/Terms/Terms';
 import Contact from './Component/Website/Contact/Contact';
 import Workflow from './Component/Content/Workflow/Workflow';
 import Trending from './Component/Website/Trending/Trending';
+import Aiclient from './Freelance/Topfreelance/Aiclient';
 
 
 
@@ -160,17 +161,32 @@ function App() {
 
       <Helmet>
         <title>Fyrexia AI - Discover AI Tools That Transform Your Business</title>
+
         <meta
           name="description"
           content="Explore the hottest AI tools and strategies that are reshaping automation, content creation, marketing, and more with Fyrexia AI."
         />
-        <meta name="keywords" content="AI tools, automation, content creation, Fyrexia, GPT, AI strategies" />
+        <meta
+          name="keywords"
+          content="AI tools, AI automation, content creation, GPT, Fyrexia AI, business AI, productivity tools"
+        />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Fyrexia AI" />
-        <meta property="og:title" content="Fyrexia AI" />
-        <meta property="og:description" content="AI tools that boost productivity and growth." />
-        <meta property="og:url" content="https://aitools-eosin.vercel.app" />
+
+        {/* Open Graph for social media */}
+        <meta property="og:title" content="Fyrexia AI - Discover AI Tools That Transform Your Business" />
+        <meta property="og:description" content="AI tools that boost productivity, automation, and growth for businesses." />
+        <meta property="og:url" content="https://fyrexia.co.uk/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fyrexia.co.uk/og-image.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fyrexia AI - Discover AI Tools That Transform Your Business" />
+        <meta name="twitter:description" content="Explore cutting-edge AI tools to automate, create, and grow with Fyrexia AI." />
+        <meta name="twitter:image" content="https://fyrexia.co.uk/og-image.jpg" />
       </Helmet>
+
 
 
       <Router>
@@ -349,7 +365,7 @@ function App() {
           <Route path="/ai-mistake-freelance" element={<FreelanceAIMistakeStrange />} />
 
 
-          <Route path="/tool-freelance" element={<Toolfreelance />} />
+          <Route path="/tool-freelance" element={<Aiclient />} />
 
           <Route path="/freelance-ai-block" element={<FreelancerAIBlockers />} />
 

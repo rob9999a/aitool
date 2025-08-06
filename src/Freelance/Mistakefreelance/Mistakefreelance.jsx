@@ -24,16 +24,31 @@ export default function FreelancerAIMistakeCard() {
                     content="AI mistake freelancers, losing freelance clients, freelancer tips, AI in freelancing, freelance client retention"
                 />
                 <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://yourwebsite.com/ai-mistake-freelancers" />
+                <meta name="author" content="Fyrexia AI" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-mistake-freelancers" />
+
+                {/* Open Graph */}
                 <meta property="og:title" content="The AI Mistake That's Costing Freelancers Clients" />
                 <meta
                     property="og:description"
                     content="Many freelancers are losing clients due to a critical AI mistake. Discover how to avoid it and keep your freelance business growing."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-mistake-freelancers" />
-                <meta property="og:site_name" content="YourWebsiteName" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-mistake-freelancers" />
+                <meta property="og:site_name" content="Fyrexia AI" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="The AI Mistake That's Costing Freelancers Clients" />
+                <meta
+                    name="twitter:description"
+                    content="Learn how freelancers can avoid common AI pitfalls and retain clients effectively."
+                />
             </Helmet>
+
+
+
+
             <Navbar></Navbar>
 
 

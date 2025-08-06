@@ -35,16 +35,39 @@ const TrendAnalysis = () => {
         <>
 
             <Helmet>
-                <title>Are Trends Organic or Engineered? The Forces Behind Popular Culture</title>
+                <title>AI Trend or Fake? Unmasking the Reality Behind Viral AI Claims</title>
                 <meta
                     name="description"
-                    content="Discover whether trends are organically created by people or strategically engineered by marketers and influencers."
+                    content="Explore the phenomenon of AI-generated content flooding social media, blurring the lines between reality and fabrication. Learn how to discern genuine AI advancements from exaggerated trends."
                 />
                 <meta
                     name="keywords"
-                    content="organic trends, engineered trends, social media trends, marketing, popular culture"
+                    content="AI trends, fake AI news, AI-generated content, AI misinformation, deepfake detection, AI in media"
                 />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="AI Trend or Fake? Unmasking the Reality Behind Viral AI Claims" />
+                <meta
+                    property="og:description"
+                    content="Delve into the surge of AI-generated content online and understand how to differentiate between genuine AI innovations and fabricated trends."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-trend-fake" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-trend-fake.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="AI Trend or Fake? Unmasking the Reality Behind Viral AI Claims" />
+                <meta
+                    name="twitter:description"
+                    content="Investigate the rise of AI-generated content and learn how to identify authentic AI developments amidst the noise of viral misinformation."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-trend-fake.jpg" />
+                <meta name="twitter:site" content="@fyrexia" />
             </Helmet>
+
 
 
             <Navbar></Navbar>

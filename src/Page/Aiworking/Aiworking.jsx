@@ -9,6 +9,41 @@ const DataFortunes = () => {
 
         <>
 
+            <Helmet>
+                <title>Are the Free Data We Give Away Building Hidden Fortunes?</title>
+                <meta
+                    name="description"
+                    content="Explore how the free data we share online contributes to hidden fortunes built by corporations and powers the data-driven economy."
+                />
+                <meta
+                    name="keywords"
+                    content="free data profits, data economy, hidden fortunes, personal data value, data monetization"
+                />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Are the Free Data We Give Away Building Hidden Fortunes?" />
+                <meta
+                    property="og:description"
+                    content="Discover how corporations turn the free data you share online into massive wealth and power."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/free-data-hidden-fortunes" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/free-data-fortunes.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Are the Free Data We Give Away Building Hidden Fortunes?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore how the free data we share fuels massive hidden fortunes in today’s data economy."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/free-data-fortunes.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

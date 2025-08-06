@@ -5,6 +5,34 @@ export default function AIAutoManageCard() {
     return (
 
         <>
+            <Helmet>
+                <title>What if AI Could Manage Your Client Projects Better Than You Can?</title>
+
+                <meta
+                    name="description"
+                    content="Discover how Fyrexia AI tools can manage your client projects smarter, faster, and more efficiently than ever before."
+                />
+
+                <meta
+                    name="keywords"
+                    content="AI project management, Fyrexia AI, client automation, smart AI tools, project automation"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="What if AI Could Manage Your Client Projects Better Than You Can?" />
+                <meta property="og:description" content="Explore next-gen AI tools that automate project workflows and boost client satisfaction." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:title" content="What if AI Could Manage Your Client Projects Better Than You Can?" />
+                <meta name="twitter:description" content="Discover how Fyrexia AI tools transform project management and client delivery." />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

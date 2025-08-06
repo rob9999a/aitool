@@ -31,9 +31,32 @@ const PhantomDrone = () => {
                         name="description"
                         content="Discover how a viral AI-generated video changed global perception in war — a phantom drone that never existed."
                     />
-                    <meta name="keywords" content="AI, war, deception, phantom drone, misinformation, deepfake" />
+                    <meta name="keywords" content="AI, war, deception, phantom drone, misinformation, deepfake, military AI, fake warfare" />
                     <meta name="author" content="YourName" />
+                    <meta name="robots" content="index, follow" />
+                    <html lang="en" />
+
+                    {/* Open Graph for social media */}
+                    <meta property="og:title" content="The Phantom Drone: AI & War Deception" />
+                    <meta
+                        property="og:description"
+                        content="A deepfake drone, a viral video, and a world misled. Explore how AI reshaped public opinion in modern conflict."
+                    />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:url" content="https://yourwebsite.com/phantom-drone-ai" />
+                    <meta property="og:image" content="https://yourwebsite.com/images/phantom-drone-cover.jpg" />
+
+                    {/* Twitter Card */}
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:title" content="The Phantom Drone: AI & War Deception" />
+                    <meta
+                        name="twitter:description"
+                        content="A fake drone fooled the world — and it was built by AI. See how digital deception is shaping modern warfare."
+                    />
+                    <meta name="twitter:image" content="https://yourwebsite.com/images/phantom-drone-cover.jpg" />
+                    <meta name="twitter:site" content="@yourhandle" />
                 </Helmet>
+
 
                 <div className="container">
                     <div className="row">

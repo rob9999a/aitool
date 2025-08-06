@@ -31,9 +31,32 @@ const JobAutomationReality = () => {
                 />
                 <meta
                     name="keywords"
-                    content="6 AI job loss, future of work, job automation, silent layoffs, automation strategy"
+                    content="AI job loss, future of work, job automation, silent layoffs, automation strategy, AI displacement, workforce disruption"
                 />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph for Facebook/LinkedIn */}
+                <meta property="og:title" content="What If the Future of Your Job Has Already Been Decided—But No One Told You?" />
+                <meta
+                    property="og:description"
+                    content="AI may have already determined the fate of your job — without you even realizing it. Learn how quiet automation is changing everything."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://yourwebsite.com/ai-job-future" />
+                <meta property="og:image" content="https://yourwebsite.com/images/ai-job-future.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="What If the Future of Your Job Has Already Been Decided—But No One Told You?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how invisible automation may already be replacing your role — and what it means for the future of work."
+                />
+                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-job-future.jpg" />
+                <meta name="twitter:site" content="@yourhandle" />
             </Helmet>
+
 
             <Navbar>
             </Navbar>

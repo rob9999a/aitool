@@ -8,8 +8,8 @@ const AIFacebookIncomePage = () => {
 
         <>
             <Navbar></Navbar>
-            <Helmet>
 
+            <Helmet>
                 <title>AI Made Me $8,600 Last Month — Without Posting on Social Media</title>
 
                 <meta
@@ -18,20 +18,28 @@ const AIFacebookIncomePage = () => {
                 />
 
                 <meta name="robots" content="index, follow" />
+                <meta name="author" content="Fyrexia AI" />
                 <html lang="en" />
 
                 <meta property="og:title" content="AI Made Me $8,600 Last Month — Without Posting on Social Media" />
-                <meta property="og:description" content="AI made me $8,600 in 30 days without posting a single thing. No followers. No reels. Just smart automation. Here's how it works." />
+                <meta
+                    property="og:description"
+                    content="AI made me $8,600 in 30 days without posting a single thing. No followers. No reels. Just smart automation. Here's how it works."
+                />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-8600-case-study" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-8600.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-8600-case-study" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-8600.jpg" />
 
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="AI Made Me $8,600 Last Month — Without Posting on Social Media" />
-                <meta name="twitter:description" content="No posts. No dancing. Just AI doing the work. Find out how I made $8,600 in one month with smart automation." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-8600.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta
+                    name="twitter:description"
+                    content="No posts. No dancing. Just AI doing the work. Find out how I made $8,600 in one month with smart automation."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-8600.jpg" />
+                <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
+
 
             <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white font-sans">
                 {/* Hero Section */}
