@@ -149,6 +149,7 @@ import Contact from './Component/Website/Contact/Contact';
 import Workflow from './Component/Content/Workflow/Workflow';
 import Trending from './Component/Website/Trending/Trending';
 import Aiclient from './Freelance/Topfreelance/Aiclient';
+import Profilai from './Page/ProfitableCustomersAI/Profilai';
 
 
 
