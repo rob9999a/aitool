@@ -37,6 +37,37 @@ const Tiktok = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>TikTok Anime Filter: The Viral Trend Transforming Faces</title>
+                <meta
+                    name="description"
+                    content="Explore the TikTok anime filter phenomenon that's taking social media by storm, turning everyday faces into stunning anime characters."
+                />
+                <meta name="keywords" content="TikTok anime filter, viral TikTok trends, anime face filter, social media filters, TikTok effects" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="TikTok Anime Filter: The Viral Trend Transforming Faces" />
+                <meta
+                    property="og:description"
+                    content="Discover how the TikTok anime filter works and why it's captivating millions worldwide."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/tiktok-anime-filter" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/tiktok-anime-filter.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="TikTok Anime Filter: The Viral Trend Transforming Faces" />
+                <meta
+                    name="twitter:description"
+                    content="Learn about the TikTok anime filter trend and how it's changing social media aesthetics."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/tiktok-anime-filter.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

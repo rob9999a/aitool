@@ -137,6 +137,38 @@ function Contentwrapper() {
     return (
 
         <>
+
+            <Helmet>
+                <title>Gemini vs ChatGPT-4: The AI Showdown</title>
+                <meta
+                    name="description"
+                    content="Compare Google's Gemini AI with OpenAI's ChatGPT-4. Explore strengths, weaknesses, and future potentials of these powerful AI models."
+                />
+                <meta name="keywords" content="Gemini AI, ChatGPT-4, AI comparison, artificial intelligence, Google AI, OpenAI" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Gemini vs ChatGPT-4: The AI Showdown" />
+                <meta
+                    property="og:description"
+                    content="Compare Google's Gemini AI with OpenAI's ChatGPT-4. Explore strengths, weaknesses, and future potentials of these powerful AI models."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/gemini-vs-chatgpt4" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/gemini-vs-chatgpt4.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Gemini vs ChatGPT-4: The AI Showdown" />
+                <meta
+                    name="twitter:description"
+                    content="Explore strengths, weaknesses, and future potentials of Google’s Gemini and OpenAI’s ChatGPT-4."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/gemini-vs-chatgpt4.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

@@ -5,6 +5,37 @@ const Glassesai = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>AI Machine Dreams: Exploring the Imagination of Artificial Minds</title>
+                <meta
+                    name="description"
+                    content="Dive into the fascinating world of AI-generated dreams and creativity. Discover how machines imagine, create, and dream in ways humans never expected."
+                />
+                <meta name="keywords" content="AI dreams, artificial intelligence, machine creativity, AI imagination, future of AI" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="AI Machine Dreams: Exploring the Imagination of Artificial Minds" />
+                <meta
+                    property="og:description"
+                    content="Explore how AI systems generate creative and unexpected dreams, changing the way we think about machine intelligence."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-machine-dreams" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-machine-dreams.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="AI Machine Dreams: Exploring the Imagination of Artificial Minds" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how AI generates dreams and creativity, reshaping our understanding of intelligence."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-machine-dreams.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

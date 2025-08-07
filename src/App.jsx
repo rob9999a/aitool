@@ -82,7 +82,6 @@ import MarketingAIPage from './Page/MarketingAIPage/MarketingAIPage';
 import AiStrategy from './Page/AiStrategy/AiStrategy';
 import AIAdCampaignCard from './Page/AIAdCampaignCard/AIAdCampaignCard';
 import ProfitableCustomersAI from './Page/ProfitableCustomersAI/Profilai';
-import Profilai from './Page/ProfitableCustomersAI/Profilai';
 import CustomerSupportAI from './Page/Customerupportai/Customerupportai';
 import SupplyChainAI from './Page/SupplyChainAI/SupplyChainAI';
 import Forecasting from './Page/FinancialForecastingAI/Forecasting';
@@ -207,7 +206,7 @@ function App() {
           <Route path="/my-step" element={<Stepmoney />} />
           <Route path="/ai-fake-war" element={<Aiwar />} />
 
-          <Route path="/tools-secret" element={<Toolsecret />} />
+          <Route path="/tools-" element={<Toolsecret />} />
           <Route path="/powerfulai" element={<Powerai />} />
           <Route path="/ai-global-economy" element={<Aiglobal />} />
 
@@ -260,8 +259,6 @@ function App() {
           <Route path="/ai-ad-campaign" element={<AIAdCampaignCard />} />
 
           <Route path="/ai-best-customers" element={<Profilai />} />
-
-          <Route path="/ai-entrepreneurship" element={<Profilai />} />
 
           <Route path="/ai-customer-support" element={<CustomerSupportAI />} />
 
@@ -408,7 +405,6 @@ function App() {
 
           <Route path="/vr-sensory-gaming" element={<Vrevolution />} />
 
-          <Route path="/vr-sensory-gaming" element={<Vrevolution />} />
 
           <Route path="/tiktok-anime-filter" element={<Tiktok />} />
 

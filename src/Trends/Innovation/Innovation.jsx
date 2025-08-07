@@ -100,6 +100,36 @@ function Innovation() {
     return (
 
         <>
+
+            <Helmet>
+                <title>AI Leader 2026: The Future of Artificial Intelligence Leadership</title>
+                <meta
+                    name="description"
+                    content="Explore the emerging trends, visionary leaders, and transformative technologies shaping AI leadership in 2026 and beyond."
+                />
+                <meta name="keywords" content="AI leadership, future of AI, AI trends 2026, artificial intelligence leaders, technology innovation" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="AI Leader 2026: The Future of Artificial Intelligence Leadership" />
+                <meta
+                    property="og:description"
+                    content="Discover the key figures and innovations driving AI leadership in 2026 and how they're shaping the future."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-leader-2026" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-leader-2026.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="AI Leader 2026: The Future of Artificial Intelligence Leadership" />
+                <meta
+                    name="twitter:description"
+                    content="Explore the visionary leaders and trends shaping AI's future in 2026."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-leader-2026.jpg" />
+            </Helmet>
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 text-gray-800 antialiased leading-relaxed">

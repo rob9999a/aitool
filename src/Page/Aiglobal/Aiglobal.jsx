@@ -27,8 +27,8 @@ const Aiglobal = () => {
                 <meta property="og:title" content="Do Elites Use Secret AI to Control the Global Economy?" />
                 <meta property="og:description" content="Explore if elites use secret AI tools—symbolized by a 'helmet' of control—to influence and dominate the global economy." />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://fyrexia.co.uk/secret-ai-helmet-control" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-helmet-control.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-global-economy" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-global-economy.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

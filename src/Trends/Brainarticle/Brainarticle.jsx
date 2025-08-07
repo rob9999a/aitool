@@ -5,6 +5,43 @@ const Brainarticle = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>The Quantum Brain Experiment: Unlocking the Future of Consciousness</title>
+
+                <meta
+                    name="description"
+                    content="Explore the groundbreaking quantum brain experiment that aims to unlock the secrets of human consciousness through quantum computing and neuroscience."
+                />
+
+                <meta
+                    name="keywords"
+                    content="quantum brain, quantum computing, consciousness, neuroscience, brain experiment, future technology"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="The Quantum Brain Experiment: Unlocking the Future of Consciousness" />
+                <meta
+                    property="og:description"
+                    content="Discover how the quantum brain experiment could revolutionize our understanding of consciousness and brain function."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/quantum-brain-experiment" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/quantum-brain.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="The Quantum Brain Experiment: Unlocking the Future of Consciousness" />
+                <meta
+                    name="twitter:description"
+                    content="Explore the quantum brain experiment and its potential to unlock new frontiers in consciousness."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/quantum-brain.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

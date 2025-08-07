@@ -25,7 +25,7 @@ const AIAdvertising = () => {
                 <meta property="og:title" content="Is Artificial Intelligence Used to Create Advertising Campaigns That Deceive Millions?" />
                 <meta property="og:description" content="Learn how AI is being used to design persuasive — and sometimes deceptive — advertising campaigns that reach millions of people." />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://fyrexia.co.uk/ai-deceptive-ads" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-create-advertising-deceive-millions" />
                 <meta property="og:image" content="https://fyrexia.co.uk/images/ai-deceptive-ads.jpg" />
 
                 {/* Twitter Card */}

@@ -5,6 +5,37 @@ const Gene = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>New Gene Edit Lets Humans Stay Awake for Days — Without Fatigue</title>
+                <meta
+                    name="description"
+                    content="Discover the breakthrough gene editing technology that allows humans to stay awake for days without feeling tired. Explore the science and implications behind this revolutionary discovery."
+                />
+                <meta name="keywords" content="gene editing, sleep, fatigue, biotechnology, human enhancement, staying awake" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="New Gene Edit Lets Humans Stay Awake for Days — Without Fatigue" />
+                <meta
+                    property="og:description"
+                    content="Explore the science behind the new gene editing technique that could eliminate the need for sleep and fatigue in humans."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/sleep-gene-edit" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/sleep-gene-edit.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="New Gene Edit Lets Humans Stay Awake for Days — Without Fatigue" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how gene editing is revolutionizing human sleep, allowing prolonged wakefulness without fatigue."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/sleep-gene-edit.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

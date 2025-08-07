@@ -37,6 +37,40 @@ const personalizationPoints = [
 const Interaction = () => {
     return (
         <>
+
+            <Helmet>
+                <title>How AI Is Powering Ultra-Personalized Customer Experiences</title>
+
+                <meta
+                    name="description"
+                    content="Explore how artificial intelligence is transforming customer personalization by delivering tailored experiences, product recommendations, and messaging at scale."
+                />
+
+                <meta name="keywords" content="AI personalization, customer experience, AI marketing, personalized recommendations, artificial intelligence CRM" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph tags */}
+                <meta property="og:title" content="How AI Is Powering Ultra-Personalized Customer Experiences" />
+                <meta
+                    property="og:description"
+                    content="Learn how businesses are using AI to personalize every interaction — from emails to product suggestions — and increase customer loyalty."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-customer-personalization" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-personalization.jpg" />
+
+                {/* Twitter Card tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="How AI Is Powering Ultra-Personalized Customer Experiences" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how AI-driven personalization is reshaping the future of customer engagement."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-personalization.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

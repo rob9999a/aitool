@@ -72,8 +72,8 @@ const Aigntruth = () => {
                     content="Explore how AI builds convincing parallel realities through deepfakes and simulations that challenge our perception of truth."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://fyrexia.co.uk/ai-parallel-reality" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-parallel-reality.avif" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-generate-truth" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-generate-truth.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -82,7 +82,7 @@ const Aigntruth = () => {
                     name="twitter:description"
                     content="Discover the power of AI-driven deepfakes and simulations creating realities that blur the line between truth and fiction."
                 />
-                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-parallel-reality.avif" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-generate-truth.jpg" />
                 <meta name="twitter:site" content="@FyrexiaAI" />
             </Helmet>
 

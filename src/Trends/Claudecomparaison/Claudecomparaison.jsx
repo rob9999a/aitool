@@ -140,6 +140,43 @@ function Claudecomparaison() {
     return (
 
         <>
+
+            <Helmet>
+                <title>Claude vs GPT: The Battle of AI Language Models</title>
+
+                <meta
+                    name="description"
+                    content="Compare Claude and GPT, two leading AI language models, to see which one delivers better performance, creativity, and usability for your projects."
+                />
+
+                <meta
+                    name="keywords"
+                    content="Claude AI, GPT, AI language models, AI comparison, OpenAI, Anthropic"
+                />
+
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Claude vs GPT: The Battle of AI Language Models" />
+                <meta
+                    property="og:description"
+                    content="A detailed comparison between Claude and GPT to help you decide the best AI model for your needs."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/claude-vs-gpt" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/claude-vs-gpt.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Claude vs GPT: The Battle of AI Language Models" />
+                <meta
+                    name="twitter:description"
+                    content="Compare Claude and GPT to find out which AI language model suits your project best."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/claude-vs-gpt.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

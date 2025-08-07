@@ -4,6 +4,36 @@ import Navbar from '../../Component/Website/Header/Navbar';
 const Vrevolution = () => {
     return (
         <>
+
+            <Helmet>
+                <title>New VR Game Lets You Feel Heat, Cold, and Touch — In Real Time</title>
+                <meta
+                    name="description"
+                    content="Discover the groundbreaking VR game that lets players feel heat, cold, and physical sensations in real time, revolutionizing immersive gaming experiences."
+                />
+                <meta name="keywords" content="VR game, sensory gaming, virtual reality, haptic feedback, immersive gaming, VR technology" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="New VR Game Lets You Feel Heat, Cold, and Touch — In Real Time" />
+                <meta
+                    property="og:description"
+                    content="Experience the next level of VR gaming with real-time heat, cold, and touch sensations."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/vr-sensory-gaming" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/vr-sensory-gaming.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="New VR Game Lets You Feel Heat, Cold, and Touch — In Real Time" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how this VR game delivers real-time sensory feedback for a truly immersive experience."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/vr-sensory-gaming.jpg" />
+            </Helmet>
             <Navbar></Navbar>
 
 

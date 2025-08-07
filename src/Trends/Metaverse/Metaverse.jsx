@@ -17,6 +17,36 @@ const Metaverse = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Metaverse Simulation: The Next Digital Frontier</title>
+                <meta
+                    name="description"
+                    content="Dive into the world of metaverse simulations and discover how virtual realities are transforming social, business, and entertainment landscapes."
+                />
+                <meta name="keywords" content="metaverse, virtual reality, digital simulation, VR, metaverse technology, future of metaverse" />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Metaverse Simulation: The Next Digital Frontier" />
+                <meta
+                    property="og:description"
+                    content="Explore the evolving metaverse simulations shaping the future of interaction and digital experience."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/metaverse-simulation" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/metaverse-simulation.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Metaverse Simulation: The Next Digital Frontier" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how metaverse simulations are changing the way we connect, work, and play online."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/metaverse-simulation.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

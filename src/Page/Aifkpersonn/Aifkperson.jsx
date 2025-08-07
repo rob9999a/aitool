@@ -31,6 +31,41 @@ const AIGeneratedCEOs = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Can AI Run Real Companies With Fictional CEOs?</title>
+
+                <meta
+                    name="description"
+                    content="Explore how artificial intelligence might create fictional executives who manage businesses, sign deals, and generate profits — without ever truly existing."
+                />
+
+                <meta
+                    name="keywords"
+                    content="AI companies, artificial executives, AI CEO, AI business management, autonomous business, AI-run companies"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Run Real Companies With Fictional CEOs?" />
+                <meta
+                    property="og:description"
+                    content="Discover the future of fully autonomous businesses managed by AI personas that never existed — but still succeed."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-run-real-companies" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-ceo.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Run Real Companies With Fictional CEOs?" />
+                <meta
+                    name="twitter:description"
+                    content="Exploring how AI might create fictional executives who lead real businesses and generate real profits."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-ceo.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 
