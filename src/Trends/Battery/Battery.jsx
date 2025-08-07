@@ -5,6 +5,41 @@ const Battery = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>This Nano Battery Could Last 50 Years Without a Recharge</title>
+
+                <meta
+                    name="description"
+                    content="Discover how nano battery technology promises up to 50 years of power without recharging — and what it means for the future of energy and devices."
+                />
+                <meta
+                    name="keywords"
+                    content="nano battery, 50 year battery, battery innovation, long life battery, AI energy future, nano tech power"
+                />
+                <link rel="canonical" href="https://fyrexia.co.uk/nano-battery-50-years" />
+
+                {/* Open Graph tags */}
+                <meta property="og:title" content="This Nano Battery Could Last 50 Years Without a Recharge" />
+                <meta
+                    property="og:description"
+                    content="Explore the revolutionary nano battery that could power devices for half a century — a breakthrough in long-term energy solutions."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/nano-battery-50-years" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/nano-battery.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+
+                {/* Twitter Card tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="This Nano Battery Could Last 50 Years Without a Recharge" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how nano battery technology is reshaping energy and innovation — with a lifespan measured in decades."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/nano-battery.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

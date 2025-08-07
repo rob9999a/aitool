@@ -57,6 +57,32 @@ const Aimovie = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>The Rise of AI Story Generators | Fyrexia</title>
+                <meta
+                    name="description"
+                    content="Explore how AI story generators are revolutionizing storytelling, from crafting movie endings to empowering writers with dynamic narratives and creative tools."
+                />
+                <meta
+                    name="keywords"
+                    content="AI story generators, AI movie endings, generative storytelling, AI writers tools, creative AI"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="The Rise of AI Story Generators | Fyrexia" />
+                <meta
+                    property="og:description"
+                    content="Dive into the world of AI-powered story generation—discover tools that craft narrative endings, assist writers, and shape the future of creative media."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-movie-endings" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-story-generators.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

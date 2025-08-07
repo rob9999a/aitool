@@ -71,35 +71,32 @@ function Aignnews() {
     return (
         <>
             <Helmet>
-                <title>Is AI-generated News the Future of Journalism?</title>
-
+                <title>Is AI‑Generated News the Future of Journalism?</title>
                 <meta
                     name="description"
-                    content="Explore how AI-generated news is transforming journalism and what the future holds for news creation, accuracy, and media ethics."
+                    content="Explore how AI is reshaping journalism—from automated articles to ethical challenges—and what the future holds for news credibility and media integrity."
                 />
+                <meta
+                    name="keywords"
+                    content="AI journalism, automated news, AI ethics, media transformation, future of news"
+                />
+                <meta name="robots" content="index, follow" />
+                <html lang="en" />
 
-                <link rel="canonical" href="https://yourwebsite.com/ai-generated-news-future-journalism" />
-
-                {/* Open Graph tags for social sharing */}
-                <meta property="og:title" content="Is AI-generated News the Future of Journalism?" />
+                {/* Open Graph */}
+                <meta property="og:title" content="Is AI‑Generated News the Future of Journalism?" />
                 <meta
                     property="og:description"
-                    content="Explore how AI-generated news is transforming journalism and what the future holds for news creation, accuracy, and media ethics."
+                    content="Delve into the rise of AI in newsrooms, from automated reporting to ethics, trust, and how journalism can adapt."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-generated-news-future-journalism" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-news-thumbnail.jpg" />
-                <meta property="og:site_name" content="Your Website Name" />
-
-                {/* Twitter Card tags */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Is AI-generated News the Future of Journalism?" />
-                <meta
-                    name="twitter:description"
-                    content="Explore how AI-generated news is transforming journalism and what the future holds for news creation, accuracy, and media ethics."
-                />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-news-thumbnail.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-news-journalism" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-journalism.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gray-50 text-gray-800 antialiased leading-relaxed">

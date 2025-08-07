@@ -113,8 +113,8 @@ function Appleannonce() {
                     name="description"
                     content="Discover how Apple's latest AI announcements might transform the tech industry and disrupt the global market landscape."
                 />
-
-                <link rel="canonical" href="https://yourwebsite.com/apple-ai-announcements-market-shift" />
+                <meta name="keywords" content="Apple AI, Apple AI news, Apple market shift, AI announcements, AI industry change" />
+                <link rel="canonical" href="https://fyrexia.co.uk/apple-ai-shift" />
 
                 {/* Open Graph tags */}
                 <meta property="og:title" content="Why Apple’s AI Announcements Could Shift the Entire Market" />
@@ -123,9 +123,9 @@ function Appleannonce() {
                     content="Discover how Apple's latest AI announcements might transform the tech industry and disrupt the global market landscape."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/apple-ai-announcements-market-shift" />
-                <meta property="og:image" content="https://yourwebsite.com/images/apple-ai-market.jpg" />
-                <meta property="og:site_name" content="Your Website Name" />
+                <meta property="og:url" content="https://fyrexia.co.uk/apple-ai-shift" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/apple-ai-market.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
 
                 {/* Twitter Card tags */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -134,8 +134,12 @@ function Appleannonce() {
                     name="twitter:description"
                     content="Discover how Apple's latest AI announcements might transform the tech industry and disrupt the global market landscape."
                 />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/apple-ai-market.jpg" />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/apple-ai-market.jpg" />
             </Helmet>
+
+
+
+
             <Navbar></Navbar>
 
 
