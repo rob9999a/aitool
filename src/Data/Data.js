@@ -2089,20 +2089,6 @@ const articlesWithHref = [
 
 
 
-    {
-        id: 150,
-        title: "AI-Powered Dream You Never Wake From",
-        description: "AI-Powered Dream You Never Wake From.",
-        category: 'news',
-        image: "https://i.postimg.cc/yNXpYJXw/child-with-autism-living-fantasy-world-23-2151248853.avif",
-        readTime: "7 min read",
-        views: "253.8K",
-        likes: 1850,
-        isHot: true,
-        date: "July 19, 2025",
-        dateSort: new Date("2026-07-19"),
-        href: '/ai-dream'
-    },
 
 
     {
@@ -2115,7 +2101,7 @@ const articlesWithHref = [
         views: "93.8K",
         likes: 1850,
         isHot: true,
-        date: "May 19, 2026",
+        date: "May 19, 2027",
         dateSort: new Date("2026-05-19"),
         href: '/ai-dream'
     }
