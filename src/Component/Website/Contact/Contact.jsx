@@ -25,7 +25,7 @@ const Contact = () => {
                 <meta property="og:title" content="Fyrexia AI - Discover AI Tools That Transform Your Business" />
                 <meta property="og:description" content="AI tools that boost productivity and growth." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://fyrexia.co.uk/" />
+                <meta property="og:url" content="https://fyrexia.co.uk/contact" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary" />
