@@ -151,7 +151,6 @@ import Aiclient from './Freelance/Topfreelance/Aiclient';
 import Profilai from './Page/ProfitableCustomersAI/Profilai';
 import Legal from './Component/Content/Legal/Legal';
 import Aiwars from './Page/War/War';
-import Lucids from './Component/Content/Lucid/Lucid';
 
 
 
@@ -203,7 +202,6 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/ai-dream" element={<Lucids />} />
 
 
           <Route path="/top-writer-ai" element={<Topwrite />} />
