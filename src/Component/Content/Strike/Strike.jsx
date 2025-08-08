@@ -4,6 +4,26 @@ import Navbar from '../../Website/Header/Navbar';
 const Strike = () => {
     return (
         <>
+            <Helmet>
+                <title>Trump's Secret AI Strike Simulation Uncovered | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover revelations about Trump's secret AI strike simulation and its implications on global security."
+                />
+                <meta
+                    name="keywords"
+                    content="Trump AI Strike, AI Simulation, Secret AI Project, Fyrexia, Global Security"
+                />
+                <meta property="og:title" content="Trump's Secret AI Strike Simulation Uncovered" />
+                <meta
+                    property="og:description"
+                    content="Discover revelations about Trump's secret AI strike simulation and its implications on global security."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/trump-ai-strike-leak" />
+                <link rel="canonical" href="https://fyrexia.co.uk/trump-ai-strike-leak" />
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="bg-white min-h-screen text-gray-900 font-sans">

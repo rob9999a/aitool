@@ -5,6 +5,27 @@ const Google = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Did a Former Google Employee Leak a Secret AI Weapons Project? | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore the controversy surrounding the alleged leak of a secret AI weapons project by a former Google employee."
+                />
+                <meta
+                    name="keywords"
+                    content="Google AI Weapons, AI Weapon Leak, Former Google Employee, AI Controversy, Fyrexia"
+                />
+                <meta property="og:title" content="Did a Former Google Employee Leak a Secret AI Weapons Project?" />
+                <meta
+                    property="og:description"
+                    content="Explore the controversy surrounding the alleged leak of a secret AI weapons project by a former Google employee."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/google-ai-weapons-leak" />
+                <link rel="canonical" href="https://fyrexia.co.uk/google-ai-weapons-leak" />
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="bg-white min-h-screen font-sans text-gray-800">

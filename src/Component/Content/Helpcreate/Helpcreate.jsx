@@ -11,28 +11,25 @@ const Helpcreate = () => {
 
 
             <Helmet>
-                <title>Can AI Help You Post Daily on YouTube, TikTok & Instagram — Without Burning Out?</title>
+                <title>Can AI Help You Post Daily on YouTube, TikTok & Instagram — Without Burning Out? | Fyrexia AI Tools</title>
                 <meta
                     name="description"
-                    content="Discover how AI tools can automate your content creation across YouTube, TikTok, and Instagram — so you stay consistent without creative burnout. Templates, scripts, editing, and posting… all optimized."
+                    content="Discover how AI tools can assist you in creating and scheduling daily posts on social media platforms like YouTube, TikTok, and Instagram without stress."
                 />
-                <meta name="robots" content="index, follow" />
-                <html lang="en" />
-
-                {/* Open Graph */}
-                <meta property="og:title" content="Can AI Help You Post Daily on YouTube, TikTok & Instagram — Without Burning Out?" />
-                <meta property="og:description" content="Use AI to stay consistent without exhaustion. Create, repurpose, and schedule high-performing content across platforms — effortlessly." />
-                <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-content-consistency" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-social-content.jpg" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Can AI Help You Post Daily on YouTube, TikTok & Instagram — Without Burning Out?" />
-                <meta name="twitter:description" content="AI content tools are changing the game. Learn how to automate and scale your content without sacrificing your time or mental health." />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-social-content.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta
+                    name="keywords"
+                    content="AI Social Media, Content Creation AI, YouTube AI, TikTok AI, Instagram AI, Social Media Automation"
+                />
+                <meta property="og:title" content="Can AI Help You Post Daily on YouTube, TikTok & Instagram" />
+                <meta
+                    property="og:description"
+                    content="Learn how AI can help you post consistently on social media platforms without burnout."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-help-creater" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-help-creater" />
             </Helmet>
+
             <Navbar></Navbar>
 
 

@@ -10,7 +10,7 @@ const Whistleblower = () => {
 
 
             <Helmet>
-                <title>AI Whistleblower Reveals Hidden Surveillance Program on Citizens</title>
+                <title>AI Whistleblower Reveals Hidden Surveillance Program on Citizens | Fyrexia AI Tools</title>
                 <meta
                     name="description"
                     content="A courageous whistleblower exposes a top-secret AI surveillance program targeting everyday citizens. Explore the shocking details behind the global privacy breach."
@@ -19,7 +19,7 @@ const Whistleblower = () => {
                     name="keywords"
                     content="AI whistleblower, surveillance, hidden program, artificial intelligence, government spying, mass surveillance, AI ethics, privacy breach"
                 />
-                <meta name="author" content="Your Name or News Platform" />
+                <meta name="author" content="Fyrexia AI Tools" />
 
                 {/* Open Graph / Social Media */}
                 <meta property="og:title" content="AI Whistleblower Reveals Hidden Surveillance Program on Citizens" />
@@ -29,9 +29,10 @@ const Whistleblower = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:image" content="https://i.postimg.cc/cCYwGbVv/hacker-holding-mask-23-2147985365.jpg" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-whistleblower-reveal" />
-                <link rel="canonical" href="https://yourwebsite.com/ai-whistleblower-reveal" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-surveillance-whistleblower" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-surveillance-whistleblower" />
             </Helmet>
+
             <Navbar></Navbar>
 
 

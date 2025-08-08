@@ -12,14 +12,16 @@ const DeepMind = () => {
                 <title>DeepMind's Quest: Unlocking the Secrets of General AI</title>
                 <meta name="description" content="Explore DeepMind's groundbreaking journey to develop General Artificial Intelligence (AGI) and the future of AI technology." />
                 <meta name="keywords" content="DeepMind, General AI, Artificial Intelligence, AGI, Machine Learning, AI Research, AI Future" />
-                <meta name="author" content="Your Name or Company" />
+                <meta name="author" content="Fyrexia AI Tools" />
                 <meta property="og:title" content="DeepMind's Quest: Unlocking the Secrets of General AI" />
                 <meta property="og:description" content="Explore DeepMind's groundbreaking journey to develop General Artificial Intelligence (AGI) and the future of AI technology." />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="URL_to_a_relevant_image.jpg" />
-                <meta property="og:url" content="https://yourwebsite.com/deepmind-quest" />
-                <link rel="canonical" href="https://yourwebsite.com/deepmind-quest" />
+                <meta property="og:image" content="https://fyrexia.co.uk/path-to-image.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/deepmind-agi-quest" />
+                <link rel="canonical" href="https://fyrexia.co.uk/deepmind-agi-quest" />
             </Helmet>
+
+
             <Navbar></Navbar>
 
 

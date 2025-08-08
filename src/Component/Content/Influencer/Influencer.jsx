@@ -5,6 +5,27 @@ const Influencer = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Your Next Favorite Influencer Might Not Be Human | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore the rise of AI-generated influencers and how they're reshaping social media and marketing landscapes."
+                />
+                <meta
+                    name="keywords"
+                    content="AI Influencers, Virtual Influencers, Social Media, AI Marketing, Fyrexia"
+                />
+                <meta property="og:title" content="Your Next Favorite Influencer Might Not Be Human" />
+                <meta
+                    property="og:description"
+                    content="Explore the rise of AI-generated influencers and their impact on social media."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-influencer-rise" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-influencer-rise" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

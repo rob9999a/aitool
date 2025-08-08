@@ -64,6 +64,26 @@ const Sonorus = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Transforming Ambient Noise into Real-Time Music | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover how AI technology transforms ambient noise into real-time music, revolutionizing the way we experience sound."
+                />
+                <meta
+                    name="keywords"
+                    content="AI Music, Ambient Noise, Real-Time Music, AI Sound, Fyrexia"
+                />
+                <meta property="og:title" content="Transforming Ambient Noise into Real-Time Music" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI technology transforms ambient noise into real-time music."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-sound-to-music" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-sound-to-music" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

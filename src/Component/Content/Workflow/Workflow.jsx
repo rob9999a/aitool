@@ -6,6 +6,28 @@ function Workflow() {
     return (
 
         <>
+
+            <Helmet>
+                <title>How AI is Revolutionizing the Blogging Workflow | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover how artificial intelligence (AI) is transforming blogging by helping ideate, write, optimize, and distribute content efficiently."
+                />
+                <meta
+                    name="keywords"
+                    content="AI blogging, content creation, AI writing, blog optimization, AI content strategy"
+                />
+                <meta property="og:title" content="How AI is Revolutionizing the Blogging Workflow" />
+                <meta
+                    property="og:description"
+                    content="Discover how artificial intelligence (AI) is transforming blogging by helping ideate, write, optimize, and distribute content efficiently."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-blog-workflow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-blog-workflow" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

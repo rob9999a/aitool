@@ -8,6 +8,26 @@ const ThinkingVsPrompting = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Which Is the New Content Creation Skill? | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover the new essential skill in content creation driven by AI and how it’s changing the creative landscape."
+                />
+                <meta
+                    name="keywords"
+                    content="content creation skill, AI content, creative skills, Fyrexia, AI tools"
+                />
+                <meta property="og:title" content="Which Is the New Content Creation Skill?" />
+                <meta
+                    property="og:description"
+                    content="Discover the new essential skill in content creation driven by AI and how it’s changing the creative landscape."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-thinking-content" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-thinking-content" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

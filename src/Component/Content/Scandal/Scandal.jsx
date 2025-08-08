@@ -5,6 +5,27 @@ const Scandal = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Trump Scandal: AI Uncovers Untold Secrets | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover how AI technology is uncovering untold secrets related to the Trump scandal."
+                />
+                <meta
+                    name="keywords"
+                    content="Trump Scandal, AI Leak, Artificial Intelligence, News, Fyrexia"
+                />
+                <meta property="og:title" content="Trump Scandal: AI Uncovers Untold Secrets" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI technology is uncovering untold secrets related to the Trump scandal."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/trump-ai-leak" />
+                <link rel="canonical" href="https://fyrexia.co.uk/trump-ai-leak" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

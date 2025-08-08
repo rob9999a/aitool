@@ -8,6 +8,28 @@ const Holograms = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>✨ Holograms Are Back — and They're More Real Than Ever | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover how holograms have made a spectacular comeback with cutting-edge technology making them more realistic than ever."
+                />
+                <meta
+                    name="keywords"
+                    content="Holograms, Holographic Technology, Realistic Holograms, AI, Tech Innovation, Fyrexia"
+                />
+                <meta property="og:title" content="✨ Holograms Are Back — and They're More Real Than Ever" />
+                <meta
+                    property="og:description"
+                    content="Discover how holograms have made a spectacular comeback with cutting-edge technology making them more realistic than ever."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/hologram-comeback" />
+                <link rel="canonical" href="https://fyrexia.co.uk/hologram-comeback" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

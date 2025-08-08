@@ -4,6 +4,27 @@ import Navbar from "../../Website/Header/Navbar";
 const Youtubescript = () => {
     return (
         <>
+
+            <Helmet>
+                <title>Should Your Next YouTube Script Be Written by AI? | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore whether AI can help you create engaging YouTube scripts that captivate your audience and boost your channel’s growth."
+                />
+                <meta
+                    name="keywords"
+                    content="AI YouTube scripts, video scripts, AI content creation, YouTube growth, Fyrexia"
+                />
+                <meta property="og:title" content="Should Your Next YouTube Script Be Written by AI?" />
+                <meta
+                    property="og:description"
+                    content="Explore whether AI can help you create engaging YouTube scripts that captivate your audience and boost your channel’s growth."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-youtube-scripts" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-youtube-scripts" />
+            </Helmet>
+
             <Navbar />
 
             <div className="bg-gray-50 min-h-screen py-16 px-6 sm:px-12 md:px-24 font-sans text-gray-900">

@@ -6,6 +6,27 @@ const Gnideas = () => {
 
         <>
 
+            <Helmet>
+                <title>The Power of Human + AI Collaboration | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore the synergy between human creativity and AI technology to craft compelling narratives and innovative solutions."
+                />
+                <meta
+                    name="keywords"
+                    content="Human AI Collaboration, AI Creativity, Narrative Crafting, AI Tools, Fyrexia"
+                />
+                <meta property="og:title" content="The Power of Human + AI Collaboration" />
+                <meta
+                    property="og:description"
+                    content="Where technology meets creativity to craft compelling narratives."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-gn-ideas" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-gn-ideas" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">

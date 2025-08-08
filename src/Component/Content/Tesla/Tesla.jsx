@@ -5,6 +5,26 @@ const Tesla = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Tesla's Next Leap: Fully Autonomous AI Taxi Network Launching in 2027 | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore Tesla's upcoming fully autonomous AI taxi network set to revolutionize transportation by 2027."
+                />
+                <meta
+                    name="keywords"
+                    content="Tesla, Autonomous Taxi, AI Robotaxi, Self-Driving Cars, AI Transportation"
+                />
+                <meta property="og:title" content="Tesla's Next Leap: Fully Autonomous AI Taxi Network Launching in 2027" />
+                <meta
+                    property="og:description"
+                    content="Explore Tesla's upcoming fully autonomous AI taxi network set to revolutionize transportation by 2027."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/tesla-ai-robotaxi" />
+                <link rel="canonical" href="https://fyrexia.co.uk/tesla-ai-robotaxi" />
+            </Helmet>
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-white font-sans">

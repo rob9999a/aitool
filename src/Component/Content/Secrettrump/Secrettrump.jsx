@@ -5,6 +5,26 @@ const Secrettrump = () => {
   return (
 
     <>
+      <Helmet>
+        <title>Did Trump Ask a Tech Company to Spy on Political Opponents? | Fyrexia AI Tools</title>
+        <meta
+          name="description"
+          content="Investigate the claims that Trump asked a tech company to conduct surveillance on political opponents using AI technology."
+        />
+        <meta
+          name="keywords"
+          content="Trump Surveillance, AI Spy, Political Opponents, Tech Company, Fyrexia"
+        />
+        <meta property="og:title" content="Did Trump Ask a Tech Company to Spy on Political Opponents?" />
+        <meta
+          property="og:description"
+          content="Investigate the claims that Trump asked a tech company to conduct surveillance on political opponents using AI technology."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://fyrexia.co.uk/trump-ai-surveillance" />
+        <link rel="canonical" href="https://fyrexia.co.uk/trump-ai-surveillance" />
+      </Helmet>
+
       <Navbar></Navbar>
 
 

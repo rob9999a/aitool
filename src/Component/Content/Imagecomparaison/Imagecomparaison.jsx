@@ -5,6 +5,27 @@ const Imagecomparaison = () => {
     return (
 
         <>
+            <Helmet>
+                <title>🖼️ What's Better: AI-Generated Images or Stock Photos? | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Explore the pros and cons of AI-generated images versus traditional stock photos, and find out which suits your needs best."
+                />
+                <meta
+                    name="keywords"
+                    content="AI Generated Images, Stock Photos, Image Comparison, AI Art, Fyrexia"
+                />
+                <meta property="og:title" content="🖼️ What's Better: AI-Generated Images or Stock Photos?" />
+                <meta
+                    property="og:description"
+                    content="Explore the pros and cons of AI-generated images versus traditional stock photos."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-vs-stock-images" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-vs-stock-images" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

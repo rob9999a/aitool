@@ -9,6 +9,26 @@ const Trump = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>AI Analyzes Trump Speeches: Hidden Signals of Global Conflict? | Fyrexia AI Tools</title>
+                <meta
+                    name="description"
+                    content="Discover how AI analyzes Trump’s speeches to reveal hidden signals that might indicate global conflict."
+                />
+                <meta
+                    name="keywords"
+                    content="AI, Trump Speeches, Global Conflict, AI Analysis, Fyrexia"
+                />
+                <meta property="og:title" content="AI Analyzes Trump Speeches: Hidden Signals of Global Conflict?" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI analyzes Trump’s speeches to reveal hidden signals that might indicate global conflict."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-analyzes-trump-war-signals" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-analyzes-trump-war-signals" />
+            </Helmet>
             <Navbar></Navbar>
 
 
