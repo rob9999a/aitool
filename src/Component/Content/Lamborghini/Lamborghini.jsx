@@ -6,6 +6,35 @@ const Lamborghini = () => {
 
     return (
         <>
+
+
+
+            <Helmet>
+                <title>Lamborghini Is Integrating AI Into Its Supercars</title>
+                <meta
+                    name="description"
+                    content="Explore how Lamborghini is redefining supercar tech with AI—Real‑time driver coaching, 5G telemetry, and personalized customizations powered by artificial intelligence."
+                />
+                <meta
+                    name="keywords"
+                    content="Lamborghini AI, Telemetry X, AI customization, supercar AI, Lamborghini tech future"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/lamborghini-ai-supercar" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Lamborghini Is Integrating AI Into Its Supercars" />
+                <meta
+                    property="og:description"
+                    content="From AI-assisted driver coaching to 5G telemetry and digital customization—discover how Lamborghini is engineering its future with artificial intelligence."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/lamborghini-ai-supercar" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/lamborghini-ai-supercar.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

@@ -5,6 +5,42 @@ export default function SmartDecisionsAI() {
     return (
 
         <>
+            <Helmet>
+                <title>How Can AI Help Businesses Make Smarter Decisions Faster?</title>
+                <meta
+                    name="description"
+                    content="Explore how AI helps businesses make faster, smarter decisions—from real-time data insights to autonomous agents and efficiency gains."
+                />
+                <meta
+                    name="keywords"
+                    content="AI decision making, real-time business intelligence, agentic AI, AI business speed, predictive analytics"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-businesses-faster" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="How Can AI Help Businesses Make Smarter Decisions Faster?" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI-driven insights, predictive analytics, and autonomous agents enable companies to outpace competitors in decision-making."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-businesses-faster" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-businesses-faster.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="How Can AI Help Businesses Make Smarter Decisions Faster?" />
+                <meta
+                    name="twitter:description"
+                    content="From UBS to AI agents—see how businesses gain speed, insight, and agility through AI-powered decision-making."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-businesses-faster.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

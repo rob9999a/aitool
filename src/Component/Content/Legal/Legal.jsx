@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaLightbulb, FaClock, FaRocket, FaBrain, FaChessKnight, FaCrown } from 'react-icons/fa';
 import { Helmet } from "react-helmet";
-import Navbar from '../../../Header/Navbar';
 
 const Legal = () => {
     return (
@@ -13,31 +12,18 @@ const Legal = () => {
                 <title>Do Creators Using AI Have an Unfair Advantage? (Yes — and It’s Legal.)</title>
                 <meta
                     name="description"
-                    content="AI is giving creators the power to produce faster, smarter, and cheaper — and no, it’s not cheating. Learn how this legal 'boost' is changing the game and why you should use it before you’re left behind."
+                    content="Explore the advantages creators gain by using AI, the legal landscape surrounding it, and why leveraging AI tools is a smart and legitimate strategy."
                 />
-                <meta name="robots" content="index, follow" />
-                <html lang="en" />
-
-                {/* Open Graph for Facebook, LinkedIn */}
                 <meta property="og:title" content="Do Creators Using AI Have an Unfair Advantage? (Yes — and It’s Legal.)" />
                 <meta
                     property="og:description"
-                    content="Creators using AI are scaling faster than ever — and it’s not illegal or unethical. Discover why this edge matters and how to use it for your brand."
+                    content="Explore the advantages creators gain by using AI, the legal landscape surrounding it, and why leveraging AI tools is a smart and legitimate strategy."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-advantage" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-creators.jpg" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Do Creators Using AI Have an Unfair Advantage? (Yes — and It’s Legal.)" />
-                <meta
-                    name="twitter:description"
-                    content="Speed. Scale. Smarter content. AI gives creators an edge — and it’s 100% legal. Learn why it’s your turn to use it."
-                />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-creators.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta property="og:url" content="https://fyrexia.co.uk/creators-ai-advantage" />
+                <link rel="canonical" href="https://fyrexia.co.uk/creators-ai-advantage" />
             </Helmet>
+
             <Navbar></Navbar>
 
 

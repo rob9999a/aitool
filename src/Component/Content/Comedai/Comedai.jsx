@@ -60,6 +60,22 @@ const Comedai = () => {
     return (
 
         <>
+            <Helmet>
+                <title>What Happens When You Let AI Create Stand-Up Comedy?</title>
+                <meta
+                    name="description"
+                    content="Discover the surprising and humorous results when artificial intelligence takes the stage to generate stand-up comedy content."
+                />
+                <meta property="og:title" content="What Happens When You Let AI Create Stand-Up Comedy?" />
+                <meta
+                    property="og:description"
+                    content="Discover the surprising and humorous results when artificial intelligence takes the stage to generate stand-up comedy content."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-standup-comedy" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-standup-comedy" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

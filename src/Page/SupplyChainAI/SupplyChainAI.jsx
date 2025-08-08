@@ -38,6 +38,42 @@ const SupplyChainAI = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Can AI Predict Your Supply Chain Disruptions Before They Happen?</title>
+                <meta
+                    name="description"
+                    content="Discover how AI-powered analytics can forecast supply chain disruptions before they occur—helping businesses stay resilient and proactive."
+                />
+                <meta
+                    name="keywords"
+                    content="AI supply chain, predictive logistics, supply chain disruption prediction, AI forecasting, business continuity"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-supply-chain-prediction" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Predict Your Supply Chain Disruptions Before They Happen?" />
+                <meta
+                    property="og:description"
+                    content="Explore AI-driven tools that forecast supply chain risks before they strike—empowering logistics leaders to react quickly and efficiently."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-supply-chain-prediction" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-supply-chain.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Predict Your Supply Chain Disruptions Before They Happen?" />
+                <meta
+                    name="twitter:description"
+                    content="Discover how predictive AI protects businesses from unexpected supply chain breakdowns and ensures continuity."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-supply-chain.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

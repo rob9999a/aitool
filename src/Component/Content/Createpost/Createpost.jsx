@@ -69,31 +69,18 @@ const Createpost = () => {
                 <title>Create Viral Social Media Content with AI — Templates, Tools & Strategy</title>
                 <meta
                     name="description"
-                    content="Learn how to use AI to create viral content for Instagram, TikTok, and YouTube. From hooks and captions to video ideas and carousels — AI makes going viral easier than ever."
+                    content="Learn how to create viral social media content using AI-powered templates, tools, and strategies to maximize engagement and reach."
                 />
-                <meta name="robots" content="index, follow" />
-                <html lang="en" />
-
-                {/* Open Graph */}
-                <meta property="og:title" content="Create Viral Social Media Content with AI" />
+                <meta property="og:title" content="Create Viral Social Media Content with AI — Templates, Tools & Strategy" />
                 <meta
                     property="og:description"
-                    content="Use AI tools to generate viral captions, videos, reels, and posts. Learn how creators use ChatGPT, Midjourney, and editing automation to explode reach."
+                    content="Learn how to create viral social media content using AI-powered templates, tools, and strategies to maximize engagement and reach."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-viral-content" />
-                <meta property="og:image" content="https://yourwebsite.com/images/ai-viral.jpg" />
-
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Create Viral Social Media Content with AI" />
-                <meta
-                    name="twitter:description"
-                    content="Go viral with AI! Discover how to generate high-performing content using ChatGPT, templates, and editing tools — no burnout required."
-                />
-                <meta name="twitter:image" content="https://yourwebsite.com/images/ai-viral.jpg" />
-                <meta name="twitter:site" content="@yourhandle" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-viral-content" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-viral-content" />
             </Helmet>
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">

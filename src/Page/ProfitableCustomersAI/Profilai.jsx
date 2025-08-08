@@ -82,6 +82,42 @@ const Profilai = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>Can AI Identify Your Most Profitable Customers Before They Buy?</title>
+                <meta
+                    name="description"
+                    content="Discover how AI uses predictive analytics to pinpoint your most valuable customers before they've even made a purchase—boost ROI and personalize smarter."
+                />
+                <meta
+                    name="keywords"
+                    content="AI customer prediction, predictive analytics, profitable customers, customer lifetime value AI, AI customer insights"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-best-customers" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Can AI Identify Your Most Profitable Customers Before They Buy?" />
+                <meta
+                    property="og:description"
+                    content="Learn how AI-driven models can forecast who your top customers will be—before they even commit—driving smarter targeting and growth."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-best-customers" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-best-customers.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Can AI Identify Your Most Profitable Customers Before They Buy?" />
+                <meta
+                    name="twitter:description"
+                    content="Explore how predictive AI analytics can spot your best future customers early, so you invest in the right leads first."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-best-customers.jpg" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

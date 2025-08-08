@@ -6,6 +6,21 @@ const Aiwarthree = () => {
 
     return (
         <>
+            <Helmet>
+                <title>AI Predicts World War III: Is It Closer Than We Think?</title>
+                <meta
+                    name="description"
+                    content="Explore AI's predictions about the possibility and timing of World War III. Analyzing data, scenarios, and what it means for global security."
+                />
+                <meta property="og:title" content="AI Predicts World War III: Is It Closer Than We Think?" />
+                <meta
+                    property="og:description"
+                    content="Dive into AI-driven insights on global conflict risks and the potential for World War III, evaluating how technology shapes our future."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-predicts-ww3" />
+            </Helmet>
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-white font-sans">

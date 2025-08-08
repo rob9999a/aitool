@@ -29,7 +29,7 @@ const SmallBusinessAI = () => {
                     content="Discover how AI is revolutionizing small businesses by improving operations, customer service, and marketing strategies."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://fyrexia.co.uk/ai-small-business-growth" />
+                <meta property="og:url" content="https://fyrexia.co.uk//ai-small-business-growth" />
                 <meta property="og:image" content="https://fyrexia.co.uk/images/ai-small-business.jpg" />
 
                 {/* Twitter Card */}

@@ -19,24 +19,23 @@ const AIContentGuide = () => {
 
 
         <>
+
             <Helmet>
                 <title>Is AI Content Considered Original or Is It Plagiarism?</title>
                 <meta
                     name="description"
-                    content="Explore whether AI-generated content is truly original or if it falls under plagiarism. Understand the nuances and implications for creators and businesses."
+                    content="Explore the debate on whether AI-generated content is truly original or if it borders on plagiarism, including ethical and legal considerations."
                 />
-                <meta name="keywords" content="AI content, originality, plagiarism, AI writing, content creation, AI plagiarism" />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://yourwebsite.com/ai-content-originality" />
                 <meta property="og:title" content="Is AI Content Considered Original or Is It Plagiarism?" />
                 <meta
                     property="og:description"
-                    content="Explore whether AI-generated content is truly original or if it falls under plagiarism. Understand the nuances and implications for creators and businesses."
+                    content="Explore the debate on whether AI-generated content is truly original or if it borders on plagiarism, including ethical and legal considerations."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://yourwebsite.com/ai-content-originality" />
-                <meta property="og:site_name" content="YourWebsiteName" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-vs-original" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-vs-original" />
             </Helmet>
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-white font-sans text-gray-800">

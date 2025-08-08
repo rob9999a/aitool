@@ -7,6 +7,8 @@ const Anthropic = () => {
     return (
 
         <>
+
+
             <Helmet>
                 <title>Anthropic: Ensuring Safe and Reliable Artificial Intelligence</title>
                 <meta
@@ -21,10 +23,13 @@ const Anthropic = () => {
                     content="As artificial intelligence becomes more powerful and widespread, the urgency of ensuring these systems are safe, reliable, and aligned with human values has never been greater. Anthropic, founded in 2021 by former OpenAI researchers, is a leading voice dedicated to this mission."
                 />
                 <meta property="og:type" content="article" />
-                <meta property="og:image" content="URL_to_relevant_image.jpg" />
-                <meta property="og:url" content="https://yourwebsite.com/anthropic-ai-safety" />
-                <link rel="canonical" href="https://yourwebsite.com/anthropic-ai-safety" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-anthropic.jpg" />
+                <meta property="og:url" content="https://fyrexia.co.uk/anthropic-ai-safety" />
+                <link rel="canonical" href="https://fyrexia.co.uk/anthropic-ai-safety" />
             </Helmet>
+
+
+
             <Navbar></Navbar>
 
 

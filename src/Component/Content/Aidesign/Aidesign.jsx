@@ -46,7 +46,20 @@ const Aidesign = () => {
     return (
 
         <>
-
+            <Helmet>
+                <title>Can AI Generate Content That Outperforms Human Creators?</title>
+                <meta
+                    name="description"
+                    content="Exploring whether AI-generated content can surpass human creativity. Analyzing strengths, biases, and best collaborative practices."
+                />
+                <meta property="og:title" content="AI vs Human Creators: Who Wins?" />
+                <meta
+                    property="og:description"
+                    content="Discover how AI stacks up against human creators—where it excels, where it falls short, and why hybrid workflows may be the future."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/vr-home-design" />
+            </Helmet>
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-white p-4 sm:p-6 md:p-8">

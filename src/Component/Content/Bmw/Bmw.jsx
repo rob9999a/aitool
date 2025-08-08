@@ -5,6 +5,23 @@ const Bmw = () => {
     return (
 
         <>
+
+            <Helmet>
+                <title>BMW AI Electric Revolution: Redefining the Future of EVs</title>
+                <meta
+                    name="description"
+                    content="As the automotive world races toward an electric future, BMW has launched a groundbreaking initiative that leverages artificial intelligence to redefine electric vehicle (EV) design, production, and user experience. This move isn't just about going green—it's about harnessing AI to power a revolution that could set new industry standards."
+                />
+                <meta property="og:title" content="BMW AI Electric Revolution: Redefining the Future of EVs" />
+                <meta
+                    property="og:description"
+                    content="As the automotive world races toward an electric future, BMW has launched a groundbreaking initiative that leverages artificial intelligence to redefine electric vehicle (EV) design, production, and user experience. This move isn't just about going green—it's about harnessing AI to power a revolution that could set new industry standards."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/bmw-ai-electric-revolution" />
+                <link rel="canonical" href="https://fyrexia.co.uk/bmw-ai-electric-revolution" />
+            </Helmet>
+
             <Navbar></Navbar>
 
 

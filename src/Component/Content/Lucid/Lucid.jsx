@@ -29,6 +29,39 @@ const Lucid = () => {
 
         <>
 
+            <Helmet>
+                <title>AI-Powered Dreams: Visualizing the Subconscious | Fyrexia</title>
+                <meta
+                    name="description"
+                    content="Explore how AI is turning dreams into visual experiences—from immersive recordings to dream translations—on Fyrexia AI."
+                />
+                <meta
+                    name="keywords"
+                    content="AI dreams, dream visualization, subconscious AI, dream recorder, AI-powered dreams"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/ai-powered-dreams" />
+                {/* Open Graph */}
+                <meta property="og:title" content="AI-Powered Dreams: Visualizing the Subconscious | Fyrexia" />
+                <meta
+                    property="og:description"
+                    content="From dream recording devices to immersive AI visualizations—discover how Fyrexia explores the intersection of dreams and artificial intelligence."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/ai-powered-dreams" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-powered-dreams.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="AI‑Powered Dreams: Visualizing the Subconscious | Fyrexia" />
+                <meta
+                    name="twitter:description"
+                    content="Discover the latest at Fyrexia: how AI is decoding and recreating dreams into visual narratives—and what it means for creativity and memory."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/ai-powered-dreams.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
             <div className="min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-black text-white font-sans overflow-hidden relative">

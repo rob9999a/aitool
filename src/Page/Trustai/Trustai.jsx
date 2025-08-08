@@ -6,6 +6,42 @@ const AITrustPage = () => {
     return (
 
         <>
+            <Helmet>
+                <title>Trust Our Minds: Balancing Human Cognition and AI in Decision-Making</title>
+                <meta
+                    name="description"
+                    content="Explore how human intuition and machine intelligence complement each other in critical decision-making processes. Discover the future of hybrid cognition."
+                />
+                <meta
+                    name="keywords"
+                    content="human cognition, machine intelligence, AI decision-making, hybrid intelligence, human vs AI"
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://fyrexia.co.uk/trust-our-minds" />
+                <html lang="en" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="Trust Our Minds: Balancing Human Cognition and AI in Decision-Making" />
+                <meta
+                    property="og:description"
+                    content="Discover the synergy between human thought and AI algorithms that is shaping the future of smarter, more balanced decisions."
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://fyrexia.co.uk/trust-our-minds" />
+                <meta property="og:image" content="https://fyrexia.co.uk/images/trust-our-minds.jpg" />
+                <meta property="og:site_name" content="Fyrexia" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Trust Our Minds: Balancing Human Cognition and AI in Decision-Making" />
+                <meta
+                    name="twitter:description"
+                    content="Explore how humans and AI together improve decision quality in business, science, and everyday life."
+                />
+                <meta name="twitter:image" content="https://fyrexia.co.uk/images/trust-our-minds.jpg" />
+            </Helmet>
+
+
             <Navbar></Navbar>
 
 

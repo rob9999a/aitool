@@ -150,6 +150,8 @@ import Workflow from './Component/Content/Workflow/Workflow';
 import Trending from './Component/Website/Trending/Trending';
 import Aiclient from './Freelance/Topfreelance/Aiclient';
 import Profilai from './Page/ProfitableCustomersAI/Profilai';
+import Legal from './Component/Content/Legal/Legal';
+import Aiwars from './Page/War/War';
 
 
 
@@ -201,6 +203,8 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
 
+          <Route path="/ai-dream" element={<Lucid />} />
+
 
           <Route path="/top-writer-ai" element={<Topwrite />} />
           <Route path="/free-ai-business-tools" element={<Twopage />} />
@@ -229,6 +233,9 @@ function App() {
           <Route path="/ai-plant-ideas" element={<AIIdeaInfluence />} />
 
           <Route path="/ai-real-companies" element={<AIIdeaInfluence />} />
+
+          <Route path="/ai-war-information" element={<Aiwars />} />
+
 
           <Route path="/ai-run-real-companies" element={<AIGeneratedCEOs />} />
 
@@ -312,6 +319,7 @@ function App() {
 
           <Route path="/ai-vs-original" element={<AIContentGuide />} />
 
+          <Route path="/creators-ai-advantage" element={<Legal />} />
 
           <Route path="/ai-gn-ideas" element={<Gnideas />} />
 
