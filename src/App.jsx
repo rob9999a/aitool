@@ -120,7 +120,6 @@ import Aimood from './Component/Content/Aimood/Aimood';
 import Aidesign from './Component/Content/Aidesign/Aidesign';
 import Comedai from './Component/Content/Comedai/Comedai';
 import Influencer from './Component/Content/Influencer/Influencer';
-import Lucid from './Component/Content/Lucid/Lucid';
 import Events from './Component/Content/Events/Events';
 import Sonorus from './Component/Content/Sonorus/Sonorus';
 import Footballwar from './Component/Content/Footballwar/Footballwar';
@@ -152,6 +151,7 @@ import Aiclient from './Freelance/Topfreelance/Aiclient';
 import Profilai from './Page/ProfitableCustomersAI/Profilai';
 import Legal from './Component/Content/Legal/Legal';
 import Aiwars from './Page/War/War';
+import Lucids from './Component/Content/Lucid/Lucid';
 
 
 
@@ -203,7 +203,7 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/ai-dream" element={<Lucid />} />
+          <Route path="/ai-dream" element={<Lucids />} />
 
 
           <Route path="/top-writer-ai" element={<Topwrite />} />

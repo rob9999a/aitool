@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../Website/Header/Navbar';
 
-const Lucid = () => {
+const Lucids = () => {
     const [isGlowing, setIsGlowing] = useState(true);
     const [isFloating, setIsFloating] = useState(false);
     const [showQuestion, setShowQuestion] = useState(false);
@@ -270,4 +270,4 @@ const Lucid = () => {
     );
 };
 
-export default Lucid;
+export default Lucids;
