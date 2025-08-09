@@ -1036,20 +1036,7 @@ const articlesWithHref = [
 
 
 
-    {
-        id: 65,
-        title: "What if AI could build your next business idea — before you spend a dollar on it?",
-        description: "What if AI could build your next business idea — before you spend a dollar on it? With the right tools",
-        category: 'business',
-        image: "https://i.postimg.cc/7LD9bqyp/shoot-fantastic-alien.jpg",
-        readTime: "8 min read",
-        views: "44.5K",
-        likes: 800,
-        isHot: true,
-        date: "Dec 15, 2025",
-        dateSort: new Date("2025-12-18"),
-        href: '/ai-build-businesses'
-    },
+
 
     {
         id: 66,
