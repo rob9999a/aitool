@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../../Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Aigame = () => {
     const [isGlitchActive, setIsGlitchActive] = useState(false);

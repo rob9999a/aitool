@@ -1,6 +1,7 @@
 // App.jsx
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Aivstraditional = () => {
     const [activeDoor, setActiveDoor] = useState(null);

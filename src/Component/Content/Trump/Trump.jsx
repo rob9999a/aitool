@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MdNavigateBefore } from 'react-icons/md';
 import Navbar from '../../Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Trump = () => {
     const [showFullReport, setShowFullReport] = useState(false);

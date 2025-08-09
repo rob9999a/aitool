@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Lucids = () => {
     const [isGlowing, setIsGlowing] = useState(true);

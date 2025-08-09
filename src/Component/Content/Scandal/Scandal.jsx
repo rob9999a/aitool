@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Scandal = () => {
     return (

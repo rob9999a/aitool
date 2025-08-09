@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-
 import './Powerai.css';
 import Navbar from '../../Component/Website/Header/Navbar';
 
