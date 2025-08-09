@@ -1866,8 +1866,8 @@ const articlesWithHref = [
         views: "73.5K",
         likes: 1380,
         isHot: true,
-        date: "May 1, 2026",
-        dateSort: new Date("2026-05-01"),
+        date: "July 30, 2026",
+        dateSort: new Date("2026-07-30"),
         href: '/ai-analyzes-trump-war-signals'
     },
 
