@@ -437,4 +437,4 @@ const Lamborghini = () => {
     );
 };
 
-export default Lamborghini
+export default Lamborghini;

@@ -2091,20 +2091,7 @@ const articlesWithHref = [
 
 
 
-    {
-        id: 151,
-        title: "Can AI Manipulate War Information?",
-        description: "Explore how artificial intelligence is being used to influence, distort, or manipulate information during wartime. Understand the role of AI-driven deepfakes, misinformation campaigns",
-        category: 'news',
-        image: "https://i.postimg.cc/yNXpYJXw/child-with-autism-living-fantasy-world-23-2151248853.avif",
-        readTime: "7 min read",
-        views: "93.8K",
-        likes: 1850,
-        isHot: true,
-        date: "May 19, 2027",
-        dateSort: new Date("2026-05-19"),
-        href: '/ai-dream'
-    }
+
 
 
 

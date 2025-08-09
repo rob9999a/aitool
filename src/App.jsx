@@ -135,7 +135,6 @@ import Google from './Component/Content/Google/Google';
 import Scandal from './Component/Content/Scandal/Scandal';
 import Bmw from './Component/Content/Bmw/Bmw';
 import Tesla from './Component/Content/Tesla/Tesla';
-import Lamborghini from './Component/Content/Lamborghini/Lamborghini';
 import Musk from './Component/Content/Musk/Musk';
 import Rival from './Component/Content/Rival/Rival';
 import DeepMind from './Component/Content/DeepMind/DeepMind';
@@ -151,6 +150,7 @@ import Aiclient from './Freelance/Topfreelance/Aiclient';
 import Profilai from './Page/ProfitableCustomersAI/Profilai';
 import Legal from './Component/Content/Legal/Legal';
 import Aiwars from './Page/War/War';
+import Lamborghini from './Component/Content/Lamborghini/Lamborghini';
 
 
 
