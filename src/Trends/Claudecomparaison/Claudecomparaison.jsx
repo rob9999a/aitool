@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const claudeGptComparisonData = {
     title: "What Makes Claude 3 Different from OpenAI’s GPT Models?",

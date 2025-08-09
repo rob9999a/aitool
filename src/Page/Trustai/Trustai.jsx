@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
 import './Trustai.css'
+import { Helmet } from "react-helmet";
 
 const AITrustPage = () => {
     return (

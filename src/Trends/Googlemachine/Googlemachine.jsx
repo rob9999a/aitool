@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const articleData = {
     title: "Have Machines Begun to Dream? Google’s Latest AI Experiment Sparks Global Debate",

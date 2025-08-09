@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const articleData = {
     title: "The Race for AI Supremacy in 2026: Who’s Leading the Charge?",

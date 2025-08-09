@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const aiComparisonData = {
     title: "Can Gemini Really Beat ChatGPT-4 in Real-World Use?",

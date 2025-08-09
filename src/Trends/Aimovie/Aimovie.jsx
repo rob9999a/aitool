@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
+import { Helmet } from "react-helmet";
 
 const Aimovie = () => {
     const [activeMovie, setActiveMovie] = useState('titanic');
