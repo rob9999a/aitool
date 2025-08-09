@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../Component/Website/Header/Navbar";
+import { Helmet } from "react-helmet";
 
 export default function AvoidBurnoutAI() {
     return (
