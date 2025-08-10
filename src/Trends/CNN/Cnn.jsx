@@ -24,7 +24,7 @@ const Cnn = () => {
 
 
 
-            <div className="bg-white min-h-screen p-4 md:p-8">
+            <div className="div-cnn bg-white min-h-screen p-4 md:p-8">
                 {/* Header */}
                 <header className="mb-8">
                     <h1 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
