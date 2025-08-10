@@ -151,6 +151,7 @@ import Profilai from './Page/ProfitableCustomersAI/Profilai';
 import Legal from './Component/Content/Legal/Legal';
 import Aiwars from './Page/War/War';
 import Lamborghini from './Component/Content/Lamborghini/Lamborghini';
+import Cnn from './Trends/CNN/Cnn';
 
 
 
@@ -480,6 +481,9 @@ function App() {
           <Route path="/ai-assassination-leak" element={<Global />} />
 
           <Route path="/ai-surveillance-whistleblower" element={<Whistleblower />} />
+
+          <Route path="/summary-cnn-ai-impact" element={<Cnn />} />
+
 
 
         </Routes>

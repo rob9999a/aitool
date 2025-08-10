@@ -2071,6 +2071,20 @@ const articlesWithHref = [
     },
 
 
+    {
+        id: 160,
+        title: "Political Pressure on CNN and the Impact of Artificial Intelligence on Media Integrity",
+        description: "This article explores the political pressures faced by CNN and how artificial intelligence is reshaping media integrity. It examines the sources and effects of political influence on news coverage, the growing role of AI in content creation and distribution, and the challenges CNN encounters in maintaining unbiased reporting amidst these pressures.",
+        category: 'news',
+        image: "https://i.postimg.cc/cH9SMnCv/gradient-breaking-news-background-23-2151146337.avif",
+        readTime: "20 min read",
+        views: "20.3K",
+        likes: 1850,
+        isHot: true,
+        date: "Jun 23, 23",
+        dateSort: new Date("2026-06-19"),
+        href: '/summary-cnn-ai-impact'
+    },
 
 
 
