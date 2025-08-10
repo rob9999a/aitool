@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-
+import '../CNN/Cnn.css'
 import Navbar from '../../Component/Website/Header/Navbar';
 
 const Cnn = () => {
@@ -27,7 +27,7 @@ const Cnn = () => {
             <div className="div-cnn bg-white min-h-screen p-4 md:p-8">
                 {/* Header */}
                 <header className="mb-8">
-                    <h1 className="text-2xl md:text-3xl font-bold text-gray-900 text-center">
+                    <h1 className="div-cnn text-3xl md:text-4xl font-bold text-gray-900 text-center">
                         Political Pressure on CNN and the Impact of Artificial Intelligence on Media Integrity
                     </h1>
                 </header>
@@ -35,7 +35,7 @@ const Cnn = () => {
                 <div className="max-w-4xl mx-auto space-y-10">
                     {/* Section 1: Political Pressure */}
                     <section className="border-l-4 border-blue-600 pl-4">
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">1. Political Pressure on CNN</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 text-left">1. Political Pressure on CNN</h2>
 
                         <div className="mb-6">
                             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-2">Where does political pressure come from?</h3>
@@ -47,7 +47,7 @@ const Cnn = () => {
                         </div>
 
                         <div>
-                            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-2">How does this pressure show up in coverage?</h3>
+                            <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-2 text-left">How does this pressure show up in coverage?</h3>
                             <ul className="list-disc pl-5 space-y-2 text-gray-600">
                                 <li>Bias in news selection and story omission</li>
                                 <li>Headlines and language influencing audience perception</li>
@@ -58,7 +58,7 @@ const Cnn = () => {
 
                     {/* Section 2: AI in Media */}
                     <section className="border-l-4 border-green-600 pl-4">
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">2. The Role of Artificial Intelligence in Media</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 text-left">2. The Role of Artificial Intelligence in Media</h2>
 
                         <div className="mb-6">
                             <h3 className="text-lg md:text-xl font-semibold text-gray-700 mb-2">How is AI used in media?</h3>
@@ -81,7 +81,7 @@ const Cnn = () => {
 
                     {/* Section 3: CNN's Response */}
                     <section className="border-l-4 border-purple-600 pl-4">
-                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">3. How Does CNN Handle These Pressures and AI?</h2>
+                        <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 text-left">3. How Does CNN Handle These Pressures and AI?</h2>
                         <div className="text-gray-600 space-y-3">
                             <p>• Leverages AI to improve coverage speed and quality</p>
                             <p>• Faces challenges maintaining neutrality amid political pressure</p>
