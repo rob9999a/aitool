@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../CNN/Cnn.css'
 import Navbar from '../../Component/Website/Header/Navbar';
+import AdsenseAd from '../../Adsense/Adsense';
 
 const Cnn = () => {
     return (
@@ -25,6 +26,7 @@ const Cnn = () => {
 
 
             <div className="div-cnn bg-white min-h-screen p-4 md:p-8">
+                <AdsenseAd></AdsenseAd>
                 {/* Header */}
                 <header className="mb-8">
                     <h1 className="div-cnn text-3xl md:text-4xl font-bold text-gray-900 text-center">
