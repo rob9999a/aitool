@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRight, Calendar, Eye, Heart } from 'lucide-react';
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
+import AdsenseAd from '../../../Adsense/Adsense';
+
+
 
 const Home = () => {
     const navigate = useNavigate();
@@ -147,6 +150,13 @@ const Home = () => {
                                                     : 'ct-bds text-xl'
                                                 }`}
                                         >
+
+                                            {showAd && (
+                                                <div className="adsense-container mt-6">
+                                                    <AdsenseAd />
+                                                </div>
+                                            )}
+
                                             <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${category.color} mb-3`}>
                                                 <IconComponent className="w-6 h-6 text-white" />
                                             </div>
