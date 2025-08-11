@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRight, Calendar, Eye, Heart } from 'lucide-react';
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import AdsenseAd from '../../../Adsense/Adsense';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -176,7 +175,6 @@ const Home = () => {
                                     Showing {startIndex + 1}-{Math.min(startIndex + articlesPerPage, filteredArticles.length)} of {filteredArticles.length} articles
                                 </div>
                             </div>
-                            <AdsenseAd />
 
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
