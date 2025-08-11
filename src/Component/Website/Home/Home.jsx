@@ -15,6 +15,7 @@ const Home = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
     const articlesPerPage = 6;
+    const [showAd, setShowAd] = useState(false);
 
     const categories = [
         { id: 'all', name: 'All Articles', icon: Flame, color: 'from-red-500 to-orange-500', count: 60 },
@@ -50,6 +51,8 @@ const Home = () => {
     const handleCategoryChange = (categoryId) => {
         setSelectedCategory(categoryId);
         setCurrentPage(1);
+        setShowAd(true);  // عند الضغط على الزر نظهر الإعلان
+
     };
 
     const handleArticleClick = (article) => {
