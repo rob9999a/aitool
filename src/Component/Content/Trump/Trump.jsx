@@ -64,7 +64,7 @@ const Trump = () => {
                 </header>
 
                 {/* Main Content */}
-                <main className="max-w-6xl mx-auto px-4 py-12">
+                <main className="w-full px-4 py-12">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         {/* Introduction */}
                         <div className="lg:col-span-2">
@@ -184,21 +184,18 @@ const Trump = () => {
                                             Trump's use of binary language—"winners vs losers," "us vs globalists," "America vs chaos"—matches linguistic profiles of pre-war rhetoric.
                                         </p>
 
-                                        <div className="bg-gray-100 p-4 rounded-lg border border-gray-200">
+                                        <div className="p-4 rounded-lg">
                                             <div className="flex items-start mb-2">
                                                 <span className="text-red-500 mr-2">↳</span>
                                                 <span className="font-bold text-amber-600">Historical Matches:</span>
                                             </div>
                                             <ul className="grid grid-cols-2 gap-2 mt-2">
-                                                <li className="flex items-center bg-white px-3 py-1 rounded border border-gray-200">
+                                                <li className="flex items-center px-3 p-1">
                                                     <div className="bg-gradient-to-br from-amber-500 to-red-500 rounded-full w-6 h-6 mr-2 flex items-center justify-center text-white text-xs">KW</div>
                                                     <span>Kaiser Wilhelm II</span>
                                                 </li>
-                                                <li className="flex items-center bg-white px-3 py-1 rounded border border-gray-200">
-                                                    <div className="bg-gradient-to-br from-amber-500 to-red-500 rounded-full w-6 h-6 mr-2 flex items-center justify-center text-white text-xs">BM</div>
-                                                    <span>Benito Mussolini</span>
-                                                </li>
-                                                <li className="flex items-center bg-white px-3 py-1 rounded border border-gray-200">
+
+                                                <li className="flex items-center px-3 p-1">
                                                     <div className="bg-gradient-to-br from-amber-500 to-red-500 rounded-full w-6 h-6 mr-2 flex items-center justify-center text-white text-xs">VP</div>
                                                     <span>Vladimir Putin</span>
                                                 </li>
@@ -291,12 +288,12 @@ const Trump = () => {
                                             </div>
 
                                             <div className="mt-4 grid grid-cols-2 gap-4">
-                                                <div className="bg-white p-3 rounded border border-gray-200">
-                                                    <h4 className="font-bold text-amber-600">Hitler Speeches</h4>
+                                                <div className="text-6xl">
+                                                    <h4 className="font-bold text-xl">Hitler Speeches</h4>
                                                     <p className="text-gray-700 text-sm">"International financiers"</p>
                                                 </div>
-                                                <div className="bg-white p-3 rounded border border-gray-200">
-                                                    <h4 className="font-bold text-amber-600">Mussolini Speeches</h4>
+                                                <div className="p-3">
+                                                    <h4 className="font-bold text-xl">Mussolini Speeches</h4>
                                                     <p className="text-gray-700 text-sm">Anti-League of Nations tone</p>
                                                 </div>
                                             </div>
@@ -326,7 +323,7 @@ const Trump = () => {
                                             Military strategy metaphors in civilian contexts: "psychological warfare," "strike them so fast," "this is war."
                                         </p>
 
-                                        <div className="bg-gray-100 p-4 rounded-lg border border-gray-200">
+                                        <div className="bg-gray-100 p-4 rounded-lg border">
                                             <div className="space-y-4">
                                                 <div className="bg-white p-4 rounded border border-gray-200">
                                                     <h4 className="font-bold text-amber-600 mb-2">Speech Excerpts:</h4>
@@ -597,10 +594,10 @@ const Trump = () => {
                             </div>
                         </div>
                     </div>
-                </main>
+                </main >
 
                 {/* Footer */}
-                <footer className="mt-16 bg-gray-50 border-t border-gray-200 py-8 px-4">
+                < footer className="mt-16 bg-gray-50 border-t border-gray-200 py-8 px-4" >
                     <div className="max-w-7xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div>
@@ -643,8 +640,8 @@ const Trump = () => {
 
 
                     </div>
-                </footer>
-            </div>
+                </footer >
+            </div >
 
         </>
     );
