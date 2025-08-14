@@ -152,6 +152,9 @@ import Legal from './Component/Content/Legal/Legal';
 import Aiwars from './Page/War/War';
 import Lamborghini from './Component/Content/Lamborghini/Lamborghini';
 import Cnn from './Trends/CNN/Cnn';
+import JanitorAIStory from './Trends/Janitor/Janitor';
+import AIChecker from './Trends/Checker/Checker';
+import Detector from './Trends/Detector/Detector';
 
 
 
@@ -466,6 +469,14 @@ function App() {
           <Route path="/bmw-ai-electric-revolution" element={<Bmw />} />
 
           <Route path="/tesla-ai-robotaxi" element={<Tesla />} />
+
+
+          <Route path="/janitor-secret" element={<JanitorAIStory />} />
+
+          <Route path="/ai-checker" element={<AIChecker />} />
+
+          <Route path="/ai-detector" element={<Detector />} />
+
 
           <Route path="/lamborghini-ai-supercar" element={<Lamborghini />} />
 
