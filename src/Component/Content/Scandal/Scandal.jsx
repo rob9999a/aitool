@@ -24,6 +24,9 @@ const Scandal = () => {
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://fyrexia.co.uk/trump-ai-leak" />
                 <link rel="canonical" href="https://fyrexia.co.uk/trump-ai-leak" />
+                <img src="https://i.postimg.cc/vBBBygMj/man-with-gun-pointing-another-man-with-gun-his-hand-1187092-122079.jpg" alt="Trump Scandal" />
+                <meta property="og:image" content="https://i.postimg.cc/vBBBygMj/man-with-gun-pointing-another-man-with-gun-his-hand-1187092-122079.jpg" />
+
             </Helmet>
 
 

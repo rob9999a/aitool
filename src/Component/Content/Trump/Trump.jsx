@@ -11,8 +11,10 @@ const PolarisAnalysis = () => {
                 <title>AI Analyzes Trump Speeches: Hidden Signals of Global Conflict?</title>
                 <meta
                     name="description"
-                    content="An AI-driven analysis reveals hidden signals of global conflict in Donald Trump's speeches."
-                />
+                    content="An AI-driven analysis reveals hidden signals of global conflict in Donald Trump's speeches." />
+                <img src="https://i.postimg.cc/63dH930r/trumps-victory-what-it-means-for-indias-markets-and-key-sectors.webp" alt="Trump Speeches" />
+                <meta property="og:image" content="https://i.postimg.cc/63dH930r/trumps-victory-what-it-means-for-indias-markets-and-key-sectors.webp" />
+
             </Helmet>
             <Navbar></Navbar>
 

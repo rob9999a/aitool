@@ -20,6 +20,9 @@ const Strike = () => {
                     property="og:description"
                     content="Discover revelations about Trump's secret AI strike simulation and its implications on global security."
                 />
+                <img src="https://i.postimg.cc/xC0mz1Qy/ai-ascendancy-futuristic-society-ruled-by-artificial-intelligence-1199132-98097.jpg" alt="Trump's Secret AI" />
+                <meta property="og:image" content="https://i.postimg.cc/xC0mz1Qy/ai-ascendancy-futuristic-society-ruled-by-artificial-intelligence-1199132-98097.jpg" />
+
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://fyrexia.co.uk/trump-ai-strike-leak" />
                 <link rel="canonical" href="https://fyrexia.co.uk/trump-ai-strike-leak" />
