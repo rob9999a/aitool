@@ -57,7 +57,7 @@ const Tiktok = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/tiktok-anime-filter" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/tiktok-anime-filter.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/C5D2T4hD/aesthetic-anime-character-gaming-23-2151560674.avif" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

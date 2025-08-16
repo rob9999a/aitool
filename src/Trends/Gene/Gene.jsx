@@ -25,7 +25,7 @@ const Gene = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/sleep-gene-edit" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/sleep-gene-edit.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/zvMc4cYq/ai-concept-background-abstract-artificial-human-head-with-eyes-light-digital-future-vision-illustrat.avif" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

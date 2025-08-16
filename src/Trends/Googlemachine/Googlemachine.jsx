@@ -113,7 +113,7 @@ function Googlemachine() {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/living-biocomputer" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/living-biocomputer.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/R0zjMy6F/technology-integrated-everyday-life-23-2151887054.avif" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
