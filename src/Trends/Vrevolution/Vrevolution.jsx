@@ -24,7 +24,7 @@ const Vrevolution = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/vr-sensory-gaming" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/vr-sensory-gaming.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/s2pFPx4c/cartoon-ai-robot-scene-23-2151675056.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

@@ -28,7 +28,7 @@ const Nasa = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/nasa-time-anomaly" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/nasa-time-anomaly.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/Vk0P6DS2/spaceman-riding-horse-outer-space-23-2151605215.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

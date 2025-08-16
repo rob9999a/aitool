@@ -25,7 +25,7 @@ const Glassesai = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/ai-machine-dreams" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/ai-machine-dreams.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/HkNWvr51/long-shot-couple-metaverse-date-dessert-23-2149413649.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />

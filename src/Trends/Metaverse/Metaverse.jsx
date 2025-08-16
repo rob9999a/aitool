@@ -36,7 +36,7 @@ const Metaverse = () => {
                 />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://fyrexia.co.uk/metaverse-simulation" />
-                <meta property="og:image" content="https://fyrexia.co.uk/images/metaverse-simulation.jpg" />
+                <meta property="og:image" content="https://i.postimg.cc/MHsJcLmJ/cyberpunk-illustration-with-neon-colors-futuristic-technology-23-2151672040.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
