@@ -2138,6 +2138,20 @@ const articlesWithHref = [
         href: '/ai-detector'
     },
 
+    {
+        id: 173,
+        title: "Behind the Curtain of WWE: The Illusion, the Pain, the Secret",
+        description: "Step into the hidden world of WWE—where illusion meets reality, and scripted drama hides real pain, sacrifice, and secrets",
+        category: 'news',
+        image: "https://i.postimg.cc/SstzW8F2/1b1f1dd2af9af5a200e751b8979b22e4-crop-north.avif",
+        readTime: "13 min read",
+        views: "156K",
+        likes: 6366,
+        isHot: true,
+        date: "Jan 30, 24",
+        dateSort: new Date("2026-06-24"),
+        href: '/wwe-secrets'
+    },
 
 
 

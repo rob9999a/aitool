@@ -155,6 +155,7 @@ import Cnn from './Trends/CNN/Cnn';
 import JanitorAIStory from './Trends/Janitor/Janitor';
 import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
+import We from './Trends/We/We';
 
 
 
@@ -392,6 +393,8 @@ function App() {
   /* news */
 
           <Route path="/gemini-vs-chatgpt4" element={<Contentwrapper />} />
+
+          <Route path="/wwe-secrets" element={<We />} />
 
           <Route path="/claude-vs-gpt" element={<Claudecomparaison />} />
 
