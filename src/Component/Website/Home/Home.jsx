@@ -163,10 +163,7 @@ const Home = () => {
                                                 }`}
                                         >
 
-                                            {showAd && (
-                                                <div className="adsense-container mt-6">
-                                                </div>
-                                            )}
+
 
                                             <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${category.color} mb-3`}>
                                                 <IconComponent className="w-6 h-6 text-white" />
