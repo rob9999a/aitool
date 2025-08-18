@@ -233,10 +233,10 @@ function App() {
 
 
       <Router>
-        <PopunderAd />
-        <NativeAd />
-        <Routes>
 
+        <Routes>
+          <PopunderAd />
+          <NativeAd />
           <Route path="/" element={<Home />} />
 
           <Route path="/Trending" element={<Trending />} />
