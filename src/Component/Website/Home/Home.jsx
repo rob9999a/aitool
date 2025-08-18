@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRight, Calendar, Eye, Heart } from 'lucide-react';
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import AdsenseAd from '../../../Adsense/Adsense';
 
 
 
