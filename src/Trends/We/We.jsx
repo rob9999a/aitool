@@ -69,6 +69,7 @@ const We = () => {
                             <div className="md:w-1/2">
                                 <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-80 flex items-center justify-center text-gray-500">
                                     <img className="w-full h-auto object-cover" src="https://i.postimg.cc/bY77zwsp/maxresdefault.jpg" alt="WWE Image" />
+                                    <AdsenseAd adSlot="1234567890" />
 
                                 </div>
                             </div>
