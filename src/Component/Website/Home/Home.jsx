@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from "react-helmet";
 import articlesWithHref from '../../../Data/Data';
 import './Home.css'
@@ -16,6 +16,36 @@ const Home = () => {
 
 
 
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+        script.async = true;
+        script.dataset.cfasync = "false";
+
+        if (containerRef.current) {
+            containerRef.current.appendChild(script);
+        }
+
+        return () => {
+            if (containerRef.current && containerRef.current.contains(script)) {
+                containerRef.current.removeChild(script);
+            }
+        };
+    }, []);
+
+
+    // Popunder Ad يظهر مرة واحدة لكل زائر
+    useEffect(() => {
+        const hasShown = localStorage.getItem("popunderShown");
+        if (!hasShown) {
+            const script = document.createElement("script");
+            script.src = "//pl27448508.profitableratecpm.com/your-popunder-script.js";
+            script.async = true;
+            document.body.appendChild(script);
+            localStorage.setItem("popunderShown", "true");
+            return () => document.body.removeChild(script);
+        }
+    }, []);
 
 
     const navigate = useNavigate();
