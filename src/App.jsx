@@ -156,6 +156,7 @@ import JanitorAIStory from './Trends/Janitor/Janitor';
 import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
+import AdsenseAd from './Adsense/Adsense';
 
 
 
@@ -233,9 +234,11 @@ function App() {
       <Router>
         <PopunderAd />
         <NativeAd />
+        <AdsenseAd></AdsenseAd>
         <Routes>
 
           <Route path="/" element={<Home />} />
+          <Route path="/adsensead" element={<AdsenseAd />} />
 
           <Route path="/Trending" element={<Trending />} />
 
