@@ -185,7 +185,6 @@ const Home = () => {
 
                                             {showAd && (
                                                 <div className="adsense-container mt-6">
-                                                    <AdsenseAd />
                                                 </div>
                                             )}
 
