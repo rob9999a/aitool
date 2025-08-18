@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../Component/Website/Header/Navbar';
 import { Helmet } from "react-helmet";
+import AdsenseAd from '../../Adsense/Adsense';
 
 const We = () => {
     return (
@@ -45,6 +46,10 @@ const We = () => {
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <AdsenseAd></AdsenseAd>
                 </div>
 
                 {/* Introduction */}

@@ -5,11 +5,14 @@ const AdsenseAd = () => {
 
     useEffect(() => {
         try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            // هذا يضمن إعادة تحميل الإعلان بعد كل عرض للمكوّن
+            if (window.adsbygoogle) {
+                window.adsbygoogle.push({});
+            }
         } catch (e) {
             console.error('Adsense error:', e);
         }
-    }, []);
+    });
 
     return (
         <ins
