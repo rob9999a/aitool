@@ -235,8 +235,7 @@ function App() {
       <Router>
 
         <Routes>
-          <PopunderAd />
-          <NativeAd />
+
           <Route path="/" element={<Home />} />
 
           <Route path="/Trending" element={<Trending />} />
