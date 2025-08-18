@@ -234,7 +234,6 @@ function App() {
       <Router>
         <PopunderAd />
         <NativeAd />
-        <AdsenseAd></AdsenseAd>
         <Routes>
 
           <Route path="/" element={<Home />} />
