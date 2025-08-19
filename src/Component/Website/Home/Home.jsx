@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRight, Calendar, Eye, Heart } from 'lucide-react';
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
+import AdsenseAd from '../../../Dadsense/Dadsense';
 
 
 
@@ -93,20 +94,26 @@ const Home = () => {
     };
 
     const handleArticleClick = (article) => {
-        // Popunder يفتح عند الضغط
-        const links = [
-            "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
-            "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
-        ];
-        const randomLink = links[Math.floor(Math.random() * links.length)];
-        window.open(randomLink, "_blank");
+        // التحقق إذا Popunder تم فتحه مسبقًا
+        const popunderShown = localStorage.getItem("popunderShown");
 
-        // بعد Popunder نعمل navigate للمقال
+        if (!popunderShown) {
+            const links = [
+                "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
+                "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
+            ];
+            const randomLink = links[Math.floor(Math.random() * links.length)];
+            window.open(randomLink, "_blank");
+
+            // علامة أن الإعلان تم عرضه
+            localStorage.setItem("popunderShown", "true");
+        }
+
+        // التوجه للمقال
         if (article.href) {
             navigate(article.href);
         }
     };
-
 
 
 
@@ -225,86 +232,102 @@ const Home = () => {
                     </section>
 
                     {/* Articles Grid */}
+
+
+
                     <section className="py-12">
                         <div className="container mx-auto px-12">
+                            {/* Header */}
                             <div className="flex items-center justify-between mb-10">
                                 <h3 className="text-2xl font-bold text-gray">
-                                    {selectedCategory === 'all' ? 'Latest Articles (Sorted by Date)' : `${categories.find(c => c.id === selectedCategory)?.name} Articles`}
+                                    {selectedCategory === 'all'
+                                        ? 'Latest Articles (Sorted by Date)'
+                                        : `${categories.find(c => c.id === selectedCategory)?.name} Articles`}
                                 </h3>
                                 <div className="text-gray-400">
                                     Showing {startIndex + 1}-{Math.min(startIndex + articlesPerPage, filteredArticles.length)} of {filteredArticles.length} articles
                                 </div>
                             </div>
 
-
+                            {/* Articles Grid */}
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {currentArticles.map((article) => (
-                                    <article
-                                        key={article.id}
-                                        className="group cursor-pointer"
-                                        onClick={() => handleArticleClick(article)}
-                                    >
-                                        <div className="div-card rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
-                                            <div className="relative">
-                                                <img
-                                                    src={article.image}
-                                                    alt={article.title}
-                                                    className="image-ct w-full h-15 object-cover group-hover:scale-110 transition-transform duration-300"
-                                                />
-                                                {article.isHot && (
-                                                    <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-orange-500 px-3 py-1 rounded-full text-white text-sm font-medium flex items-center gap-1 animate-pulse">
-                                                        <Flame className="w-3 h-3" />
-                                                        Hot
+                                {currentArticles.map((article, index) => (
+                                    <React.Fragment key={article.id}>
+                                        <article
+                                            className="group cursor-pointer"
+                                            onClick={() => navigate(article.href)}
+                                        >
+                                            <div className="div-card rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
+                                                <div className="relative">
+                                                    <img
+                                                        src={article.image}
+                                                        alt={article.title}
+                                                        className="image-ct w-full h-15 object-cover group-hover:scale-110 transition-transform duration-300"
+                                                    />
+                                                    {article.isHot && (
+                                                        <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-orange-500 px-3 py-1 rounded-full text-white text-sm font-medium flex items-center gap-1 animate-pulse">
+                                                            <Flame className="w-3 h-3" />
+                                                            Hot
+                                                        </div>
+                                                    )}
+                                                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-2 py-1 rounded-lg text-white text-xs">
+                                                        {article.readTime}
                                                     </div>
-                                                )}
-                                                <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-2 py-1 rounded-lg text-white text-xs">
-                                                    {article.readTime}
-                                                </div>
-                                            </div>
-
-                                            <div className="p-6">
-                                                <div className="flex items-center gap-2 mb-3">
-                                                    <span className={`px-2 py-1 rounded-lg text-xs font-medium bg-gradient-to-r ${categories.find(c => c.id === article.category)?.color
-                                                        } text-white`}>
-                                                        {categories.find(c => c.id === article.category)?.name}
-                                                    </span>
-                                                    <span className="text-gray-400 text-xs flex items-center gap-1">
-                                                        <Calendar className="w-3 h-3" />
-                                                        {article.date}
-                                                    </span>
                                                 </div>
 
-                                                <h4 className="title-card font-900 text-2xl mb-3  transition-colors">
-                                                    {article.title}
-                                                </h4>
-
-                                                <p className="text-gray-500 text-xl mb-4">
-                                                    {article.description}
-                                                </p>
-
-                                                <div className="flex items-center justify-between pt-4 border-t border-white/10">
-                                                    <div className="flex items-center gap-4 text-xs text-gray-400">
-                                                        <span className="flex items-center gap-1">
-                                                            <Eye className="w-3 h-3" />
-                                                            {article.views}
+                                                <div className="p-6">
+                                                    <div className="flex items-center gap-2 mb-3">
+                                                        <span className={`px-2 py-1 rounded-lg text-xs font-medium bg-gradient-to-r ${categories.find(c => c.id === article.category)?.color} text-white`}>
+                                                            {categories.find(c => c.id === article.category)?.name}
                                                         </span>
-                                                        <span className="flex items-center gap-1">
-                                                            <Heart className="w-3 h-3" />
-                                                            {article.likes}
+                                                        <span className="text-gray-400 text-xs flex items-center gap-1">
+                                                            <Calendar className="w-3 h-3" />
+                                                            {article.date}
                                                         </span>
                                                     </div>
-                                                    <button className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-                                                        Read More
-                                                        <ChevronRight className="w-4 h-4" />
-                                                    </button>
+
+                                                    <h4 className="title-card font-900 text-2xl mb-3 transition-colors">
+                                                        {article.title}
+                                                    </h4>
+
+                                                    <p className="text-gray-500 text-xl mb-4">
+                                                        {article.description}
+                                                    </p>
+
+                                                    <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                                                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                                                            <span className="flex items-center gap-1">
+                                                                <Eye className="w-3 h-3" />
+                                                                {article.views}
+                                                            </span>
+                                                            <span className="flex items-center gap-1">
+                                                                <Heart className="w-3 h-3" />
+                                                                {article.likes}
+                                                            </span>
+                                                        </div>
+                                                        <button className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                                                            Read More
+                                                            <ChevronRight className="w-4 h-4" />
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </article>
+                                        </article>
+
+                                        {/* AdSense بعد كل 3 مقالات */}
+                                        {(index + 1) % 3 === 0 && (
+                                            <div className="col-span-full my-4">
+                                                <AdsenseAd slot="1234567890" />
+                                            </div>
+                                        )}
+                                    </React.Fragment>
                                 ))}
                             </div>
                         </div>
                     </section>
+
+
+
 
                     {/* Pagination */}
                     {totalPages > 1 && (

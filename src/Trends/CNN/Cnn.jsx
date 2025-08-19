@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import '../CNN/Cnn.css'
 import Navbar from '../../Component/Website/Header/Navbar';
-import AdsenseAd from '../../Adsense/Adsense';
 
 const Cnn = () => {
     return (

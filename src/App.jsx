@@ -156,7 +156,8 @@ import JanitorAIStory from './Trends/Janitor/Janitor';
 import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
-import AdsenseAd from './Adsense/Adsense';
+import PopunderAd from './PopunderAd/PopunderAd';
+import AdsenseAd from './Dadsense/Dadsense';
 
 
 
@@ -164,30 +165,8 @@ function App() {
 
 
 
-  const PopunderAd = () => {
-    useEffect(() => {
-      const handleClick = () => {
-        const links = [
-          "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
-          "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
-        ];
-        const randomLink = links[Math.floor(Math.random() * links.length)];
-
-        // هنا إذا تحب يظهر كل مرة:
-        window.open(randomLink, "_blank");
-
-      };
 
 
-      document.addEventListener("click", handleClick);
-
-      return () => {
-        document.removeEventListener("click", handleClick);
-      };
-    }, []);
-
-    return null; // ما فيش محتوى مرئي، مجرد Popunder
-  };
 
   // Native Ad يظهر في كل صفحة
   const NativeAd = () => {
@@ -244,10 +223,10 @@ function App() {
       <Router>
         <PopunderAd />
         <NativeAd />
+        <AdsenseAd></AdsenseAd>
         <Routes>
 
           <Route path="/" element={<Home />} />
-          <Route path="/adsensead" element={<AdsenseAd />} />
 
           <Route path="/Trending" element={<Trending />} />
 
