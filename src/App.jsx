@@ -223,9 +223,7 @@ function App() {
 
       <Router>
 
-        <NativeAd />
-        <AdsenseAd></AdsenseAd>
-        <PopunderAd />
+
 
 
         <Routes>
