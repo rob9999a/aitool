@@ -221,9 +221,7 @@ function App() {
 
 
       <Router>
-        <PopunderAd />
-        <NativeAd />
-        <AdsenseAd></AdsenseAd>
+
         <Routes>
 
           <Route path="/" element={<Home />} />
@@ -528,7 +526,9 @@ function App() {
           <Route path="/summary-cnn-ai-impact" element={<Cnn />} />
 
 
-
+          <PopunderAd />
+          <NativeAd />
+          <AdsenseAd></AdsenseAd>
         </Routes>
       </Router>
     </>
