@@ -2169,7 +2169,7 @@ const articlesWithHref = [
         date: "Jan 30, 24",
         dateSort: new Date("2026-06-24"),
         href: '/unseen-decisions'
-    },
+    }
 
 
 
