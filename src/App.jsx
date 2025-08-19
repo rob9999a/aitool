@@ -158,6 +158,7 @@ import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import PopunderAd from './PopunderAd/PopunderAd';
 import AdsenseAd from './Dadsense/Dadsense';
+import Harmajdon from './Trends/Harmajdon/Harmajdon';
 
 
 
@@ -525,11 +526,14 @@ function App() {
 
           <Route path="/summary-cnn-ai-impact" element={<Cnn />} />
 
+          <Route path="/unseen-decisions" element={<Harmajdon />} />
 
-          <PopunderAd />
-          <NativeAd />
-          <AdsenseAd></AdsenseAd>
+
+
         </Routes>
+        <NativeAd />
+        <AdsenseAd></AdsenseAd>
+        <PopunderAd />
       </Router>
     </>
   );

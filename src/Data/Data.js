@@ -2156,6 +2156,20 @@ const articlesWithHref = [
 
 
 
+    {
+        id: 174,
+        title: "he Hidden Abyss:AI and the Unpredictable Nuclear Threat",
+        description: "Exploring the hidden risks of AI-controlled nuclear arsenals and their unpredictable consequences",
+        category: 'news',
+        image: "https://i.postimg.cc/YCC7qPTh/Design-sans-titre.png",
+        readTime: "13 min read",
+        views: "66K",
+        likes: 3002,
+        isHot: true,
+        date: "Jan 30, 24",
+        dateSort: new Date("2026-06-24"),
+        href: '/unseen-decisions'
+    },
 
 
 
