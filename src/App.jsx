@@ -162,21 +162,31 @@ import AdsenseAd from './Adsense/Adsense';
 
 function App() {
 
-  // Popunder يظهر مرة واحدة لكل زائر
+
+
   const PopunderAd = () => {
     useEffect(() => {
-      const hasShown = localStorage.getItem("popunderShown");
-      if (!hasShown) {
-        const script = document.createElement("script");
-        script.src = "//pl27448508.profitableratecpm.com/your-popunder-script.js";
-        script.async = true;
-        document.body.appendChild(script);
-        localStorage.setItem("popunderShown", "true");
-        return () => document.body.removeChild(script);
-      }
+      const handleClick = () => {
+        const links = [
+          "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
+          "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
+        ];
+        const randomLink = links[Math.floor(Math.random() * links.length)];
+
+        // هنا إذا تحب يظهر كل مرة:
+        window.open(randomLink, "_blank");
+
+      };
+
+
+      document.addEventListener("click", handleClick);
+
+      return () => {
+        document.removeEventListener("click", handleClick);
+      };
     }, []);
 
-    return null;
+    return null; // ما فيش محتوى مرئي، مجرد Popunder
   };
 
   // Native Ad يظهر في كل صفحة
