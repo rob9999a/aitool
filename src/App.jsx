@@ -222,7 +222,9 @@ function App() {
 
 
       <Router>
-
+        <NativeAd />
+        <AdsenseAd></AdsenseAd>
+        <PopunderAd />
         <Routes>
 
           <Route path="/" element={<Home />} />
@@ -531,9 +533,7 @@ function App() {
 
 
         </Routes>
-        <NativeAd />
-        <AdsenseAd></AdsenseAd>
-        <PopunderAd />
+
       </Router>
     </>
   );
