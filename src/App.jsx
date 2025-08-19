@@ -322,7 +322,6 @@ function App() {
           <Route path="/ai-business-pitch" element={<Aipitch />} />
 
 
-/* freeelance /*
 
           <Route path="/ai-make-you-rich" element={<AIDropshippingSuccess />} />
           <Route path="/ai-script-tool" element={<AIDscript />} />
@@ -419,7 +418,7 @@ function App() {
           <Route path="/ai-businesses-analysts" element={<AIvsAnalysts />} />
 
 
-  /* news */
+
 
           <Route path="/gemini-vs-chatgpt4" element={<Contentwrapper />} />
 
