@@ -3,31 +3,37 @@ import React, { useEffect, useState } from 'react';
 const PopunderAd = () => {
     const [adBlockDetected, setAdBlockDetected] = useState(false);
 
+
     useEffect(() => {
-        // كشف AdBlock
-        const adTest = document.createElement('div');
-        adTest.className = 'adsbox';
-        adTest.style.height = '1px';
-        adTest.style.width = '1px';
-        adTest.style.position = 'absolute';
-        adTest.style.left = '-9999px';
-        document.body.appendChild(adTest);
+        const script = document.createElement('script');
+        script.src = "//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js";
+        script.async = true;
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
+
+
+    useEffect(() => {
+        const testAd = document.createElement('div');
+        testAd.className = 'adsbox';
+        testAd.style.height = '1px';
+        document.body.appendChild(testAd);
 
         setTimeout(() => {
-            if (adTest.offsetHeight === 0) {
-                setAdBlockDetected(true);
+            if (testAd.offsetHeight === 0) {
+                console.log('AdBlock detected');
+                // هنا ممكن تعرض رسالة أو تلتزم بعدم تحميل الإعلان
+            } else {
+                // تحميل السكريبت الإعلاني هنا
             }
-            document.body.removeChild(adTest);
+            document.body.removeChild(testAd);
         }, 100);
+    }, []);
 
-        // تحميل سكريبت Popunder فقط إذا لم يكن AdBlock
-        if (!adBlockDetected) {
-            const script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = '//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js';
-            document.body.appendChild(script);
-        }
-    }, [adBlockDetected]);
 
     return (
         <>
@@ -48,6 +54,8 @@ const PopunderAd = () => {
                     padding: '20px',
                 }}>
                     <div>
+                        <div id="container-c39b3bd3eab4b0b5a5910cf7fc622ee2"></div>
+
                         <h2>AdBlock Detected</h2>
                         <p>Please disable your ad blocker to support our site and see exclusive content.</p>
                     </div>

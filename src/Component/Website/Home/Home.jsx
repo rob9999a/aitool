@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Helmet } from "react-helmet";
 import articlesWithHref from '../../../Data/Data';
 import './Home.css'
@@ -6,13 +6,16 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, ChevronRight, ChevronLeft } from 'lucide-react';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import PopunderAd from '../../../PopunderAd/PopunderAd';
 
 const Home = () => {
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const [adBlockDetected, setAdBlockDetected] = useState(false);
     const articlesPerPage = 6;
+
+    const popunderRef = useRef(null);
+    const socialBarRef = useRef(null);
 
     const categories = [
         { id: 'all', name: 'All Articles', icon: Flame, color: 'from-red-500 to-orange-500', count: 60 },
@@ -43,16 +46,50 @@ const Home = () => {
     };
 
     const handleArticleClick = (article) => {
-        if (article.href) {
-            navigate(article.href);
-        }
+        if (article.href) navigate(article.href);
     };
+
+    // كشف AdBlock
+    useEffect(() => {
+        const testAd = document.createElement('div');
+        testAd.className = 'adsbox';
+        testAd.style.height = '1px';
+        document.body.appendChild(testAd);
+
+        setTimeout(() => {
+            if (testAd.offsetHeight === 0) setAdBlockDetected(true);
+            document.body.removeChild(testAd);
+        }, 100);
+    }, []);
+
+    // تحميل Popunder و SocialBar تلقائياً
+    useEffect(() => {
+        if (!adBlockDetected) {
+            // SocialBar
+            if (socialBarRef.current && socialBarRef.current.childNodes.length === 0) {
+                const socialScript = document.createElement('script');
+                socialScript.type = 'text/javascript';
+                socialScript.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
+                socialScript.async = true;
+                socialBarRef.current.appendChild(socialScript);
+            }
+
+            // Popunder
+            if (popunderRef.current && popunderRef.current.childNodes.length === 0) {
+                const popunderScript = document.createElement('script');
+                popunderScript.type = 'text/javascript';
+                popunderScript.src = "//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js";
+                popunderScript.async = true;
+                popunderRef.current.appendChild(popunderScript);
+            }
+        }
+    }, [adBlockDetected]);
 
     return (
         <>
             <Helmet>
                 <title>Fyrexia AI — Articles</title>
-                <meta name="description" content="Fyrexia AI articles without ads." />
+                <meta name="description" content="Fyrexia AI articles with ads." />
             </Helmet>
 
             <div className="my-section min-h-screen">
@@ -75,7 +112,6 @@ const Home = () => {
                             <Flame className="w-8 h-8" />
                             Hot Categories
                         </h3>
-
                         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                             {categories.map((category) => {
                                 const IconComponent = category.icon;
@@ -97,7 +133,9 @@ const Home = () => {
                     </div>
                 </section>
 
-                <PopunderAd></PopunderAd>
+                {/* Popunder and SocialBar */}
+                <div ref={popunderRef} />
+                <div ref={socialBarRef} style={{ marginBottom: '24px', textAlign: 'center' }} />
 
                 {/* Articles Grid */}
                 <section className="py-12">
@@ -137,13 +175,11 @@ const Home = () => {
                     </div>
                 </section>
 
-
                 {/* Pagination */}
                 {totalPages > 1 && (
                     <section className="py-8">
                         <div className="container mx-auto px-4">
                             <div className="flex flex-wrap justify-center gap-2 md:gap-4">
-                                {/* Previous Button */}
                                 <button
                                     onClick={() => handlePageChange(currentPage - 1)}
                                     disabled={currentPage === 1}
@@ -152,7 +188,6 @@ const Home = () => {
                                     <ChevronLeft className="w-4 h-4" />
                                 </button>
 
-                                {/* Page Numbers */}
                                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                                     <button
                                         key={page}
@@ -160,14 +195,12 @@ const Home = () => {
                                         className={`w-10 h-10 rounded-lg border transition flex items-center justify-center 
               ${currentPage === page
                                                 ? 'bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg'
-                                                : 'border-gray-300 text-gray-600 hover:bg-gray-100'}
-            `}
+                                                : 'border-gray-300 text-gray-600 hover:bg-gray-100'}`}
                                     >
                                         {page}
                                     </button>
                                 ))}
 
-                                {/* Next Button */}
                                 <button
                                     onClick={() => handlePageChange(currentPage + 1)}
                                     disabled={currentPage === totalPages}
@@ -183,9 +216,6 @@ const Home = () => {
                         </div>
                     </section>
                 )}
-
-
-
 
                 <Footer />
             </div>
