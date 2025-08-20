@@ -7,11 +7,13 @@ const Layouts = ({ children }) => {
     return (
         <>
             <Navbar />
-            <main>
+            <PopunderAd />
 
-                <Home></Home>
-            </main>
+            <main>{children}</main>
 
+            <div className="container mx-auto px-12 my-8">
+                <AdsenseAd slot="1234567890" />
+            </div>
         </>
     );
 };
