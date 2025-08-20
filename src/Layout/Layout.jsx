@@ -6,14 +6,9 @@ const Layouts = ({ children }) => {
     return (
         <>
             <Navbar />
+            <main>qsdd</main>
 
-            <PopunderAd />
-
-            <main>{children}</main>
-
-            <div className="container mx-auto px-12 my-8">
-                <AdsenseAd slot="1234567890" />
-            </div>        </>
+        </>
     );
 };
 
