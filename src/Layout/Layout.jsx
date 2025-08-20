@@ -16,7 +16,7 @@ const Layouts = ({ children }) => {
 
             <main>{children}</main>
 
-            <div className="container mx-auto px-12 my-8">
+            <div className="container mx-auto">
                 <AdsenseAd slot="1234567890" />
             </div>
         </>
