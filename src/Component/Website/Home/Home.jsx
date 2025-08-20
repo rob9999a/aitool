@@ -12,6 +12,7 @@ const Home = () => {
     const containerRef = useRef(null);
     const topBannerRef = useRef(null);
     const inContentAdRef = useRef(null);
+    const middleNativeAdRef = useRef(null);
     const gridAdRefs = useRef({});
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
@@ -65,6 +66,27 @@ const Home = () => {
         const timer = setTimeout(loadTopBannerAd, 1500);
         return () => clearTimeout(timer);
     }, []);
+
+    // تحميل Middle Native Ad
+    useEffect(() => {
+        const loadMiddleNativeAd = () => {
+            if (middleNativeAdRef.current && !middleNativeAdRef.current.hasChildNodes()) {
+                const script = document.createElement("script");
+                script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+                script.async = true;
+                script.setAttribute('data-cfasync', 'false');
+
+                const adContainer = document.createElement("div");
+                adContainer.id = "container-c39b3bd3eab4b0b5a5910cf7fc622ee2-middle";
+
+                middleNativeAdRef.current.appendChild(script);
+                middleNativeAdRef.current.appendChild(adContainer);
+            }
+        };
+
+        const timer = setTimeout(loadMiddleNativeAd, 2500);
+        return () => clearTimeout(timer);
+    }, [currentPage, selectedCategory]);
 
     // تحميل In-Content Ad
     useEffect(() => {
@@ -134,10 +156,24 @@ const Home = () => {
         setCurrentPage(page);
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        // عرض إعلان بين الصفحات
-        if (Math.random() < 0.3) { // 30% فرصة لعرض إعلان
-            setShowInterstitialAd(true);
-            setTimeout(() => setShowInterstitialAd(false), 5000);
+        // عرض Native Banner عند تغيير الصفحة (بدلاً من Interstitial)
+        if (Math.random() < 0.4) { // 40% فرصة لعرض Native Banner
+            // إعادة تحميل Native Banner في وسط الصفحة
+            if (middleNativeAdRef.current) {
+                middleNativeAdRef.current.innerHTML = '';
+                setTimeout(() => {
+                    const script = document.createElement("script");
+                    script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+                    script.async = true;
+                    script.setAttribute('data-cfasync', 'false');
+
+                    const adContainer = document.createElement("div");
+                    adContainer.id = `container-c39b3bd3eab4b0b5a5910cf7fc622ee2-page-${page}`;
+
+                    middleNativeAdRef.current.appendChild(script);
+                    middleNativeAdRef.current.appendChild(adContainer);
+                }, 1000);
+            }
         }
     };
 
@@ -145,10 +181,24 @@ const Home = () => {
         setSelectedCategory(categoryId);
         setCurrentPage(1);
 
-        // عرض إعلان عند تغيير الفئة
-        if (Math.random() < 0.4) { // 40% فرصة لعرض إعلان
-            setShowInterstitialAd(true);
-            setTimeout(() => setShowInterstitialAd(false), 5000);
+        // عرض Native Banner عند تغيير الفئة
+        if (Math.random() < 0.5) { // 50% فرصة لعرض Native Banner
+            // إعادة تحميل Native Banner في الأعلى
+            if (containerRef.current) {
+                containerRef.current.innerHTML = '';
+                setTimeout(() => {
+                    const script = document.createElement("script");
+                    script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+                    script.async = true;
+                    script.setAttribute('data-cfasync', 'false');
+
+                    const adContainer = document.createElement("div");
+                    adContainer.id = `container-c39b3bd3eab4b0b5a5910cf7fc622ee2-category-${categoryId}`;
+
+                    containerRef.current.appendChild(script);
+                    containerRef.current.appendChild(adContainer);
+                }, 800);
+            }
         }
     };
 
@@ -373,7 +423,7 @@ const Home = () => {
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {currentArticles.map((article, index) => (
+                                {currentArticles.slice(0, Math.ceil(currentArticles.length / 2)).map((article, index) => (
                                     <React.Fragment key={article.id}>
                                         <article
                                             className="group cursor-pointer"
@@ -436,14 +486,134 @@ const Home = () => {
                                             </div>
                                         </article>
 
-                                        {/* إعلان بعد كل مقالين */}
+                                        {/* إعلان بعد كل مقالين في النصف الأول */}
                                         {(index + 1) % 2 === 0 && (
                                             <div className="col-span-full my-6">
                                                 <div
                                                     ref={(el) => {
-                                                        gridAdRefs.current[`grid-${index}`] = el;
+                                                        gridAdRefs.current[`grid-first-${index}`] = el;
                                                         if (el) {
-                                                            setTimeout(() => loadGridAd(`grid-${index}`), 500);
+                                                            setTimeout(() => loadGridAd(`grid-first-${index}`), 500);
+                                                        }
+                                                    }}
+                                                    className="grid-ad"
+                                                    style={{
+                                                        width: '100%',
+                                                        minHeight: '250px',
+                                                        backgroundColor: '#f8f9fa',
+                                                        borderRadius: '8px',
+                                                        border: '1px solid #e9ecef',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center'
+                                                    }}
+                                                />
+                                            </div>
+                                        )}
+                                    </React.Fragment>
+                                ))}
+                            </div>
+
+                            {/* Native Banner في وسط المقالات */}
+                            {currentArticles.length > 3 && (
+                                <div className="my-12">
+                                    <div className="text-center mb-4">
+                                        <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+                                            Recommended Content
+                                        </span>
+                                    </div>
+                                    <div
+                                        ref={middleNativeAdRef}
+                                        className="middle-native-ad"
+                                        style={{
+                                            width: '100%',
+                                            minHeight: '200px',
+                                            backgroundColor: '#f8f9fa',
+                                            borderRadius: '12px',
+                                            border: '1px solid #e9ecef',
+                                            padding: '20px',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+                                        }}
+                                    />
+                                </div>
+                            )}
+
+                            {/* النصف الثاني من المقالات */}
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {currentArticles.slice(Math.ceil(currentArticles.length / 2)).map((article, index) => (
+                                    <React.Fragment key={article.id}>
+                                        <article
+                                            className="group cursor-pointer"
+                                            onClick={() => handleArticleClick(article)}
+                                        >
+                                            <div className="div-card rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
+                                                <div className="relative">
+                                                    <img
+                                                        src={article.image}
+                                                        alt={article.title}
+                                                        className="image-ct w-full h-15 object-cover group-hover:scale-110 transition-transform duration-300"
+                                                    />
+                                                    {article.isHot && (
+                                                        <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-orange-500 px-3 py-1 rounded-full text-white text-sm font-medium flex items-center gap-1 animate-pulse">
+                                                            <Flame className="w-3 h-3" />
+                                                            Hot
+                                                        </div>
+                                                    )}
+                                                    <div className="absolute top-4 right-4 bg-black/50 backdrop-blur-sm px-2 py-1 rounded-lg text-white text-xs">
+                                                        {article.readTime}
+                                                    </div>
+                                                </div>
+
+                                                <div className="p-6">
+                                                    <div className="flex items-center gap-2 mb-3">
+                                                        <span className={`px-2 py-1 rounded-lg text-xs font-medium bg-gradient-to-r ${categories.find(c => c.id === article.category)?.color} text-white`}>
+                                                            {categories.find(c => c.id === article.category)?.name}
+                                                        </span>
+                                                        <span className="text-gray-400 text-xs flex items-center gap-1">
+                                                            <Calendar className="w-3 h-3" />
+                                                            {article.date}
+                                                        </span>
+                                                    </div>
+
+                                                    <h4 className="title-card font-900 text-2xl mb-3 transition-colors">
+                                                        {article.title}
+                                                    </h4>
+
+                                                    <p className="text-gray-500 text-xl mb-4">
+                                                        {article.description}
+                                                    </p>
+
+                                                    <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                                                        <div className="flex items-center gap-4 text-xs text-gray-400">
+                                                            <span className="flex items-center gap-1">
+                                                                <Eye className="w-3 h-3" />
+                                                                {article.views}
+                                                            </span>
+                                                            <span className="flex items-center gap-1">
+                                                                <Heart className="w-3 h-3" />
+                                                                {article.likes}
+                                                            </span>
+                                                        </div>
+                                                        <button className="text-cyan-400 hover:text-cyan-300 text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                                                            Read More
+                                                            <ChevronRight className="w-4 h-4" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+
+                                        {/* إعلان بعد كل مقالين في النصف الثاني */}
+                                        {(index + 1) % 2 === 0 && (
+                                            <div className="col-span-full my-6">
+                                                <div
+                                                    ref={(el) => {
+                                                        gridAdRefs.current[`grid-second-${index}`] = el;
+                                                        if (el) {
+                                                            setTimeout(() => loadGridAd(`grid-second-${index}`), 500);
                                                         }
                                                     }}
                                                     className="grid-ad"
