@@ -210,8 +210,7 @@ function App() {
 
       <Router>
 
-        <AdsenseAd></AdsenseAd>
-        <PopunderAd></PopunderAd>
+
 
         <Layouts>
 
