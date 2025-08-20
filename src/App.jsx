@@ -167,6 +167,7 @@ function App() {
 
 
 
+
   // Native Ad يظهر في كل صفحة
   const NativeAd = () => {
     useEffect(() => {
@@ -183,7 +184,6 @@ function App() {
 
     return <div id="native-ad" style={{ margin: "0 0" }}></div>;
   };
-
   return (
 
     <>
@@ -220,6 +220,7 @@ function App() {
 
 
       <Router>
+
         <Layouts>
 
           <Routes>

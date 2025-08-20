@@ -174,7 +174,6 @@ const Home = () => {
 
                 <div className="relative z-10">
 
-                    <Header></Header>
 
                     {/* Hero Section */}
                     <section id='template-home' className="py-16">
