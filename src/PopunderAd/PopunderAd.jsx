@@ -11,7 +11,7 @@ const PopunderAd = () => {
             ];
             const randomLink = links[Math.floor(Math.random() * links.length)];
 
-            // Popunder يظهر بعد 5 ثواني
+            // يظهر بعد 5 ثواني
             setTimeout(() => {
                 window.open(randomLink, "_blank");
                 sessionStorage.setItem("popunderShown", "true");
