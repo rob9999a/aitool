@@ -6,11 +6,13 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRight, Calendar, Eye, Heart } from 'lucide-react';
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import AdsenseAd from '../../../Dadsense/Dadsense';
 import Navbar from '../Header/Navbar';
 
 const Home = () => {
     const containerRef = useRef(null);
+    const topBannerRef = useRef(null);
+    const inContentAdRef = useRef(null);
+    const gridAdRefs = useRef({});
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -31,19 +33,64 @@ const Home = () => {
     // تحميل Native Ad مرة واحدة
     useEffect(() => {
         const loadNativeAd = () => {
-            const script = document.createElement("script");
-            script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
-            script.async = true;
-            script.dataset.cfasync = "false";
-
             if (containerRef.current && !containerRef.current.hasChildNodes()) {
+                const script = document.createElement("script");
+                script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+                script.async = true;
+                script.setAttribute('data-cfasync', 'false');
+
+                const adContainer = document.createElement("div");
+                adContainer.id = "container-c39b3bd3eab4b0b5a5910cf7fc622ee2";
+
                 containerRef.current.appendChild(script);
+                containerRef.current.appendChild(adContainer);
             }
         };
 
         const timer = setTimeout(loadNativeAd, 1000);
         return () => clearTimeout(timer);
     }, []);
+
+    // تحميل Top Banner Ad
+    useEffect(() => {
+        const loadTopBannerAd = () => {
+            if (topBannerRef.current && !topBannerRef.current.hasChildNodes()) {
+                const script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
+                topBannerRef.current.appendChild(script);
+            }
+        };
+
+        const timer = setTimeout(loadTopBannerAd, 1500);
+        return () => clearTimeout(timer);
+    }, []);
+
+    // تحميل In-Content Ad
+    useEffect(() => {
+        const loadInContentAd = () => {
+            if (inContentAdRef.current && !inContentAdRef.current.hasChildNodes()) {
+                const script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
+                inContentAdRef.current.appendChild(script);
+            }
+        };
+
+        const timer = setTimeout(loadInContentAd, 2000);
+        return () => clearTimeout(timer);
+    }, [currentPage, selectedCategory]);
+
+    // تحميل Grid Ads
+    const loadGridAd = (index) => {
+        const gridAdRef = gridAdRefs.current[index];
+        if (gridAdRef && !gridAdRef.hasChildNodes()) {
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
+            gridAdRef.appendChild(script);
+        }
+    };
 
     // Popunder محسن - يظهر بذكاء
     useEffect(() => {
@@ -149,12 +196,23 @@ const Home = () => {
                     <div className="countdown">3</div>
                 </div>
                 <div className="ad-body">
-                    <AdsenseAd
-                        slot="9946281213833145"
-                        format="fluid"
+                    <div
+                        ref={(el) => {
+                            if (el && !el.hasChildNodes()) {
+                                const script = document.createElement("script");
+                                script.type = "text/javascript";
+                                script.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
+                                el.appendChild(script);
+                            }
+                        }}
                         style={{
                             width: '100%',
-                            height: '400px'
+                            height: '400px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#f5f5f5',
+                            borderRadius: '8px'
                         }}
                     />
                 </div>
@@ -214,13 +272,18 @@ const Home = () => {
                     {/* Top Banner Ad */}
                     <section className="py-4">
                         <div className="container mx-auto px-4">
-                            <AdsenseAd
-                                slot="9946281213833145"
-                                format="horizontal"
+                            <div
+                                ref={topBannerRef}
                                 className="top-banner-ad"
                                 style={{
                                     width: '100%',
-                                    height: '90px'
+                                    minHeight: '90px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    backgroundColor: '#f8f9fa',
+                                    borderRadius: '8px',
+                                    border: '1px solid #e9ecef'
                                 }}
                             />
                         </div>
@@ -235,7 +298,20 @@ const Home = () => {
                             </h3>
 
                             {/* Native Ad */}
-                            <div ref={containerRef} id="native-ad" className="mb-6"></div>
+                            <div
+                                ref={containerRef}
+                                id="native-ad"
+                                className="mb-6"
+                                style={{
+                                    minHeight: '120px',
+                                    backgroundColor: '#f8f9fa',
+                                    borderRadius: '8px',
+                                    border: '1px solid #e9ecef',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center'
+                                }}
+                            />
 
                             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                                 {categories.map((category) => {
@@ -280,13 +356,18 @@ const Home = () => {
 
                             {/* In-content Ad - قبل المقالات */}
                             <div className="mb-8">
-                                <AdsenseAd
-                                    slot="9946281213833145"
-                                    format="fluid"
+                                <div
+                                    ref={inContentAdRef}
                                     className="in-content-ad"
                                     style={{
                                         width: '100%',
-                                        minHeight: '200px'
+                                        minHeight: '200px',
+                                        backgroundColor: '#f8f9fa',
+                                        borderRadius: '8px',
+                                        border: '1px solid #e9ecef',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center'
                                     }}
                                 />
                             </div>
@@ -355,16 +436,26 @@ const Home = () => {
                                             </div>
                                         </article>
 
-                                        {/* AdSense بعد كل مقالين */}
+                                        {/* إعلان بعد كل مقالين */}
                                         {(index + 1) % 2 === 0 && (
                                             <div className="col-span-full my-6">
-                                                <AdsenseAd
-                                                    slot="9946281213833145"
-                                                    format="fluid"
+                                                <div
+                                                    ref={(el) => {
+                                                        gridAdRefs.current[`grid-${index}`] = el;
+                                                        if (el) {
+                                                            setTimeout(() => loadGridAd(`grid-${index}`), 500);
+                                                        }
+                                                    }}
                                                     className="grid-ad"
                                                     style={{
                                                         width: '100%',
-                                                        minHeight: '250px'
+                                                        minHeight: '250px',
+                                                        backgroundColor: '#f8f9fa',
+                                                        borderRadius: '8px',
+                                                        border: '1px solid #e9ecef',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center'
                                                     }}
                                                 />
                                             </div>
