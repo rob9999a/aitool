@@ -8,6 +8,7 @@ import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import Navbar from '../Header/Navbar';
 import SocialBar from '../../../Socialbar/Socialbar';
+import PopunderAd from '../../../PopunderAd/PopunderAd';
 
 // ===== مكونات نظام الإعلانات =====
 
@@ -388,6 +389,7 @@ const Home = () => {
                     </section>
 
                     <SocialBar />
+                    <PopunderAd></PopunderAd>
 
                     {/* إعلان البانر العلوي */}
                     <TopBannerAd show={!adBlockDetected} />
