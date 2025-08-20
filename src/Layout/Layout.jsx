@@ -3,11 +3,13 @@ import Home from "../Component/Website/Home/Home";
 import AdsenseAd from "../Dadsense/Dadsense";
 import PopunderAd from "../PopunderAd/PopunderAd";
 
-const Layouts = ({ children }) => {
+const Layouts = ({ children, NativeAd }) => {
     return (
         <>
-            <Navbar />
             <PopunderAd />
+            <NativeAd></NativeAd>
+
+
 
             <main>{children}</main>
 
