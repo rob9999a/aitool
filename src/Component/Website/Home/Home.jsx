@@ -7,6 +7,7 @@ import { Flame, Zap, TrendingUp, DollarSign, Edit, Users, ChevronLeft, ChevronRi
 import Header from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import AdsenseAd from '../../../Dadsense/Dadsense';
+import Navbar from '../Header/Navbar';
 
 
 
@@ -173,6 +174,8 @@ const Home = () => {
                 </div>
 
                 <div className="relative z-10">
+
+                    <Navbar></Navbar>
 
 
                     {/* Hero Section */}

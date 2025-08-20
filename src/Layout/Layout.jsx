@@ -9,7 +9,6 @@ const Layouts = ({ children }) => {
 
     return (
         <>
-            <Navbar></Navbar>
 
 
 
