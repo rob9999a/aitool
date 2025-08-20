@@ -628,47 +628,7 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* CSS إضافي للإعلانات */}
-            <style jsx>{`
-                .ad-container {
-                    transition: all 0.3s ease;
-                }
-                
-                .ad-container:hover {
-                    transform: translateY(-2px);
-                }
-                
-                /* تحسين عرض الإعلانات */
-                .ad-container > div {
-                    background: rgba(255, 255, 255, 0.05);
-                    backdrop-filter: blur(10px);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    border-radius: 12px;
-                }
-                
-                /* تحسين الاستجابة على الموبايل */
-                @media (max-width: 768px) {
-                    .ad-container {
-                        margin: 1rem 0;
-                    }
-                    
-                    .interstitial-ad-content {
-                        width: 95% !important;
-                        padding: 16px !important;
-                    }
-                }
-                
-                /* تأثير التحميل للإعلانات */
-                .ad-container > div > div:last-child {
-                    animation: shimmer 2s infinite;
-                }
-                
-                @keyframes shimmer {
-                    0% { opacity: 0.6; }
-                    50% { opacity: 0.8; }
-                    100% { opacity: 0.6; }
-                }
-            `}</style>
+
         </>
     );
 };
