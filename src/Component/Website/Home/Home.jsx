@@ -150,7 +150,7 @@ const Home = () => {
                 </div>
                 <div className="ad-body">
                     <AdsenseAd
-                        slot="YOUR_INTERSTITIAL_SLOT"
+                        slot="9946281213833145"
                         format="fluid"
                         style={{
                             width: '100%',
@@ -215,7 +215,7 @@ const Home = () => {
                     <section className="py-4">
                         <div className="container mx-auto px-4">
                             <AdsenseAd
-                                slot="YOUR_BANNER_SLOT"
+                                slot="9946281213833145"
                                 format="horizontal"
                                 className="top-banner-ad"
                                 style={{
@@ -281,7 +281,7 @@ const Home = () => {
                             {/* In-content Ad - قبل المقالات */}
                             <div className="mb-8">
                                 <AdsenseAd
-                                    slot="YOUR_CONTENT_SLOT"
+                                    slot="9946281213833145"
                                     format="fluid"
                                     className="in-content-ad"
                                     style={{
@@ -359,7 +359,7 @@ const Home = () => {
                                         {(index + 1) % 2 === 0 && (
                                             <div className="col-span-full my-6">
                                                 <AdsenseAd
-                                                    slot="YOUR_GRID_AD_SLOT"
+                                                    slot="9946281213833145"
                                                     format="fluid"
                                                     className="grid-ad"
                                                     style={{
