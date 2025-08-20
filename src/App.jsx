@@ -157,6 +157,8 @@ import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
+import AdsenseAd from './Dadsense/Dadsense';
+import PopunderAd from './PopunderAd/PopunderAd';
 
 
 
@@ -221,8 +223,9 @@ function App() {
 
       <Router>
 
-
-
+        <AdsenseAd></AdsenseAd>
+        <NativeAd></NativeAd>
+        <PopunderAd></PopunderAd>
 
         <Routes>
 
