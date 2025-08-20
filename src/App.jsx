@@ -158,6 +158,8 @@ import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
 import Layouts from './Layout/Layout';
+import AdsenseAd from './Dadsense/Dadsense';
+import PopunderAd from './PopunderAd/PopunderAd';
 
 
 function App() {
@@ -207,6 +209,9 @@ function App() {
 
 
       <Router>
+
+        <AdsenseAd></AdsenseAd>
+        <PopunderAd></PopunderAd>
 
         <Layouts>
 
