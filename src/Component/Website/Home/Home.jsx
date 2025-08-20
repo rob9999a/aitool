@@ -9,52 +9,15 @@ import Footer from '../Footer/Footer';
 import AdsenseAd from '../../../Dadsense/Dadsense';
 import Navbar from '../Header/Navbar';
 
-
-
 const Home = () => {
-
-
     const containerRef = useRef(null);
-
-
-
-    useEffect(() => {
-        const script = document.createElement("script");
-        script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
-        script.async = true;
-        script.dataset.cfasync = "false";
-
-        if (containerRef.current) {
-            containerRef.current.appendChild(script);
-        }
-
-        return () => {
-            if (containerRef.current && containerRef.current.contains(script)) {
-                containerRef.current.removeChild(script);
-            }
-        };
-    }, []);
-
-
-    // Popunder Ad يظهر مرة واحدة لكل زائر
-    useEffect(() => {
-        const hasShown = localStorage.getItem("popunderShown");
-        if (!hasShown) {
-            const script = document.createElement("script");
-            script.src = "//pl27448508.profitableratecpm.com/your-popunder-script.js";
-            script.async = true;
-            document.body.appendChild(script);
-            localStorage.setItem("popunderShown", "true");
-            return () => document.body.removeChild(script);
-        }
-    }, []);
-
-
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const [showInterstitialAd, setShowInterstitialAd] = useState(false);
+    const [adClickCount, setAdClickCount] = useState(0);
+    const [lastAdTime, setLastAdTime] = useState(0);
     const articlesPerPage = 6;
-    const [showAd, setShowAd] = useState(false);
 
     const categories = [
         { id: 'all', name: 'All Articles', icon: Flame, color: 'from-red-500 to-orange-500', count: 60 },
@@ -63,17 +26,55 @@ const Home = () => {
         { id: 'content', name: 'Content Creation', icon: Edit, color: 'from-purple-500 to-pink-500', count: 12 },
         { id: 'freelance', name: 'Freelancing', icon: Users, color: 'from-indigo-500 to-blue-500', count: 18 },
         { id: 'news', name: 'News', icon: Users, color: 'from-indigo-500 to-blue-500', count: 20 },
-
     ];
 
-    // إضافة href لجميع المقالات
+    // تحميل Native Ad مرة واحدة
+    useEffect(() => {
+        const loadNativeAd = () => {
+            const script = document.createElement("script");
+            script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
+            script.async = true;
+            script.dataset.cfasync = "false";
 
+            if (containerRef.current && !containerRef.current.hasChildNodes()) {
+                containerRef.current.appendChild(script);
+            }
+        };
 
+        const timer = setTimeout(loadNativeAd, 1000);
+        return () => clearTimeout(timer);
+    }, []);
 
-    // ترتيب المقالات حسب التاريخ من الأحدث إلى الأقدم
+    // Popunder محسن - يظهر بذكاء
+    useEffect(() => {
+        const handlePopunder = () => {
+            const lastPopunder = localStorage.getItem("lastPopunder");
+            const now = Date.now();
+            const oneHour = 60 * 60 * 1000; // ساعة واحدة
+
+            if (!lastPopunder || (now - parseInt(lastPopunder)) > oneHour) {
+                const links = [
+                    "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
+                    "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
+                ];
+
+                // تأخير 30 ثانية قبل فتح Popunder
+                setTimeout(() => {
+                    const randomLink = links[Math.floor(Math.random() * links.length)];
+                    const popup = window.open(randomLink, "_blank", "width=800,height=600");
+                    if (popup) {
+                        localStorage.setItem("lastPopunder", now.toString());
+                    }
+                }, 30000);
+            }
+        };
+
+        const timer = setTimeout(handlePopunder, 5000);
+        return () => clearTimeout(timer);
+    }, []);
+
+    // ترتيب وفلترة المقالات
     const sortedArticles = [...articlesWithHref].sort((a, b) => b.dateSort - a.dateSort);
-
-    // فلترة المقالات المرتبة حسب الفئة المحددة
     const filteredArticles = selectedCategory === 'all'
         ? sortedArticles
         : sortedArticles.filter(article => article.category === selectedCategory);
@@ -85,88 +86,110 @@ const Home = () => {
     const handlePageChange = (page) => {
         setCurrentPage(page);
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        // عرض إعلان بين الصفحات
+        if (Math.random() < 0.3) { // 30% فرصة لعرض إعلان
+            setShowInterstitialAd(true);
+            setTimeout(() => setShowInterstitialAd(false), 5000);
+        }
     };
 
     const handleCategoryChange = (categoryId) => {
         setSelectedCategory(categoryId);
         setCurrentPage(1);
-        setShowAd(true);  // عند الضغط على الزر نظهر الإعلان
 
+        // عرض إعلان عند تغيير الفئة
+        if (Math.random() < 0.4) { // 40% فرصة لعرض إعلان
+            setShowInterstitialAd(true);
+            setTimeout(() => setShowInterstitialAd(false), 5000);
+        }
     };
 
     const handleArticleClick = (article) => {
-        // التحقق إذا Popunder تم فتحه مسبقًا
-        const popunderShown = localStorage.getItem("popunderShown");
+        const now = Date.now();
 
-        if (!popunderShown) {
-            const links = [
-                "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
-                "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed"
-            ];
-            const randomLink = links[Math.floor(Math.random() * links.length)];
-            window.open(randomLink, "_blank");
+        // منطق ذكي لعرض الإعلانات
+        const shouldShowAd = () => {
+            const timeSinceLastAd = now - lastAdTime;
+            const minTimeBetweenAds = 60000; // دقيقة واحدة
 
-            // علامة أن الإعلان تم عرضه
-            localStorage.setItem("popunderShown", "true");
-        }
+            if (timeSinceLastAd < minTimeBetweenAds) return false;
 
-        // التوجه للمقال
-        if (article.href) {
-            navigate(article.href);
+            // زيادة احتمالية الإعلان مع كل نقرة
+            const probability = Math.min(0.3 + (adClickCount * 0.1), 0.8);
+            return Math.random() < probability;
+        };
+
+        if (shouldShowAd()) {
+            // عرض إعلان Interstitial
+            setShowInterstitialAd(true);
+            setLastAdTime(now);
+            setAdClickCount(prev => prev + 1);
+
+            setTimeout(() => {
+                setShowInterstitialAd(false);
+                // الانتقال للمقال بعد الإعلان
+                if (article.href) {
+                    navigate(article.href);
+                }
+            }, 3000);
+        } else {
+            // الانتقال المباشر للمقال
+            if (article.href) {
+                navigate(article.href);
+            }
         }
     };
 
-
+    const InterstitialAd = () => (
+        <div className="interstitial-ad-overlay">
+            <div className="interstitial-ad-content">
+                <div className="ad-header">
+                    <h3>Advertisement</h3>
+                    <div className="countdown">3</div>
+                </div>
+                <div className="ad-body">
+                    <AdsenseAd
+                        slot="YOUR_INTERSTITIAL_SLOT"
+                        format="fluid"
+                        style={{
+                            width: '100%',
+                            height: '400px'
+                        }}
+                    />
+                </div>
+                <button
+                    className="skip-ad-btn"
+                    onClick={() => setShowInterstitialAd(false)}
+                >
+                    Skip Ad (3s)
+                </button>
+            </div>
+        </div>
+    );
 
     return (
-
         <>
-
             <Helmet>
                 <title>Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025</title>
-
-                <meta
-                    name="description"
-                    content="Unlock the power of Fyrexia AI's cutting-edge tools to automate, innovate, and skyrocket your business growth in 2025 and beyond."
-                />
-
-                <meta
-                    name="keywords"
-                    content="Fyrexia AI, next-generation AI tools, business automation, AI innovation, AI strategies 2025, smart AI solutions"
-                />
-
+                <meta name="description" content="Unlock the power of Fyrexia AI's cutting-edge tools to automate, innovate, and skyrocket your business growth in 2025 and beyond." />
+                <meta name="keywords" content="Fyrexia AI, next-generation AI tools, business automation, AI innovation, AI strategies 2025, smart AI solutions" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Fyrexia AI" />
-
-                {/* Open Graph for social media */}
-                <meta
-                    property="og:title"
-                    content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025"
-                />
-                <meta
-                    property="og:description"
-                    content="Discover Fyrexia AI’s revolutionary AI tools designed to transform industries, automate workflows, and fuel innovation."
-                />
+                <meta property="og:title" content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025" />
+                <meta property="og:description" content="Discover Fyrexia AI's revolutionary AI tools designed to transform industries, automate workflows, and fuel innovation." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://fyrexia.co.uk/" />
                 <meta property="og:image" content="https://fyrexia.co.uk/og-image.png" />
-
-                {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta
-                    name="twitter:title"
-                    content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025"
-                />
-                <meta
-                    name="twitter:description"
-                    content="Unlock the power of Fyrexia AI’s cutting-edge tools to automate, innovate, and skyrocket your business growth."
-                />
+                <meta name="twitter:title" content="Fyrexia AI — Revolutionize Your Business with Next-Gen AI Tools in 2025" />
+                <meta name="twitter:description" content="Unlock the power of Fyrexia AI's cutting-edge tools to automate, innovate, and skyrocket your business growth." />
                 <meta name="twitter:image" content="https://fyrexia.co.uk/og-image.png" />
             </Helmet>
 
+            {showInterstitialAd && <InterstitialAd />}
 
             <div className="my-section min-h-screen">
-                {/* Animated Background */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -top-4 -left-4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
                     <div className="absolute top-1/3 -right-4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse delay-700"></div>
@@ -174,9 +197,7 @@ const Home = () => {
                 </div>
 
                 <div className="relative z-10">
-
-                    <Navbar></Navbar>
-
+                    <Navbar />
 
                     {/* Hero Section */}
                     <section id='template-home' className="py-16">
@@ -190,15 +211,31 @@ const Home = () => {
                         </div>
                     </section>
 
+                    {/* Top Banner Ad */}
+                    <section className="py-4">
+                        <div className="container mx-auto px-4">
+                            <AdsenseAd
+                                slot="YOUR_BANNER_SLOT"
+                                format="horizontal"
+                                className="top-banner-ad"
+                                style={{
+                                    width: '100%',
+                                    height: '90px'
+                                }}
+                            />
+                        </div>
+                    </section>
+
                     {/* Hot Categories */}
                     <section className="py-8">
                         <div className="container mx-auto px-4">
                             <h3 className="text-2xl mb-6 flex items-center gap-2">
                                 <Flame className="w-8 h-8" />
                                 Hot Categories
-
                             </h3>
-                            <div ref={containerRef} id="native-ad"></div>
+
+                            {/* Native Ad */}
+                            <div ref={containerRef} id="native-ad" className="mb-6"></div>
 
                             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                                 {categories.map((category) => {
@@ -207,22 +244,16 @@ const Home = () => {
                                         <button
                                             key={category.id}
                                             onClick={() => handleCategoryChange(category.id)}
-                                            className={`group relative p-6 rounded-xl
-                                             border transition-all duration-300 transform hover:scale-105 ${selectedCategory === category.id
-                                                    ? 'ct-bd text-xl'
-                                                    : 'ct-bds text-xl'
+                                            className={`group relative p-6 rounded-xl border transition-all duration-300 transform hover:scale-105 ${selectedCategory === category.id
+                                                ? 'ct-bd text-xl'
+                                                : 'ct-bds text-xl'
                                                 }`}
                                         >
-
-
-
                                             <div className={`inline-flex p-3 rounded-xl bg-gradient-to-r ${category.color} mb-3`}>
                                                 <IconComponent className="w-6 h-6 text-white" />
                                             </div>
                                             <h4 className="ct-text font-semibold text-sm mb-1">{category.name}</h4>
-                                            <p className="text-description Hot Categories
-
-">{category.count} articles</p>
+                                            <p className="text-description">{category.count} articles</p>
                                             {selectedCategory === category.id && (
                                                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-2xl animate-pulse"></div>
                                             )}
@@ -234,12 +265,8 @@ const Home = () => {
                     </section>
 
                     {/* Articles Grid */}
-
-
-
                     <section className="py-12">
                         <div className="container mx-auto px-12">
-                            {/* Header */}
                             <div className="flex items-center justify-between mb-10">
                                 <h3 className="text-2xl font-bold text-gray">
                                     {selectedCategory === 'all'
@@ -251,13 +278,25 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/* Articles Grid */}
+                            {/* In-content Ad - قبل المقالات */}
+                            <div className="mb-8">
+                                <AdsenseAd
+                                    slot="YOUR_CONTENT_SLOT"
+                                    format="fluid"
+                                    className="in-content-ad"
+                                    style={{
+                                        width: '100%',
+                                        minHeight: '200px'
+                                    }}
+                                />
+                            </div>
+
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {currentArticles.map((article, index) => (
                                     <React.Fragment key={article.id}>
                                         <article
                                             className="group cursor-pointer"
-                                            onClick={() => navigate(article.href)}
+                                            onClick={() => handleArticleClick(article)}
                                         >
                                             <div className="div-card rounded-2xl overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25">
                                                 <div className="relative">
@@ -316,10 +355,18 @@ const Home = () => {
                                             </div>
                                         </article>
 
-                                        {/* AdSense بعد كل 3 مقالات */}
-                                        {(index + 1) % 3 === 0 && (
-                                            <div className="col-span-full my-4">
-                                                <AdsenseAd slot="1234567890" />
+                                        {/* AdSense بعد كل مقالين */}
+                                        {(index + 1) % 2 === 0 && (
+                                            <div className="col-span-full my-6">
+                                                <AdsenseAd
+                                                    slot="YOUR_GRID_AD_SLOT"
+                                                    format="fluid"
+                                                    className="grid-ad"
+                                                    style={{
+                                                        width: '100%',
+                                                        minHeight: '250px'
+                                                    }}
+                                                />
                                             </div>
                                         )}
                                     </React.Fragment>
@@ -327,9 +374,6 @@ const Home = () => {
                             </div>
                         </div>
                     </section>
-
-
-
 
                     {/* Pagination */}
                     {totalPages > 1 && (
@@ -360,9 +404,7 @@ const Home = () => {
                                     <button
                                         onClick={() => handlePageChange(currentPage + 1)}
                                         disabled={currentPage === totalPages}
-                                        className="p-2 rounded-lg bg-white/10 border border-white/20 
-                                    text-white hover:bg-white/20 transition-all 
-                                    disabled:opacity-50 disabled:cursor-not-allowed"
+                                        className="p-2 rounded-lg bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                                     >
                                         <ChevronRight className="w-5 h-5" />
                                     </button>
@@ -375,8 +417,7 @@ const Home = () => {
                         </section>
                     )}
 
-                    <Footer></Footer>
-
+                    <Footer />
                 </div>
             </div>
         </>
