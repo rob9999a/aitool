@@ -4,20 +4,22 @@ import AdsenseAd from "../Dadsense/Dadsense";
 import PopunderAd from "../PopunderAd/PopunderAd";
 
 const Layouts = ({ children }) => {
-
-
-
     return (
         <>
 
+            {/* المحتوى الرئيسي */}
+            <main style={{ padding: "20px 0" }}>
+                {children}
+
+                {/* إعلان وسط الصفحة بعد المحتوى */}
+                <div style={{ textAlign: "center", margin: "40px 0" }}>
+                    <AdsenseAd slot="1234567890" />
+                </div>
+            </main>
 
 
-            <main>{children}</main>
-
-            <AdsenseAd slot="1234567890" />
         </>
     );
 };
 
-
-export default Layouts
+export default Layouts;
