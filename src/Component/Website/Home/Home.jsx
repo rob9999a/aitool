@@ -10,10 +10,9 @@ import Navbar from '../Header/Navbar';
 
 const Home = () => {
     const containerRef = useRef(null);
-    const topBannerRef = useRef(null);
-    const inContentAdRef = useRef(null);
     const middleNativeAdRef = useRef(null);
-    const gridAdRefs = useRef({});
+    const [clickCount, setClickCount] = useState(0);
+    const [lastClickTime, setLastClickTime] = useState(0);
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -153,67 +152,31 @@ const Home = () => {
     const currentArticles = filteredArticles.slice(startIndex, startIndex + articlesPerPage);
 
     const handlePageChange = (page) => {
+        handleSmartClick(); // تتبع الضغطة
         setCurrentPage(page);
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        // عرض Native Banner عند تغيير الصفحة (بدلاً من Interstitial)
-        if (Math.random() < 0.4) { // 40% فرصة لعرض Native Banner
-            // إعادة تحميل Native Banner في وسط الصفحة
-            if (middleNativeAdRef.current) {
-                middleNativeAdRef.current.innerHTML = '';
-                setTimeout(() => {
-                    const script = document.createElement("script");
-                    script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
-                    script.async = true;
-                    script.setAttribute('data-cfasync', 'false');
-
-                    const adContainer = document.createElement("div");
-                    adContainer.id = `container-c39b3bd3eab4b0b5a5910cf7fc622ee2-page-${page}`;
-
-                    middleNativeAdRef.current.appendChild(script);
-                    middleNativeAdRef.current.appendChild(adContainer);
-                }, 1000);
-            }
-        }
     };
 
     const handleCategoryChange = (categoryId) => {
+        handleSmartClick(); // تتبع الضغطة
         setSelectedCategory(categoryId);
         setCurrentPage(1);
-
-        // عرض Native Banner عند تغيير الفئة
-        if (Math.random() < 0.5) { // 50% فرصة لعرض Native Banner
-            // إعادة تحميل Native Banner في الأعلى
-            if (containerRef.current) {
-                containerRef.current.innerHTML = '';
-                setTimeout(() => {
-                    const script = document.createElement("script");
-                    script.src = "//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js";
-                    script.async = true;
-                    script.setAttribute('data-cfasync', 'false');
-
-                    const adContainer = document.createElement("div");
-                    adContainer.id = `container-c39b3bd3eab4b0b5a5910cf7fc622ee2-category-${categoryId}`;
-
-                    containerRef.current.appendChild(script);
-                    containerRef.current.appendChild(adContainer);
-                }, 800);
-            }
-        }
     };
 
     const handleArticleClick = (article) => {
+        handleSmartClick(); // تتبع الضغطة
+
         const now = Date.now();
 
-        // منطق ذكي لعرض الإعلانات
+        // منطق ذكي لعرض الإعلانات (أقل تدخلاً)
         const shouldShowAd = () => {
             const timeSinceLastAd = now - lastAdTime;
-            const minTimeBetweenAds = 60000; // دقيقة واحدة
+            const minTimeBetweenAds = 120000; // دقيقتان بدلاً من دقيقة واحدة
 
             if (timeSinceLastAd < minTimeBetweenAds) return false;
 
-            // زيادة احتمالية الإعلان مع كل نقرة
-            const probability = Math.min(0.3 + (adClickCount * 0.1), 0.8);
+            // احتمالية أقل للإعلانات
+            const probability = Math.min(0.2 + (adClickCount * 0.05), 0.4);
             return Math.random() < probability;
         };
 
@@ -239,11 +202,48 @@ const Home = () => {
     };
 
     const InterstitialAd = () => (
-        <div className="interstitial-ad-overlay">
-            <div className="interstitial-ad-content">
-                <div className="ad-header">
-                    <h3>Advertisement</h3>
-                    <div className="countdown">3</div>
+        <div className="interstitial-ad-overlay" style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0,0,0,0.8)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+        }}>
+            <div className="interstitial-ad-content" style={{
+                backgroundColor: 'white',
+                borderRadius: '12px',
+                padding: '20px',
+                maxWidth: '500px',
+                width: '90%',
+                maxHeight: '80vh',
+                overflow: 'hidden'
+            }}>
+                <div className="ad-header" style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    marginBottom: '15px',
+                    paddingBottom: '10px',
+                    borderBottom: '1px solid #eee'
+                }}>
+                    <h3 style={{ margin: 0, color: '#333' }}>Advertisement</h3>
+                    <div className="countdown" style={{
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        color: 'white',
+                        width: '30px',
+                        height: '30px',
+                        borderRadius: '50%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        fontSize: '14px',
+                        fontWeight: 'bold'
+                    }}>3</div>
                 </div>
                 <div className="ad-body">
                     <div
@@ -257,18 +257,31 @@ const Home = () => {
                         }}
                         style={{
                             width: '100%',
-                            height: '400px',
+                            height: '300px',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#f5f5f5',
-                            borderRadius: '8px'
+                            backgroundColor: '#f8f9fa',
+                            borderRadius: '8px',
+                            border: '1px solid #dee2e6'
                         }}
                     />
                 </div>
                 <button
                     className="skip-ad-btn"
                     onClick={() => setShowInterstitialAd(false)}
+                    style={{
+                        marginTop: '15px',
+                        width: '100%',
+                        padding: '12px',
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        cursor: 'pointer'
+                    }}
                 >
                     Skip Ad (3s)
                 </button>
@@ -319,25 +332,7 @@ const Home = () => {
                         </div>
                     </section>
 
-                    {/* Top Banner Ad */}
-                    <section className="py-4">
-                        <div className="container mx-auto px-4">
-                            <div
-                                ref={topBannerRef}
-                                className="top-banner-ad"
-                                style={{
-                                    width: '100%',
-                                    minHeight: '90px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    backgroundColor: '#f8f9fa',
-                                    borderRadius: '8px',
-                                    border: '1px solid #e9ecef'
-                                }}
-                            />
-                        </div>
-                    </section>
+                    {/* Top Banner Ad - تم إزالته لتقليل الإزعاج */}
 
                     {/* Hot Categories */}
                     <section className="py-8">
@@ -347,19 +342,22 @@ const Home = () => {
                                 Hot Categories
                             </h3>
 
-                            {/* Native Ad */}
+                            {/* Native Ad - مُحسن وأصغر */}
                             <div
                                 ref={containerRef}
                                 id="native-ad"
-                                className="mb-6"
+                                className="mb-8"
                                 style={{
-                                    minHeight: '120px',
+                                    maxWidth: '800px',
+                                    margin: '0 auto',
+                                    minHeight: '150px',
                                     backgroundColor: '#f8f9fa',
-                                    borderRadius: '8px',
+                                    borderRadius: '12px',
                                     border: '1px solid #e9ecef',
                                     display: 'flex',
                                     alignItems: 'center',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
                                 }}
                             />
 
@@ -404,23 +402,7 @@ const Home = () => {
                                 </div>
                             </div>
 
-                            {/* In-content Ad - قبل المقالات */}
-                            <div className="mb-8">
-                                <div
-                                    ref={inContentAdRef}
-                                    className="in-content-ad"
-                                    style={{
-                                        width: '100%',
-                                        minHeight: '200px',
-                                        backgroundColor: '#f8f9fa',
-                                        borderRadius: '8px',
-                                        border: '1px solid #e9ecef',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'center'
-                                    }}
-                                />
-                            </div>
+                            {/* In-content Ad - تم إزالته */}
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {currentArticles.slice(0, Math.ceil(currentArticles.length / 2)).map((article, index) => (
@@ -486,60 +468,34 @@ const Home = () => {
                                             </div>
                                         </article>
 
-                                        {/* إعلان بعد كل مقالين في النصف الأول */}
-                                        {(index + 1) % 2 === 0 && (
-                                            <div className="col-span-full my-6">
-                                                <div
-                                                    ref={(el) => {
-                                                        gridAdRefs.current[`grid-first-${index}`] = el;
-                                                        if (el) {
-                                                            setTimeout(() => loadGridAd(`grid-first-${index}`), 500);
-                                                        }
-                                                    }}
-                                                    className="grid-ad"
-                                                    style={{
-                                                        width: '100%',
-                                                        minHeight: '250px',
-                                                        backgroundColor: '#f8f9fa',
-                                                        borderRadius: '8px',
-                                                        border: '1px solid #e9ecef',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        justifyContent: 'center'
-                                                    }}
-                                                />
-                                            </div>
-                                        )}
+                                        {/* تم إزالة الإعلانات بين المقالات لتقليل الإزعاج */}
                                     </React.Fragment>
                                 ))}
                             </div>
 
-                            {/* Native Banner في وسط المقالات */}
-                            {currentArticles.length > 3 && (
-                                <div className="my-12">
-                                    <div className="text-center mb-4">
-                                        <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                                            Recommended Content
-                                        </span>
-                                    </div>
-                                    <div
-                                        ref={middleNativeAdRef}
-                                        className="middle-native-ad"
-                                        style={{
-                                            width: '100%',
-                                            minHeight: '200px',
-                                            backgroundColor: '#f8f9fa',
-                                            borderRadius: '12px',
-                                            border: '1px solid #e9ecef',
-                                            padding: '20px',
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            justifyContent: 'center',
-                                            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-                                        }}
-                                    />
-                                </div>
-                            )}
+                            {/* Native Banner في وسط المقالات - يظهر فقط عند الضغط 3 مرات */}
+                            <div className="my-12">
+                                <div
+                                    ref={middleNativeAdRef}
+                                    className="middle-native-ad"
+                                    style={{
+                                        maxWidth: '900px',
+                                        margin: '0 auto',
+                                        minHeight: '180px',
+                                        backgroundColor: '#f8f9fa',
+                                        borderRadius: '16px',
+                                        border: '1px solid #e9ecef',
+                                        padding: '20px',
+                                        display: 'none', // مخفي افتراضياً
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.08)',
+                                        opacity: '0',
+                                        transform: 'translateY(20px)',
+                                        transition: 'all 0.3s ease-in-out'
+                                    }}
+                                />
+                            </div>
 
                             {/* النصف الثاني من المقالات */}
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -606,32 +562,10 @@ const Home = () => {
                                             </div>
                                         </article>
 
-                                        {/* إعلان بعد كل مقالين في النصف الثاني */}
-                                        {(index + 1) % 2 === 0 && (
-                                            <div className="col-span-full my-6">
-                                                <div
-                                                    ref={(el) => {
-                                                        gridAdRefs.current[`grid-second-${index}`] = el;
-                                                        if (el) {
-                                                            setTimeout(() => loadGridAd(`grid-second-${index}`), 500);
-                                                        }
-                                                    }}
-                                                    className="grid-ad"
-                                                    style={{
-                                                        width: '100%',
-                                                        minHeight: '250px',
-                                                        backgroundColor: '#f8f9fa',
-                                                        borderRadius: '8px',
-                                                        border: '1px solid #e9ecef',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        justifyContent: 'center'
-                                                    }}
-                                                />
-                                            </div>
-                                        )}
+                                        {/* تم تنظيف الإعلانات */}
                                     </React.Fragment>
                                 ))}
+
                             </div>
                         </div>
                     </section>
