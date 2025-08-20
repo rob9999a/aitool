@@ -8,11 +8,11 @@ const Layouts = ({ children }) => {
         <>
 
             {/* المحتوى الرئيسي */}
-            <main style={{ padding: "20px 0" }}>
+            <main style={{ margin: "0" }}>
                 {children}
 
                 {/* إعلان وسط الصفحة بعد المحتوى */}
-                <div style={{ textAlign: "center", margin: "40px 0" }}>
+                <div style={{ textAlign: "center", margin: "0 0" }}>
                     <AdsenseAd slot="1234567890" />
                 </div>
             </main>
