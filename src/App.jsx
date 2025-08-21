@@ -209,7 +209,7 @@ function App() {
 
 
       <Router>
-        <SocialBar></SocialBar>
+        <PopunderAd />
 
 
 

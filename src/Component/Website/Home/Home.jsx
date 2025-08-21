@@ -6,8 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, ChevronRight, ChevronLeft } from 'lucide-react';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
-import PopunderAd from '../../../PopunderAd/PopunderAd';
-import SocialBar from '../../../Socialbar/Socialbar';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -16,8 +14,7 @@ const Home = () => {
     const [adBlockDetected, setAdBlockDetected] = useState(false);
     const articlesPerPage = 6;
 
-    const popunderRef = useRef(null);
-    const socialBarRef = useRef(null);
+
 
     const categories = [
         { id: 'all', name: 'All Articles', icon: Flame, color: 'from-red-500 to-orange-500', count: 60 },
@@ -85,8 +82,6 @@ const Home = () => {
                         Explore the latest articles on AI, business automation, content creation, and more.
                     </p>
                 </section>
-                <PopunderAd keyForReload={currentPage + selectedCategory} />
-                <SocialBar></SocialBar>
 
                 {/* Hot Categories */}
                 <section className="py-8">
@@ -116,9 +111,6 @@ const Home = () => {
                     </div>
                 </section>
 
-                {/* Popunder and SocialBar */}
-                <div ref={popunderRef} />
-                <div ref={socialBarRef} style={{ marginBottom: '24px', textAlign: 'center' }} />
 
                 {/* Articles Grid */}
                 <section className="py-12">
@@ -184,7 +176,6 @@ const Home = () => {
                                     </button>
                                 ))}
 
-                                <PopunderAd keyForReload={currentPage + selectedCategory} />
 
 
                                 <button
@@ -194,7 +185,6 @@ const Home = () => {
                                 >
                                     <ChevronRight className="w-4 h-4" />
                                 </button>
-                                <SocialBar />
 
                             </div>
 
