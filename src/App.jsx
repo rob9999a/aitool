@@ -210,6 +210,7 @@ function App() {
 
       <Router>
 
+        <PopunderAd></PopunderAd>
 
 
         <Layouts>
@@ -234,12 +235,10 @@ function App() {
             <Route path="/free-ai-business-tools" element={<Twopage />} />
             <Route path="/my-step" element={<Stepmoney />} />
             <Route path="/ai-fake-war" element={<Aiwar />} />
-            <PopunderAd></PopunderAd>
 
             <Route path="/tools-" element={<Toolsecret />} />
             <Route path="/powerfulai" element={<Powerai />} />
             <Route path="/ai-global-economy" element={<Aiglobal />} />
-            <PopunderAd></PopunderAd>
 
 
             <Route path="/intelligence-economy-deeper" element={<HiddenAIEconomy />} />
