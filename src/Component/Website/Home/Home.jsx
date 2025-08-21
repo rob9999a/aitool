@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, ChevronRight, ChevronLeft } from 'lucide-react';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
+import PopunderAd from '../../../PopunderAd/PopunderAd';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -104,6 +105,7 @@ const Home = () => {
                         Explore the latest articles on AI, business automation, content creation, and more.
                     </p>
                 </section>
+                <PopunderAd></PopunderAd>
 
                 {/* Hot Categories */}
                 <section className="py-8">

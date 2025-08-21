@@ -209,7 +209,6 @@ function App() {
 
       <Router>
 
-        <PopunderAd />
 
 
 
