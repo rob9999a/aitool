@@ -216,10 +216,8 @@ function App() {
         <Routes>
 
           <Route path="/" element={<Home />} />
-          <PopunderAd></PopunderAd>
 
           <Route path="/Trending" element={<Trending />} />
-          <PopunderAd></PopunderAd>
 
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
