@@ -14,7 +14,7 @@ const Usairan = () => {
                 "Proxy conflicts flare across Iraq, Syria, and Yemen, creating regional instability.",
                 "Global oil prices rise sharply as traders anticipate supply disruptions, putting pressure on economies worldwide."
             ],
-            image: "https://images.unsplash.com/photo-1576956033067-6c31f4729591?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "https://i.postimg.cc/0Nb9zmys/1x-1.webp",
             color: "bg-blue-100"
         },
         {
@@ -25,7 +25,7 @@ const Usairan = () => {
                 "Fear of escalating conflict causes oil prices to surge past $200 per barrel.",
                 "Global markets panic: stock indices fall, emerging markets face currency crises, and safe-haven assets like gold spike."
             ],
-            image: "https://i.postimg.cc/XYsPBzrZ/Wright-Beirut-Bombing.webp",
+            image: "https://i.postimg.cc/15sPpb3M/1000.jpg",
             color: "bg-red-100"
         },
         {
@@ -36,7 +36,7 @@ const Usairan = () => {
                 "Countries begin establishing gold-backed or digital currency reserves to reduce dependence on the U.S. dollar.",
                 "The dollar weakens rapidly, triggering inflation in the U.S. as imports become more expensive."
             ],
-            image: "https://i.postimg.cc/BQGkrDWv/image-For-Entry14-ol-I.jpg",
+            image: "https://i.postimg.cc/pL1HMTY1/2048px-GBU39-F-35-02.jpg",
             color: "bg-yellow-100"
         },
         {
@@ -47,7 +47,7 @@ const Usairan = () => {
                 "Banks in countries heavily exposed to U.S. debt face insolvency risks.",
                 "Emerging economies with dollar-denominated debt struggle to service loans, leading to defaults and social unrest."
             ],
-            image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "https://i.postimg.cc/rpB2zPH1/army-commander-defense-minister-survey-drones.jpg",
             color: "bg-purple-100"
         },
         {
@@ -58,7 +58,7 @@ const Usairan = () => {
                 "Social unrest and political polarization intensify.",
                 "The Federal Reserve is forced into extreme monetary interventions, but confidence in the dollar continues to erode."
             ],
-            image: "https://i.postimg.cc/pd1346xN/freepik-the-style-is-candid-image-photography-with-natural-1537.png",
+            image: "https://i.postimg.cc/BQGkrDWv/image-For-Entry14-ol-I.jpg",
             color: "bg-orange-100"
         },
         {
@@ -69,7 +69,7 @@ const Usairan = () => {
                 "The U.S. loses its ability to borrow cheaply, weakening its global influence.",
                 "A new multipolar financial system emerges, challenging decades of American economic hegemony."
             ],
-            image: "https://i.postimg.cc/6Qs9gqhL/freepik-the-style-is-candid-image-photography-with-natural-1535.png",
+            image: "https://i.postimg.cc/XYsPBzrZ/Wright-Beirut-Bombing.webp",
             color: "bg-green-100"
         },
         {
@@ -80,7 +80,7 @@ const Usairan = () => {
                 "Military conflicts and economic crises have lasting humanitarian impacts worldwide.",
                 "The U.S., once a superpower economically and militarily, faces a period of uncertainty and decline."
             ],
-            image: "https://i.postimg.cc/FFnXw1rd/freepik-the-style-is-candid-image-photography-with-natural-1533.png",
+            image: "https://i.postimg.cc/Px1sDMGB/Zolfaghar-missile-1200.jpg",
             color: "bg-gray-100"
         }
     ];
@@ -90,7 +90,7 @@ const Usairan = () => {
 
         <>
 
-            (
+
             <Helmet>
                 {/* Page Title */}
                 <title>The Dollar Collapse: How a U.S.-Iran War Could Shatter the Global Economy</title>
