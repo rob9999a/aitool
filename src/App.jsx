@@ -209,8 +209,10 @@ function App() {
 
 
       <Router>
-        <PopunderAd />
+        <Popunder triggerEvent="load" />
 
+        {/* أو عند أول نقرة */}
+        {/* <Popunder triggerEvent="click" /> */}
 
 
 
