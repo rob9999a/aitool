@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, ChevronRight, ChevronLeft } from 'lucide-react';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
+import Dadsense from '../../../Dadsense/Dadsense';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -124,6 +125,8 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+
+                <Dadsense></Dadsense>
 
 
                 {/* Articles Grid */}
