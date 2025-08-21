@@ -159,6 +159,7 @@ import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
 import AdsenseAd from './Dadsense/Dadsense';
 import PopunderAd from './PopunderAd/PopunderAd';
+import SocialBar from './Socialbar/Socialbar';
 
 
 function App() {
@@ -208,6 +209,7 @@ function App() {
 
 
       <Router>
+        <SocialBar></SocialBar>
 
 
 
