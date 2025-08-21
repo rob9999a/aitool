@@ -1,67 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const PopunderAd = () => {
-    const [adBlockDetected, setAdBlockDetected] = useState(false);
-
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = "//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js";
-        script.async = true;
-        document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-
-
+const PopunderAd = ({ children }) => {
+    const [clickCount, setClickCount] = useState(0);
+    const [showAd, setShowAd] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
-        const testAd = document.createElement('div');
-        testAd.className = 'adsbox';
-        testAd.style.height = '1px';
-        document.body.appendChild(testAd);
+        // إعادة تعيين العد عند تغيير الصفحة
+        setClickCount(0);
+        setShowAd(false);
+    }, [location.pathname]);
 
-        setTimeout(() => {
-            if (testAd.offsetHeight === 0) {
-                console.log('AdBlock detected');
-                // هنا ممكن تعرض رسالة أو تلتزم بعدم تحميل الإعلان
-            } else {
-                // تحميل السكريبت الإعلاني هنا
+    const handleClick = () => {
+        setClickCount(prev => {
+            const newCount = prev + 1;
+            if (newCount >= 3) {
+                setShowAd(true);
             }
-            document.body.removeChild(testAd);
-        }, 100);
-    }, []);
-
+            return newCount;
+        });
+    };
 
     return (
-        <>
-            {adBlockDetected && (
-                <div style={{
-                    position: 'fixed',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    backgroundColor: 'rgba(0,0,0,0.8)',
-                    color: 'white',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    zIndex: 9999,
-                    textAlign: 'center',
-                    padding: '20px',
-                }}>
-                    <div>
-                        <div id="container-c39b3bd3eab4b0b5a5910cf7fc622ee2"></div>
-
-                        <h2>AdBlock Detected</h2>
-                        <p>Please disable your ad blocker to support our site and see exclusive content.</p>
-                    </div>
+        <div onClick={handleClick} style={{ minHeight: '100vh' }}>
+            {children}
+            {showAd && (
+                <div>
+                    <script
+                        type="text/javascript"
+                        src="//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js"
+                    ></script>
                 </div>
             )}
-        </>
+        </div>
     );
 };
 
