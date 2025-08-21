@@ -64,28 +64,7 @@ const Home = () => {
         }, 100);
     }, []);
 
-    // تحميل Popunder و SocialBar تلقائياً
-    useEffect(() => {
-        if (!adBlockDetected) {
-            // SocialBar
-            if (socialBarRef.current && socialBarRef.current.childNodes.length === 0) {
-                const socialScript = document.createElement('script');
-                socialScript.type = 'text/javascript';
-                socialScript.src = "//pl27464192.profitableratecpm.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js";
-                socialScript.async = true;
-                socialBarRef.current.appendChild(socialScript);
-            }
 
-            // Popunder
-            if (popunderRef.current && popunderRef.current.childNodes.length === 0) {
-                const popunderScript = document.createElement('script');
-                popunderScript.type = 'text/javascript';
-                popunderScript.src = "//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js";
-                popunderScript.async = true;
-                popunderRef.current.appendChild(popunderScript);
-            }
-        }
-    }, [adBlockDetected]);
 
     return (
         <>
@@ -206,12 +185,14 @@ const Home = () => {
                                 ))}
 
                                 <button
-                                    onClick={() => handlePageChange(currentPage + 1)}
+                                    onClick={() => handlePageChange(currentPage + 1 + selectedCategory)}
                                     disabled={currentPage === totalPages}
                                     className="flex items-center justify-center w-10 h-10 rounded-lg border border-gray-300 text-gray-600 hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition"
                                 >
                                     <ChevronRight className="w-4 h-4" />
                                 </button>
+                                <SocialBar />
+
                             </div>
 
                             <p className="text-center text-gray-500 mt-4">
