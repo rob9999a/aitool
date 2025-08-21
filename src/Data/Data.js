@@ -2140,17 +2140,17 @@ const articlesWithHref = [
 
     {
         id: 173,
-        title: "Behind the Curtain of WWE: The Illusion, the Pain, the Secret",
-        description: "Step into the hidden world of WWE—where illusion meets reality, and scripted drama hides real pain, sacrifice, and secrets",
+        title: "The Dollar Collapse: How a U.S.-Iran War Could Shatter the Global Economy",
+        description: "Explore the hidden truth behind the U.S. dollar’s decline and the looming threat of war with Iran. Discover how geopolitical tensions, economic crises, and military conflict could trigger a global financial meltdown",
         category: 'news',
-        image: "https://i.postimg.cc/SstzW8F2/1b1f1dd2af9af5a200e751b8979b22e4-crop-north.avif",
-        readTime: "13 min read",
-        views: "156K",
-        likes: 6366,
+        image: "https://i.postimg.cc/6phXjcyw/VVVVVV.png",
+        readTime: "20 min read",
+        views: "106K",
+        likes: 9655,
         isHot: true,
         date: "Jan 30, 24",
         dateSort: new Date("2026-06-24"),
-        href: '/wwe-secrets'
+        href: '/usa-vs-iran'
     },
 
 
@@ -2169,7 +2169,7 @@ const articlesWithHref = [
         date: "Jan 30, 24",
         dateSort: new Date("2026-06-24"),
         href: '/unseen-decisions'
-    }
+    },
 
 
 

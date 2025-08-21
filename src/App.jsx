@@ -157,6 +157,7 @@ import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
+import Usairan from './Trends/Usairan/Usairan';
 
 
 function App() {
@@ -513,6 +514,7 @@ function App() {
 
           <Route path="/unseen-decisions" element={<Harmajdon />} />
 
+          <Route path="/usa-vs-iran" element={<Usairan />} />
 
 
         </Routes>
