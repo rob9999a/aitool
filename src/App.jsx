@@ -157,9 +157,6 @@ import AIChecker from './Trends/Checker/Checker';
 import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
-import AdsenseAd from './Dadsense/Dadsense';
-import PopunderAd from './PopunderAd/PopunderAd';
-import SocialBar from './Socialbar/Socialbar';
 
 
 function App() {
@@ -209,10 +206,6 @@ function App() {
 
 
       <Router>
-        <Popunder triggerEvent="load" />
-
-        {/* أو عند أول نقرة */}
-        {/* <Popunder triggerEvent="click" /> */}
 
 
 
