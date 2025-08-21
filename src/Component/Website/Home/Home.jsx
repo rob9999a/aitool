@@ -7,6 +7,7 @@ import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, Chevr
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import PopunderAd from '../../../PopunderAd/PopunderAd';
+import SocialBar from '../../../Socialbar/Socialbar';
 
 const Home = () => {
     const navigate = useNavigate();
@@ -106,6 +107,7 @@ const Home = () => {
                     </p>
                 </section>
                 <PopunderAd></PopunderAd>
+                <SocialBar></SocialBar>
 
                 {/* Hot Categories */}
                 <section className="py-8">
