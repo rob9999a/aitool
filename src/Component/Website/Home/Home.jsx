@@ -85,7 +85,7 @@ const Home = () => {
                         Explore the latest articles on AI, business automation, content creation, and more.
                     </p>
                 </section>
-                <PopunderAd></PopunderAd>
+                <PopunderAd keyForReload={currentPage + selectedCategory} />
                 <SocialBar></SocialBar>
 
                 {/* Hot Categories */}
@@ -183,6 +183,9 @@ const Home = () => {
                                         {page}
                                     </button>
                                 ))}
+
+                                <PopunderAd keyForReload={currentPage + selectedCategory} />
+
 
                                 <button
                                     onClick={() => handlePageChange(currentPage + 1 + selectedCategory)}

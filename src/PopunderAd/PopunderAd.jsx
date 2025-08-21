@@ -1,20 +1,29 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const PopunderAd = ({ keyForReload }) => {
-    useEffect(() => {
-        // إنشاء السكربت عند كل تغيير keyForReload
-        const script = document.createElement('script');
-        script.src = '//pl27467223.profitableratecpm.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js';
-        script.async = true;
-        document.body.appendChild(script);
+    const containerRef = useRef(null);
 
+    useEffect(() => {
+        if (!containerRef.current) return;
+
+        // تنظيف المحتوى القديم عند إعادة التحميل
+        containerRef.current.innerHTML = '';
+
+        // إنشاء السكربت الجديد
+        const script = document.createElement('script');
+        script.src = '//pl27448508.profitableratecpm.com/c39b3bd3eab4b0b5a5910cf7fc622ee2/invoke.js';
+        script.async = true;
+        script.setAttribute('data-cfasync', 'false');
+
+        containerRef.current.appendChild(script);
+
+        // تنظيف السكربت عند التفكيك
         return () => {
-            // إزالة السكربت القديم قبل إضافة الجديد
-            document.body.removeChild(script);
+            if (containerRef.current) containerRef.current.innerHTML = '';
         };
     }, [keyForReload]);
 
-    return null; // لا يحتاج DOM مرئي
+    return <div id="container-c39b3bd3eab4b0b5a5910cf7fc622ee2" ref={containerRef}></div>;
 };
 
 export default PopunderAd;
