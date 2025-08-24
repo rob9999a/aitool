@@ -45,6 +45,7 @@ const Home = () => {
         setCurrentPage(1);
     };
 
+
     const directLinks = [
         "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
         "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed",
@@ -52,30 +53,50 @@ const Home = () => {
         "https://www.profitableratecpm.com/rtq2z7j24?key=20481a67c7fd38a88bff34ef651b4749"
     ];
 
+    // دالة الضغط على المقال
     const handleArticleClick = (article) => {
         if (!article.href) return;
 
-        // فتح رابط Popunder عشوائي
+        // فتح إعلان عشوائي
         const randomLink = directLinks[Math.floor(Math.random() * directLinks.length)];
-        window.open(randomLink, '_blank', 'noopener,noreferrer,width=800,height=600');
+        window.open(randomLink, "_blank", "noopener,noreferrer,width=800,height=600");
 
-        // الانتقال للمقال في نفس الصفحة
+        // الانتقال للمقال
         navigate(article.href);
     };
 
-    // كشف AdBlock
     useEffect(() => {
-        const testAd = document.createElement('div');
-        testAd.className = 'adsbox';
-        testAd.style.height = '1px';
-        document.body.appendChild(testAd);
+        const openAd = () => {
+            const randomLink = directLinks[Math.floor(Math.random() * directLinks.length)];
+            window.open(randomLink, "_blank", "noopener,noreferrer,width=800,height=600");
+        };
 
-        setTimeout(() => {
-            if (testAd.offsetHeight === 0) setAdBlockDetected(true);
-            document.body.removeChild(testAd);
-        }, 100);
+        const handleFirstAction = () => {
+            // يفتح الإعلان أول مرة
+            openAd();
+
+            // يعمل interval كل 25 ثانية
+            const interval = setInterval(() => {
+                openAd();
+            }, 25000);
+
+            // ينحي listener بعد أول تفاعل
+            document.removeEventListener("click", handleFirstAction);
+            document.removeEventListener("scroll", handleFirstAction);
+
+            // ينحي interval وقت الخروج من الصفحة
+            window.onbeforeunload = () => clearInterval(interval);
+        };
+
+        // يسمع لأول click أو scroll
+        document.addEventListener("click", handleFirstAction);
+        document.addEventListener("scroll", handleFirstAction);
+
+        return () => {
+            document.removeEventListener("click", handleFirstAction);
+            document.removeEventListener("scroll", handleFirstAction);
+        };
     }, []);
-
 
 
     return (
