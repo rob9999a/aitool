@@ -2175,6 +2175,20 @@ const articlesWithHref = [
 
 
 
+    {
+        id: 175,
+        title: "Artificial Intelligence, the Strait of Hormuz, and a Potential U.S.–Iran War: A Strategic Analysis",
+        description: "A critical analysis of how AI, oil, and geopolitical tensions in the Strait of Hormuz could shape a potential U.S.–Iran conflict",
+        category: 'news',
+        image: "https://i.postimg.cc/RVWpHJfX/freepik-an-academic-journal-cover-depicting-a-chess-game-w-95718.png",
+        readTime: "8 min read",
+        views: "236K",
+        likes: 2333,
+        isHot: true,
+        date: "Jan 22, 24",
+        dateSort: new Date("2026-06-22"),
+        href: '/strait-of-hormuz'
+    },
 
 
 

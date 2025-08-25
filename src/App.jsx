@@ -158,6 +158,7 @@ import Detector from './Trends/Detector/Detector';
 import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
 import Usairan from './Trends/Usairan/Usairan';
+import Hormuz from './Trends/Hormuz/Hormuz';
 
 
 function App() {
@@ -516,6 +517,7 @@ function App() {
 
           <Route path="/usa-vs-iran" element={<Usairan />} />
 
+          <Route path="/strait-of-hormuz" element={<Hormuz />} />
 
         </Routes>
       </Router>
