@@ -2185,8 +2185,8 @@ const articlesWithHref = [
         views: "236K",
         likes: 2333,
         isHot: true,
-        date: "Jan 22, 26",
-        dateSort: new Date("2026-06-22"),
+        date: "Jan 30, 26",
+        dateSort: new Date("2026-06-30"),
         href: '/strait-of-hormuz'
     },
 
