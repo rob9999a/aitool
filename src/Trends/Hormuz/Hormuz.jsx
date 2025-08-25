@@ -91,7 +91,7 @@ const Hormuz = () => {
                 <meta property="og:description" content="A comprehensive strategic analysis of AI, oil, the Strait of Hormuz, and the potential U.S.–Iran conflict, highlighting geopolitical and energy risks." />
                 <meta property="og:image" content="https://i.postimg.cc/RVWpHJfX/freepik-an-academic-journal-cover-depicting-a-chess-game-w-95718.png" />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://fyrexia.co.uk/strait-of-hormuz" />
+                <meta property="og:url" content="https://fyrexia.co.uk/strait-of-hormuz" alt="hormuz-war-soon" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:title" content="Artificial Intelligence, the Strait of Hormuz, and a Potential U.S.–Iran War: A Strategic Analysis" />
@@ -122,7 +122,7 @@ const Hormuz = () => {
                     <div className={`rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${sections[activeSection].color}`}>
                         <div className="md:flex">
                             <div className="md:flex-shrink-0 md:w-2/5">
-                                <img
+                                <img content='hormuz War Soon'
                                     className="h-64 w-full object-cover md:h-full md:w-full"
                                     src={sections[activeSection].image}
                                     alt={sections[activeSection].title}
