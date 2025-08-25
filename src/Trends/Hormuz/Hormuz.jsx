@@ -125,8 +125,7 @@ const Hormuz = () => {
                                 <img content='hormuz War Soon'
                                     className="h-64 w-full object-cover md:h-full md:w-full"
                                     src={sections[activeSection].image}
-                                    alt={sections[activeSection].title}
-                                />
+                                    alt={`Illustration for ${sections[activeSection].title} discussing AI, oil, and U.S.–Iran tensions in the Strait of Hormuz`} />
                             </div>
                             <div className="p-8">
                                 <h2 className="text-2xl font-bold text-gray-800 mb-4">{sections[activeSection].title}</h2>
