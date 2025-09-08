@@ -159,6 +159,7 @@ import We from './Trends/We/We';
 import Harmajdon from './Trends/Harmajdon/Harmajdon';
 import Usairan from './Trends/Usairan/Usairan';
 import Hormuz from './Trends/Hormuz/Hormuz';
+import FastWar from './Trends/Fastwar/Fastwar';
 
 
 function App() {
@@ -308,6 +309,7 @@ function App() {
 
           <Route path="/ai-business-pitch" element={<Aipitch />} />
 
+          <Route path="/road-to-war" element={<FastWar />} />
 
 
           <Route path="/ai-make-you-rich" element={<AIDropshippingSuccess />} />

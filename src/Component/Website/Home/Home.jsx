@@ -47,10 +47,10 @@ const Home = () => {
 
 
     const directLinks = [
-        "https://www.profitableratecpm.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8",
-        "https://www.profitableratecpm.com/uhazre74nz?key=9f55590e84e7ed6e96d725ceafcbdaed",
-        "https://www.profitableratecpm.com/yiwuf7wnnc?key=dd81ef7fbf1436feddd26bc59d616562",
-        "https://www.profitableratecpm.com/rtq2z7j24?key=20481a67c7fd38a88bff34ef651b4749"
+        "https://pl27467223.revenuecpmgate.com/d6/5c/01/d65c01c5970c1ebe052b2207b76b2cda.js,",
+        "https://pl27464192.revenuecpmgate.com/3f/ed/a3/3feda393b0080593bd4b6345929e09d8.js",
+        "https://www.revenuecpmgate.com/rtq2z7j24?key=20481a67c7fd38a88bff34ef651b4749",
+        "https://www.revenuecpmgate.com/ts9kq93ne?key=e5e1c90b28cf78fc9c41a80915c570b8"
     ];
 
     // دالة الضغط على المقال
