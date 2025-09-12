@@ -7,6 +7,7 @@ import { Flame, TrendingUp, DollarSign, Edit, Users, Calendar, Eye, Heart, Chevr
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import Dadsense from '../../../Dadsense/Dadsense';
+import AdSense from "react-adsense";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -118,6 +119,15 @@ const Home = () => {
                         Explore the latest articles on AI, business automation, content creation, and more.
                     </p>
                 </section>
+
+
+                <AdSense.Google
+                    client="ca-pub-9946281213833145" // رقم حسابك في AdSense
+                    slot="1234567890"                 // رقم الإعلان (تاخذه من Google AdSense)
+                    style={{ display: "block" }}
+                    format="auto"
+                    responsive="true"
+                />
 
                 {/* Hot Categories */}
                 <section className="py-8">
@@ -234,7 +244,7 @@ const Home = () => {
                 )}
 
                 <Footer />
-            </div>
+            </div >
         </>
     );
 };
