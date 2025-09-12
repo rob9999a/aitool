@@ -2192,6 +2192,20 @@ const articlesWithHref = [
 
 
 
+    {
+        id: 176,
+        title: "Explore the chilling story behind Charlie Kirk’s assassination and the shadowy organization behind it",
+        description: "Charlie Kirk, sniper, conspiracy, politics, thriller",
+        category: 'news',
+        image: "https://i.postimg.cc/pTPjsFty/ggg.png",
+        readTime: "8 min read",
+        views: "236K",
+        likes: 2333,
+        isHot: true,
+        date: "Jan 30, 26",
+        dateSort: new Date("2026-06-30"),
+        href: '/who-kill-charlie'
+    },
 
 
 ];

@@ -160,6 +160,7 @@ import Harmajdon from './Trends/Harmajdon/Harmajdon';
 import Usairan from './Trends/Usairan/Usairan';
 import Hormuz from './Trends/Hormuz/Hormuz';
 import FastWar from './Trends/Fastwar/Fastwar';
+import SnipersShadow from './Trends/SnipersShadow/SnipersShadow';
 
 
 function App() {
@@ -325,6 +326,7 @@ function App() {
           <Route path="/ai-reason" element={<Aireason />} />
           <Route path="/ai-your-trader" element={<Aiyourtrader />} />
 
+          <Route path="/who-kill-charlie" element={<SnipersShadow />} />
 
 
 
