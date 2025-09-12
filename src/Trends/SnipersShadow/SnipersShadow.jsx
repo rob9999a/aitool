@@ -26,7 +26,7 @@ const SnipersShadow = () => {
                     {/* Header Section */}
                     <header className="relative">
                         <h1 className="text-4xl font-bold text-center py-6 px-4 bg-gray-800 text-white">
-                            The Sniper's Shadow: Conspiracy Behind the Activist's Death
+                            Who is responsible for the assassination of American activist Charlie Kirk during the “American Comeback Tour” at Utah Valley University in 2025?
                         </h1>
 
                         {/* Main image */}
@@ -47,7 +47,7 @@ const SnipersShadow = () => {
                             </div>
                             <div className="md:w-1/3 h-64 bg-gray-200 flex items-center justify-center">
                                 <span className="text-gray-500">
-                                    <img src='https://i.postimg.cc/pTPjsFty/ggg.png'></img>
+                                    <img src='https://i.postimg.cc/pTPjsFty/ggg.png' alt="Who is responsible for the assassination of American activist Charlie Kirk during the “American Comeback Tour” at Utah Valley University in 2025?"></img>
 
                                 </span>
                             </div>
@@ -67,7 +67,7 @@ const SnipersShadow = () => {
                             </div>
                             <div className="md:w-1/3 h-64 bg-gray-200 flex items-center justify-center">
                                 <span className="text-gray-500">
-                                    <img src='https://i.postimg.cc/pTPjsFty/ggg.png'></img>
+                                    <img src='https://i.postimg.cc/pTPjsFty/ggg.png' alt='Who is responsible for the assassination of American activist Charlie Kirk during the “American Comeback Tour” at Utah Valley University in 2025?'></img>
 
                                 </span>
                             </div>
